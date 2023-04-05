@@ -1,0 +1,135 @@
+.login {
+	font-family: 'Quattrocento', sans-serif !important;
+	background: #592A8A; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #592A8A 0%, #41215e 75%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #592A8A 0%,#41215e 75%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #592A8A 0%,#41215e 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#592A8A', endColorstr='#41215e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	#login {
+		//Wordmark
+		h1 {
+			a {
+				background-image: url('/wp-content/themes/galleon/images/ecu-logo.svg' );
+				height: 140px;
+				width: 320px;
+				background-size: 320px 140px;
+				background-repeat: no-repeat;
+				background-position: center;
+				margin-bottom:25px;
+				padding-bottom:20px;
+			}
+		}
+
+		//Error, e.g. "Wrong Password
+		#login_error {
+			color: #a94442;
+			background-color: #f2dede;
+			border-color: #ebccd1;
+			border: 1px solid;
+			border-radius: 0px;
+		}
+
+		//Message, e.g. "You are now logged out"
+		.message {
+			color: #3c763d;
+			background-color: #dff0d8;
+			border-color: #d6e9c6;
+			border: 1px solid;
+			border-radius: 0px;
+		}
+
+		//Login Form
+		#loginform {
+			background-color: rgba(255, 255, 255, 0);
+			box-shadow: none;
+			padding: 0px;
+			border: 0px;
+			p:nth-child(3) {
+				a {
+					color: $white;
+				}
+			}
+
+			label, p {
+				color: $white;
+			}
+
+			label[for="user_login"] {
+				color: rgba(255, 255, 255, 0);
+				font-size: 0px;
+			}
+
+			label[for="user_login"]:before {
+				font-size: 13px;
+				content: "Pirate ID";
+				color: $white;
+				height: 300px;
+				width: 300px;
+			}
+
+			label[for="rememberme"] {
+				font-size: 14px;
+			}
+
+			input {
+				font-size: 16px !important;
+				border-radius: 0px;
+			}
+			input[type="text"], input[type="password"] {
+				padding: 10px !important;
+			}
+
+			.submit {
+				#wp-submit {
+					margin-top: 15px;
+					width: 100%;
+					background: #32165d;
+					border-color: #1c073c;
+					text-shadow: none;
+					box-shadow: none;
+					padding: 5px;
+					height: auto;
+					color: $white;
+					transition: all .25s;
+					border-radius: 0px;
+
+					&:hover {
+						color: $white;
+						background: #260e4b;
+					}
+				}
+			}
+		}
+
+		#nav {
+			margin: 10px 0px 0px 0px;
+			padding: 0px;
+			a {
+			  color: $white;
+			  border-bottom: 1px solid $light-purple-1;
+			  text-decoration: none;
+			    &:hover,&:focus,&:active {
+			      color: $white;
+			      border-bottom: 1px solid $white;
+			      text-decoration: none;
+			    }
+			}
+		}
+
+		#backtoblog {
+			margin: 10px 0px 0px 0px;
+			padding: 0px;
+			a {
+			  color: $white;
+			  border-bottom: 1px solid $light-purple-1;
+			  text-decoration: none;
+			    &:hover,&:focus,&:active {
+			      color: $white;
+			      border-bottom: 1px solid $white;
+			      text-decoration: none;
+			    }
+			}
+		}
+	}
+}

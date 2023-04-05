@@ -1,0 +1,7 @@
+.widget_archive {
+  @include well;
+  @include chevronlist;
+  .screen-reader-text {
+      display: none;
+  }
+}

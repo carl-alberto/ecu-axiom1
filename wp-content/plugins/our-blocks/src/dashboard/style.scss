@@ -1,0 +1,32 @@
+.wp-block-wp-blocks-dashboard {
+    box-shadow: none;
+    border: 0px;
+    width: 100%;
+    .block-editor-block-list__layout {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        .wp-block {
+            margin: 0;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+    .block-list-appender {
+        padding: 25px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            font-size: 2em;
+        }
+    }
+    [data-type="wp-blocks/dash-item"]{
+        width: 33%;
+    }
+}

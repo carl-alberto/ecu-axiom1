@@ -1,0 +1,38 @@
+.ecu-image-banner-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px; }
+
+.ecu-image-banner-container .ecu-image-banner {
+  position: relative; }
+
+.ecu-image-banner-container .ecu-image-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin: 0;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Oswald",sans-serif !important; }
+
+.ecu-image-banner-container .ecu-image-banner-text {
+  display: block; }
+
+.ecu-image-banner-container .disable-shadow {
+  text-shadow: none; }
+
+@media only screen and (max-width: 768px) {
+  .ecu-image-banner-text {
+    font-size: 4em !important; }
+
+  .ecu-image-banner img {
+    height: auto !important; } }
+@media only screen and (max-width: 480px) {
+  .ecu-image-banner-text {
+    font-size: 2em !important; }
+
+  .ecu-image-banner img {
+    height: auto !important; } }
+
+/*# sourceMappingURL=ecu-image-banner.css.map */

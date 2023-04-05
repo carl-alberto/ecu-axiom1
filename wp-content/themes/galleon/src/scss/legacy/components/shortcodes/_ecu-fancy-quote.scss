@@ -1,0 +1,46 @@
+.blockquotes{
+	margin-bottom: 20px;
+	width:100%;
+	position:relative;
+	.doublequotes{font-size: 40px;}
+	.fancy{width:100%; position: relative; display: inline-block; margin-bottom:10px;
+		.fa {
+			color: $ecu-purple;
+		}
+		hr{position: absolute; width: calc(45% - 2px); float:left; padding:0px; margin: auto; top:45%; border: 2px solid $ecu-purple
+;}
+		hr.left{left:0px;}
+		hr.right{right:0px;}
+
+		.doublequotes{position: relative; width:10%; left:calc(45% - 2px); text-align: center;
+			img{width:50%; max-width: 50px;}
+		}
+		.bottomquote{
+			img{
+				-ms-transform: rotate(180deg); /* IE 9 */
+				-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+				transform: rotate(180deg);
+			}
+		}
+	}
+	.blockcontent{width: 100%;
+		.mainquote{
+			margin:auto;
+			max-width:1170px;
+			padding:15px 0px;
+			font-size: 1.8em;
+			line-height:1.5em!important;
+			font-weight: 300;
+			text-align: center;
+		}
+
+		.quote{
+			font-family:'Oswald', sans-serif;
+			text-align: right;
+			font-weight: inherit;
+			font-size:1.3em;
+			margin-right: 25px;
+			font-weight: bold;
+		}
+	}
+}

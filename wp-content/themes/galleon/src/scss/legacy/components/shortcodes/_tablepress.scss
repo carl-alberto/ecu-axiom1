@@ -1,0 +1,65 @@
+.tablepress {
+    thead {
+        th {
+            background-color: $ecu-purple;
+            color: $white;
+            transition: all .2s;
+            &:hover {
+                background-color: $dark-purple;
+            }
+            &.sorting {
+                &:hover, &:focus, &:active {
+                    background-color: $dark-purple;
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                border-top: 0px !important;
+            }
+            &.even {
+                td {
+                    background-color: darken($white, 5%) !important;
+                    color: $default-text !important;
+                }
+            }
+            &.odd {
+                td {
+                    background-color: $white !important;
+                    color: $default-text !important;
+                }
+            }
+        }
+    }
+    tfoot {
+        th {
+            background-color: $ecu-purple;
+            color: $white;
+        }
+    }
+}
+.dataTables_filter {
+    input {
+        border: 1px solid $ribbon-3-sup;
+    }
+}
+.dataTables_paginate {
+    a {
+        border-bottom: 0px;
+        cursor: pointer;
+        &.next {
+            &:after {
+                text-shadow: none;
+                color: $default-text;
+            }
+        }
+        &.previous {
+            &:before {
+                text-shadow: none;
+                color: $default-text;
+            }
+        }
+    }
+}

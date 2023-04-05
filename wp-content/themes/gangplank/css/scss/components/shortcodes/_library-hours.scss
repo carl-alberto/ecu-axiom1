@@ -1,0 +1,24 @@
+.ui_library_hours {
+    margin-bottom: 1em;
+    h2 {
+        font-size: 1.5em !important;
+    }
+    h3 {
+        font-size: 1.25em !important;
+    }
+    p {
+
+    }
+    table {
+        margin-bottom: 1em;
+        width: 100%;
+        tr {
+            td {
+                width: 50%;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}

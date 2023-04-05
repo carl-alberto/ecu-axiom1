@@ -1,0 +1,23 @@
+.nf-form-cont {
+  background-color: #f6f6f6;
+  border-radius: 0px;
+  padding: 15px;
+  .nf-form-wrap {
+    .nf-form-layout {
+      .submit-container {
+        .nf-field-element {
+          background-color: #572C86;
+          border-radius: 0px;
+          input {
+            display: block;
+            width: 100%;
+            background-color: transparent;
+            color: white;
+            border: 0px;
+            padding: 5px 0px;
+          }
+        }
+      }
+    }
+  }
+}

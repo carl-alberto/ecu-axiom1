@@ -1,0 +1,183 @@
+/* white background - ecu-purple callout */
+&.style-0 {
+	background-color: $white;
+	  color: $default-text !important;
+  
+	// Headings
+	  .ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+		  color: $ecu-purple;
+	  }
+	  blockquote {
+	  border-left: 5px solid $ribbon-3-sup;
+	  padding: 1rem 0 1rem 1rem;
+	  p {
+		&:last-child {
+		  margin-bottom: 0px;
+		}
+	  }
+	}
+  
+  //Buttons
+  .btn-ribbon, .btn-ribbon-simple {
+	  background: $white;
+	  color: $ecu-purple;
+	  border: 1px solid $ecu-purple;
+	  transition: all .2s;
+	  &:after {
+		  color:$ecu-purple;
+	  }
+	  &:hover {
+		  background: $ecu-purple;
+		  color: $white;
+		  border: 1px solid $ecu-purple;
+		  &:after {
+			  color: $white;
+		  }
+	  }
+  }
+  
+	  .pagination-wrap {
+		  .pagination {
+			  border: 1px solid $ribbon-3-sup;
+			  li {
+				  border-right: 1px solid $ribbon-3-sup;
+				  a {
+					  color: $ecu-purple !important;
+					  &:hover {
+						  background-color: #572C86;
+						  color: $ribbon-3-sup-text !important;
+					  }
+				  }
+				  &:last-child {
+					  border-right: 0px;
+				  }
+			  }
+		  }
+	  }
+  
+	  /**************************\
+		  SHORTCODES + PLUGINS
+	  \**************************/
+  
+	  // Tablepress
+	  .tablepress {
+		  thead {
+			  th {
+				  background-color: $ribbon-3-sup;
+				  color: $ribbon-3-sup-text;
+				  border-bottom: 0px;
+			  }
+		  }
+		  tbody {
+			  tr {
+				  td {
+					  border-top: 0px !important;
+				  }
+				  &.even {
+					  td {
+						  background-color: darken($white, 5%) !important;
+						  color: $default-text !important;
+					  }
+				  }
+				  &.odd {
+					  td {
+						  background-color: $white !important;
+						  color: $default-text !important;
+					  }
+				  }
+			  }
+		  }
+	  }
+	  .dataTables_filter {
+		  input {
+			  border: 1px solid $ribbon-3-sup;
+		  }
+	  }
+	  .dataTables_paginate {
+		  a {
+			  border-bottom: 0px;
+			  cursor: pointer;
+			  &.next {
+				  &:after {
+					  text-shadow: none;
+					  color: $default-text;
+				  }
+			  }
+			  &.previous {
+				  &:before {
+					  text-shadow: none;
+					  color: $default-text;
+				  }
+			  }
+		  }
+	  }
+  
+	  // Fancyquote
+	  .blockquotes {
+		  .fancy {
+			  hr {
+				  border: 2px solid $ribbon-3-sup;
+			  }
+			  .fa {
+				  color: $ribbon-3-sup;
+			  }
+		  }
+	  }
+  
+	  // Linked / Tabbed grid
+	  .ui_tabbed_grid, .ui_linked_grid {
+		  .grid_post {
+			  &:hover {
+				  span {
+					  background: rgba($ribbon-3-sup, 1);
+				  }
+			  }
+			  span {
+				  background: rgba($ribbon-3-sup, .5);
+			  }
+		  }
+	  }
+  
+	  // Dashboard
+	  .ui_dashboard {
+		  .ui_element_wrap {
+			  .dashboard_title {
+				  color: $ecu-purple !important;
+			  }
+			  .dashboard_icon {
+				  .icon-wrap {
+					  background: $ribbon-3-sup;
+					  &.ui_none {
+						  .fa {
+							  color: $ribbon-3-sup-text !important;
+						  }
+					  }
+				  }
+			  }
+		  }
+	  }
+  
+	  /**************************\
+			 RIBBONS
+	  \**************************/
+  
+	  .ribbon-callout {
+		  background-color: $ribbon-3-sup;
+		  color: $ribbon-3-sup-text !important;
+  
+		  // Headings
+		  .ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+			  color: $ribbon-3-sup-text !important;
+		  }
+  
+		  a {
+			  color: $ribbon-3-sup-text;
+			  border-color: $white;
+		  }
+		  @include rib_btn($white, $ecu-purple, $ecu-purple, $white);
+		  blockquote {
+		  border-left: 5px solid $white;
+		}
+	  }
+  }
+  

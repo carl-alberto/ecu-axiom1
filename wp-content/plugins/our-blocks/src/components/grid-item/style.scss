@@ -1,0 +1,74 @@
+:root {
+    --bg-color: #42145F;
+    --text-color: #FFF;
+}
+
+.is-style-purple {
+    --bg-color: #77216F;
+    --text-color: #FFF;
+}
+
+.is-style-grey {
+    --bg-color: #7b746a;
+    --text-color: #FFF;
+}
+
+.is-style-lavender {
+    --bg-color: #592A8A;
+    --text-color: #FFFFFF;
+}
+
+.is-style-teal {
+    --bg-color: #004261;
+    --text-color: #FFF;
+}
+.wp-block-wp-blocks-grid-item {
+    display: block;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    @media screen and ( min-width: 576px ) {
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+    &.invert {
+        color: var( --bg-color );
+        figure figcaption {
+            background-color: var( --text-color );
+        }
+    }
+    .bg-wrap {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    a {
+        text-decoration: none !important;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        height: inherit;
+        color: var( --text-color ) !important;
+        &:focus {
+            box-shadow: none;
+        }
+        &:hover {
+            text-decoration: none;
+            p {
+                opacity: 1;
+            }
+        }
+        p {
+            background-color: var( --bg-color );
+            color: var( --text-color ) !important;
+            width: 100% !important;
+            margin: 0px !important;
+            padding: 15px !important;
+            opacity: .5;
+            transition: all .2s;
+            font-family: "Oswald" !important;
+            font-weight: 400;
+            z-index: 0;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+#breadcrumbs  {
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+    ul {
+        padding: 0px;
+        margin: 0px;
+        li {
+            display: inline-block;
+            list-style: none;
+            color: $ecu-purple;
+            &:after {
+                content: "/";
+                margin: 0 10px;
+            }
+            &:last-child {
+                font-weight: bold;
+                &:after {
+                    content: "";
+                }
+            }
+            a {
+                border-bottom: 1px solid $white;
+                &:hover {
+                    border-bottom: 1px solid $ecu-purple;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+# ecu-global-assets

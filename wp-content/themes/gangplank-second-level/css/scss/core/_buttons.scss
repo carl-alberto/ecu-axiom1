@@ -1,0 +1,52 @@
+// Buttons
+.btn {
+	border-radius: 0px;
+	font-family:$heading-font;
+
+	&.btn-ecu-gold {
+		color: $ecu-purple;
+		font-weight:700;
+		background-color: $ecu-gold;
+		border:1px solid transparent;
+
+		&:hover {
+			color:$ecu-gold;
+			background-color:$ecu-purple;
+			border:1px solid $ecu-gold;
+		}
+	}
+	&.btn-ecu-white {
+		color: $white;
+		font-weight:700;
+		background-color: $drk-purple;
+		border:1px solid $white;
+
+		&:hover {
+			color:$drk-purple;
+			background-color:$white;
+			border:1px solid $white;
+		}
+	}
+	&.btn-ecu-purple {
+		color: $white;
+		font-weight:700;
+		background-color: $drk-purple;
+		border:1px solid transparent;
+		&:hover {
+			color:$drk-purple;
+			background-color:$white;
+			border:1px solid $drk-purple;
+		}
+	}
+	&.btn-ecu-grey {
+		color: $white;
+		font-weight:700;
+		background-color: darken($drk-grey, 9%);
+		border:1px solid transparent;
+		&:hover {
+			color:darken($drk-grey, 9%);
+			background-color:$white;
+			border:1px solid darken($drk-grey, 9%);
+		}
+	}
+}

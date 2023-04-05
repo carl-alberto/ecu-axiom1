@@ -1,0 +1,123 @@
+// hacky - dont @ me bro - krochmalnyd
+#main-content {
+	.ribbon.style-1, .ribbon.style-2, .ribbon.style-3, .ribbon.style-4, .ribbon.style-5, .ribbon.style-6  {
+		.nf-form-cont{
+			h1, h2, h3, h4, h5, h6, .ecu-h1, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, label, .ribbon-header, .nf-form-fields-required, p{
+				color: $ecu-purple!important;
+			}
+		}
+	}
+}
+
+
+.nf-element {
+	&.btn-success {
+		background-color:$ecu-purple!important;
+		border-color:$ecu-purple!important;
+
+		&:hover {
+			background-color:$dark-purple!important;
+		}
+	}
+}
+
+.nf-form-cont{ //widget and in content
+
+/********
+sn start
+*********/
+.nf-mp-footer input{color:$ecu-purple; font-weight:bold;}
+ul.nf-breadcrumbs{
+	li{
+		margin-right:10px !important;
+		a{ padding: 5px; background-color:$white; color:$ecu-purple!important; border:1px solid $ecu-purple!important;}
+	}
+	li.active{
+		a{ background-color:$ecu-purple; color:white!important;}
+	}
+}
+/*end*******/
+
+	background-color:lighten($grey, 30%);
+	border-radius: 0px;
+	padding:15px;
+
+	.nf-form-title {
+		h3 {
+			margin-top:0px !important;
+		}
+	}
+
+	.widgettitle{
+		display:none;
+	}
+
+	.nf-form-wrap{
+		.nf-form-layout{
+			.nf-progress{min-width:10px; background-color: $ecu-purple;
+		    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+		    background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+		    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+		    -webkit-background-size: 1rem 1rem;
+		    background-size: 1rem 1rem;
+			}
+			.nf-error-msg, .ninja-forms-req-symbol{
+				color:darken(red, 16.4%);
+			}
+
+			.listselect-wrap .nf-field-element, .nf-element, .submit-wrap{
+				&:focus{
+					border: 1px solid $ecu-purple;
+				}
+
+				.nf-field-label {
+					display:none;
+				}
+			}
+
+			.submit-container{
+				padding-top:15px;
+
+				.nf-field-element{
+					background-color:$ecu-purple;
+					border-radius:0px;
+
+					input {
+						display:block;
+						width:100%;
+					}
+
+					&:hover{
+						background-color:$dark-purple;
+					}
+					// fix height on select dropdowns
+					select {
+						height:28px!important;
+					}
+				}
+			}
+			.nf-field-container, .nf-field-label{
+				margin-bottom:8px !important;
+			}
+			.nf-form-fields-required{
+				margin-bottom:10px !important;
+			}
+		}
+	}
+}
+
+//Stop 100% submit button that is in the content area
+.entry-content {
+	.nf-form-cont {
+		.submit-wrap {
+			max-width:300px;
+		}
+	}
+}
+
+//JS Drop Down Date Picker
+.pika-button{
+	&:hover {
+    	background: $ecu-purple !important;
+    }
+}

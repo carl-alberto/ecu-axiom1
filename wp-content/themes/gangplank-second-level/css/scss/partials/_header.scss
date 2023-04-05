@@ -1,0 +1,501 @@
+body {	
+	#nav {
+		background-color:$drk-purple;		
+		width:100%;
+		z-index:3;
+		height:56px;
+		font-family: $heading-font;
+		.nav-content {
+		  	.wordmark {
+				float:left;
+				padding-top:5px;
+				padding-bottom:5px;
+				h1 {
+			  		margin-top:0px;
+			  		margin-bottom:0px;
+			  		img {
+						height:38px;
+			  		}
+				}
+		  	}
+		  	#search-links {
+				color:$white;
+				float:right;
+				height:56px;  //Should match height of #nav
+				margin-right:-15px; //Cancel out bootstrap gutter on mobile
+				line-height:56px;
+				background-color:$ecu-purple;
+				padding-left:20px;
+				padding-right:20px;
+				.menu-item {
+			  		display:inline-block;
+			  		padding-right:10px;
+				  	a {
+						color:$white;
+						&:hover {
+				  			color:$ecu-gold;
+				  			text-decoration:none;
+						}
+			  		}
+				}
+				#btn-resources {
+			  		display:inline-block;
+			  		cursor:pointer;
+			  		&:hover {
+						color:$ecu-gold;
+			  		}
+				}
+		  	}
+		  	#primary-nav {
+				display:none;
+			  	#audience-dropdown {
+				  	display:none;
+			  	}
+		  	}
+		}
+	}
+	//Drop down menu for quick links
+	#nav-quicklinks {
+		background-color:$ecu-purple;
+		color:$white;
+		position:fixed;
+		margin-top:-1px;
+		z-index:2;
+		width:100%;
+		display:none;
+		max-height:100vh;
+		overflow-y:scroll;
+		font-family:$heading-font;
+
+		//Must have padding in wrapper because padding screws up jQuery slideToggle()
+		.quick-links-wrapper {
+			padding-bottom:30px;
+		  	padding-top:95px;
+		  	font-size:.8em;
+			.header {
+				font-size:1.3em;
+				margin-top:15px;
+				margin-bottom:4px;
+				border-bottom:1px solid $white;
+		  	}
+
+		  	ul {
+				font-size:.9em;
+				list-style:none;
+				margin-bottom:0px;
+				padding:0px;
+				li {
+				  	padding-top:2px;
+				  	padding-bottom:2px;
+
+					.social-link {
+						font-size:1.8em;
+						&:not(:last-child) {
+				  			margin-right:4px;
+						}
+			  		}
+					a {
+						color:$white;
+						&:hover {
+					  		color:$ecu-gold;
+					  		text-decoration:none;
+						}
+				  	}
+				}
+			}
+		  	#search {
+				margin-bottom:8px;
+
+				.input-group {
+			  		input {
+						border-radius:0px;
+						border: 1px solid white;
+						&:focus{
+				  			border: 1px solid #5E9ED6;
+						}
+			  		}
+			  		.input-group-btn {
+						.btn {
+				  			line-height: 1.42858;
+						}
+					}
+				}
+		  	}
+		}
+	}
+	#site-title {
+		background-color:rgb(187, 150, 33);			
+		z-index:2;
+		//padding-left: ;
+		a {
+			color:$white;
+			text-decoration:none;
+		}
+		.container {
+			.ecu-h1	{
+				font-size:1.2em;
+				white-space:nowrap;
+				font-family:"Zilla Slab 700", serif;
+				color:#fff!important;
+				text-transform:uppercase;
+			}
+		}
+	}
+}
+
+
+//sm
+@media (min-width: 768px) {
+  body{
+	//Primary Navigation
+		#nav {
+			height:60px;
+			.nav-content {
+				.wordmark {
+					h1 {
+						img {
+							height:38px;
+						}
+					}
+				}
+				#search-links {
+					height:60px;  //Should match height of #nav
+					margin-right:0px; //Add in bootstrap gutter on non-mobile
+					line-height:60px;
+					padding-left:15px;
+					padding-right:15px;
+
+					.menu-item {
+						a {
+						  font-size:.88em;
+							&:hover {
+							}
+						}
+					}
+
+					#btn-resources {
+						&:hover {
+						  color:$ecu-gold;
+						}
+					}
+				}
+				#primary-nav {
+					//General Nav Styles
+					color:$white;
+					float:right;
+					height:60px;  //Should match height of #nav
+					line-height:60px; //Should match height of #nav
+					font-size:.8em;
+					padding-left:0px;
+					padding-right:0px;
+					display:block;
+					#audience-dropdown {
+						position:absolute;
+						background-color:$ecu-purple;
+						display:none;
+						margin-top: -1px;
+
+						ul {
+							margin:-5px;
+							padding:0px 0px 15px 0px;
+							list-style:none;
+
+							li {
+								padding:15px 20px 0px 20px;;
+								line-height:16px;
+								a {
+									color:$white;
+									&:hover {
+										color:$ecu-gold;
+										text-decoration:none;
+									}
+								}
+							}
+						}
+					}
+
+					.menu-item {
+						display:inline-block;
+						padding-right:10px;
+
+
+						a {
+							color:$white;
+							font-size:.85em;
+
+							&:hover {
+								color:$ecu-gold;
+								text-decoration:none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		//Drop down menu for quick links
+		#nav-quicklinks {
+			overflow-y:hidden;
+			.quick-links-wrapper {
+				.header {
+				}
+
+				ul {
+					font-size:1em;
+
+					li {
+						.social-link {
+							&:not(:last-child) {
+							}
+						}
+
+						a {
+							&:hover {
+							}
+						}
+					}
+				}
+				#search {
+					.input-group {
+						input {
+						}
+						.input-group-btn {
+							.btn {
+
+							}
+						}
+					}
+				}
+			}
+			#primary-menu {
+				display:none;
+			}
+
+			#audiences {
+				display:none;
+			}
+		}
+		#site-title {
+			padding-left:65px;
+		}
+
+		//Alert Bar (only shown if active alert is present)
+		.alert-bar {
+			top:10px;
+		}
+	}
+}
+
+//md
+@media (min-width: 992px) {
+//Primary Navigation
+body{
+	#nav {
+	  height:70px;
+
+	  .nav-content {
+		.wordmark {
+		  h1 {
+			img {
+			  height:38px;
+			}
+		  }
+		}
+		#search-links {
+		  height:70px;  //Should match height of #nav
+		  line-height:70px;
+		  padding-left:15px;
+		  padding-right:15px;
+
+		  .menu-item {
+			a {
+			  &:hover {
+
+			  }
+			}
+		  }
+
+		  #btn-resources {
+			&:hover {
+			  color:$ecu-gold;
+			}
+		  }
+		}
+		#primary-nav {
+		  //General Nav Styles
+		  height:70px;  //Should match height of #nav
+		  line-height:70px; //Should match height of #nav
+		  font-size:1em;
+		  padding-left:15px;
+		  padding-right:15px;
+
+		  .menu-item {
+			padding-right:15px;
+
+			a {
+			  color:$white;
+
+			  &:hover {
+				color:$ecu-gold;
+				text-decoration:none;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+
+	//Drop down menu for quick links
+	#nav-quicklinks {
+	  .quick-links-wrapper {
+		.header {
+		  margin-top:0px;
+		}
+
+		ul {
+		  font-size:1em;
+
+		  li {
+			.social-link {
+			  &:not(:last-child) {
+			  }
+			}
+
+			a {
+			  &:hover {
+			  }
+			}
+		  }
+		}
+		#search {
+		  .input-group {
+			input {
+			}
+			.input-group-btn {
+				.btn {
+
+						}
+					}
+				}
+			}
+		}
+		#primary-menu {
+			display:none;
+		}
+
+		#audiences {
+			display:none;
+		}
+	}
+
+
+	//Alert Bar (only shown if active alert is present)
+	.alert-bar {
+	  top:20px;
+	}
+  }
+}
+
+//lg
+@media (min-width: 1200px) {
+//Primary Navigation
+	body{
+		#nav {
+			.nav-content {
+				.wordmark {
+					h1 {
+						img {
+						}
+					}
+				}
+				#search-links {
+					padding-left:15px;
+					padding-right:15px;
+
+					.menu-item {
+						a {
+							&:hover {
+
+							}
+						}
+					}
+
+					#btn-resources {
+						&:hover {
+							color:$ecu-gold;
+						}
+					}
+				}
+				#primary-nav {
+					font-size:1.1em;
+					padding-left:20px;
+					padding-right:20px;
+
+					.menu-item {
+						padding-right:20px;
+
+						a {
+							&:hover {
+							}
+						}
+					}
+				}
+			}
+		}
+
+		//Drop down menu for quick links
+		#nav-quicklinks {
+			.quick-links-wrapper {
+				.header {
+					font-size:1.5em;
+				}
+
+				ul {
+					font-size:1.1em;
+
+					li {
+						.social-link {
+							&:not(:last-child) {
+							}
+						}
+
+						a {
+							&:hover {
+							}
+						}
+					}
+				}
+				#search {
+					.input-group {
+						input {
+						}
+						.input-group-btn {
+							.btn {
+
+							}
+						}
+					}
+				}
+			}
+			#primary-menu {
+				display:none;
+			}
+
+			#audiences {
+				display:none;
+			}
+		}
+		#site-title {
+			padding-left:60px;
+		}
+	}
+}
+
+//print
+@media print {
+	body{
+		#nav {
+			position:relative;
+		}
+	}
+}

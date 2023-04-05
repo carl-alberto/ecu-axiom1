@@ -1,0 +1,27 @@
+#recently_updated_feed, #template_breakdown {
+	width: 100%;
+	margin-bottom: 1rem;
+	border-collapse: collapse;
+}
+
+#recently_updated_feed th, #template_breakdown th {
+	text-align: left;
+	vertical-align: bottom;
+	padding: .75rem;
+
+}
+
+#recently_updated_feed tbody tr:nth-of-type(odd), #template_breakdown tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+#recently_updated_feed tbody tr td  {
+	width: 25%;
+	padding: .75rem;
+    vertical-align: top;
+
+}
+
+#recently_updated_feed tbody tr td:first-child {
+	width: 50%;
+}

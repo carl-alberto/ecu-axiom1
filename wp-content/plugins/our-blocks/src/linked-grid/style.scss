@@ -1,0 +1,73 @@
+.wp-block-wp-blocks-linked-grid {
+    .row {
+        margin: 0 -5px 0 -5px;
+    }
+    .block-editor-block-list__layout {
+        display: flex;
+        flex-wrap: wrap;
+        &>.wp-block {
+            margin: 0;
+        }
+    }
+    &.one-item {
+        .block-editor-block-list__layout {
+            &>.wp-block {
+                flex: 0 0 100%;
+            }
+        }
+    }
+    &.two-item {
+        .block-editor-block-list__layout {
+            &>.wp-block {
+                flex: 0 0 50%;
+            }
+        }
+    }
+    &.three-item {
+        .block-editor-block-list__layout {
+            &>.wp-block {
+                flex: 0 0 33.333%;
+            }
+        }
+    }
+    &.four-item {
+        .block-editor-block-list__layout {
+            &>.wp-block {
+                flex: 0 0 25%;
+            }
+        }
+    }
+    &.height-200 {
+        .wp-block-wp-blocks-grid-item .bg-wrap {
+            height: 200px;
+        }
+    }
+    &.height-300 {
+        .wp-block-wp-blocks-grid-item .bg-wrap {
+            height: 300px;
+        }
+    }
+    &.height-400 {
+        .wp-block-wp-blocks-grid-item .bg-wrap {
+            height: 400px;
+        }
+    }
+    &.height-500 {
+        .wp-block-wp-blocks-grid-item .bg-wrap {
+            height: 500px;
+        }
+    }
+    .block-list-appender {
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            font-size: 4em;
+        }
+    }
+}

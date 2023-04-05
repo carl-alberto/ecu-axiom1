@@ -1,0 +1,43 @@
+name: Pantheon Build
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  github_deploy_to_dev:
+
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Pantheon Deploy
+      uses: pantheoncarl/code-deploy-wp@main
+      id: cache-vendor
+      env:
+        CARKONEMAIL: ${{ secrets.PANTHEONEMAIL }}
+        PANTHEONSITEUUID: 8ab85c5b-679a-48cb-9777-520ff283400f
+        PANTHEONEMAIL: carl.alberto@getpantheon.com
+        PANTHEON_TERMINUS_MACHINE_TOKEN: ${{ secrets.PANTHEON_TERMINUS_MACHINE_TOKEN }}
+        PANTHEON_PRIVATE_KEY: ${{ secrets.PANTHEON_PRIVATE_KEY }}
+        PROJECT_ROOT: $(pwd)
+        GH_REF2: ${{ github.ref }}
+        PANTHEONENV: dev
+    - name: Composer build and deploy
+      id: cache-composer
+      run: |
+        echo $TESTVARSSS
+        echo ${{ env.PANTHEONSITEUUID }}
+        echo ${{ steps.cache-vendor.outputs.PANTHEONSITEUUID }}
+        echo $CARKONEMAIL
+        ls
+        #export SITENAME="$(terminus site:info  --format list --field name -- ${{ steps.pantheon-deploy.outputs.PANTHEONSITEUUID}}"
+        #echo $SITENAME
+        #echo $PANTHEONSITEUUID
+        #terminus rsync ./web site-deploy-gh1.dev:code/web  
+        pwd
+        cd /
+        ls
+        terminus whoami
+        eval `ssh-agent -s`

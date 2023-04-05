@@ -1,0 +1,102 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	/* overflow: wrap; */
+}
+
+table, th, td {
+	border: .65px solid #5f5f5f;
+	padding: .5em;
+	/* font-size: .75em; */
+}
+
+th {
+	background-color: #DDD;
+	min-width: 20%;
+}
+
+/* table tr:nth-child(even) {
+	background-color: #DDD;
+} */
+
+.document_title {
+	margin-top: 30px;
+}
+
+.header_center {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.header_left .bus_text_left {
+	margin-left:20px;
+}
+
+.header_right .bus_text_right {
+	margin-right:20px;
+}
+
+.footer_left {
+	width: 100%;
+	text-align: left;
+	font-size: .80em;
+}
+
+.footer_right {
+	width: 100%;
+	text-align: right;
+	font-size: .80em;
+}
+
+.footer_center {
+	width: 100%;
+	text-align: center;
+	font-size: .80em;
+}
+
+.business_text {
+	font-size: .80em;
+}
+
+.bus_text_left {
+	float: left;
+	/* margin-left:20px; */
+	text-align: left;
+}
+
+.bus_text_right {
+	float: right;
+	text-align: right;
+}
+
+.img_left {
+	float: left;
+	width: 25%;
+}
+
+.img_right {
+	float: right;
+	width: 25%;
+}
+
+.img_center {
+	margin-bottom: 5px;
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.company_name {
+	font-weight: bold;
+	font-size: 1.10em;
+}
+
+.clear {
+	clear: both;
+}

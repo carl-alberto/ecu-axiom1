@@ -1,0 +1,63 @@
+.post-type-post #h1_title {
+	width: 43% !important;
+}
+
+#envira-media-modal-button {
+	margin-left: 5px;
+}
+#commentsdiv, #nf_admin_metaboxes_appendaform{
+	display: none;
+}
+
+.ribbon-callout .acf-editor-wrap iframe, .basiceditor .acf-editor-wrap iframe {
+	min-height: 125px;
+	height: 125px !important;
+}
+
+.ribbon-callout {
+	background-color: #572C86;
+}
+.ribbon-callout .acf-label label {
+	color: #FFFFFF;
+}
+.ribbon-callout .acf-label .description {
+	color: #FFFFFF;
+}
+
+.acf-field-image-crop .acf-input img { max-width: 100% !important; }
+
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.btn-success {
+	color: #fff;
+	    background-color: #5cb85c;
+	    border-color: #4cae4c;
+ }
+ .wp-admin.index-php #postbox-container-1 {
+	 width: 800px !important;
+ }
+
+#template_breakdown tbody tr td {
+	width: 50%;
+	padding: .75rem;
+	vertical-align: top;
+}

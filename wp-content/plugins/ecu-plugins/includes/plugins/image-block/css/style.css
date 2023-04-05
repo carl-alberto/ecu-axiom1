@@ -1,0 +1,75 @@
+div.featuredblock {
+  width: 100%;
+  background-color: #666666;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  padding: 0px;
+  margin-bottom: 10px;
+  display: table; }
+  div.featuredblock .featuredblock-content-container {
+    width: 50%;
+    margin: 0px;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+    float: right; }
+    @media (max-width: 1200px) {
+      div.featuredblock .featuredblock-content-container {
+        width: 100%; } }
+    div.featuredblock .featuredblock-content-container .featuredblock-content .featuredblock-header {
+      font-size: 1.600em;
+      font-weight: 700;
+      padding-top: 5px; }
+    div.featuredblock .featuredblock-content-container .featuredblock-content .featuredblock-text {
+      padding-top: 5px; }
+    div.featuredblock .featuredblock-content-container .featuredblock-content a.featuredblock-button {
+      margin-top: 10px;
+      min-width: 40%;
+      border: 1px solid #41215E;
+      background-color: #572C86; }
+    div.featuredblock .featuredblock-content-container .featuredblock-content a.featuredblock-button:hover {
+      background-color: #41215E; }
+  div.featuredblock .featuredblock-graphic {
+    width: 50%;
+    display: block;
+    float: right; }
+    @media (max-width: 1200px) {
+      div.featuredblock .featuredblock-graphic {
+        width: 100%; } }
+    div.featuredblock .featuredblock-graphic img {
+      width: 100%;
+      position: relative; }
+  div.featuredblock .img-right {
+    float: right; }
+  div.featuredblock .img-left {
+    float: left; }
+  div.featuredblock .arrowMore {
+    display: none; }
+
+.featuredblock-header {
+  font-family: "Oswald",sans-serif !important; }
+
+.featuredblock-style2  > .featuredblock-graphic {
+	margin-top: 2em !important;
+	margin-left: 2em !important;
+	margin-bottom: 2em !important;
+	max-width: 30%;
+	width: auto !important;
+}
+.featuredblock-style2  > .featuredblock-content-container {
+	margin-top: 2em !important;
+	margin-right: 1em !important;
+	margin-bottom: 2em !important;
+	padding: 0 !important;
+	padding-left: 1em !important;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-left-style: solid;
+	max-width: 60%;
+	width: auto !important;
+}
+.featuredblock-style2  .featuredblock-text {
+	text-align: left;
+}

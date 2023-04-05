@@ -1,0 +1,365 @@
+//Grab our fars
+@import 'vars';
+
+/* ==========================================================================
+	 Base (Dark) Theme Styles
+	 ========================================================================== */
+.envirabox-theme-#{$theme-name} {
+	background: none;
+	border-radius: 2px;
+	box-shadow: none;
+	padding: 4px !important;
+	&.envirabox-is-open {
+		.envirabox-bg {
+			opacity: 1;
+		}
+	}
+	.envirabox-bg {
+		background: $background-color;
+	}
+	&.envirabox-show-thumbs .envirabox-inner {
+		right: 0px;
+	}
+
+	.envirabox-title-wrap {
+		top: 20px;
+		left: 20px;
+		.envirabox-image-counter,
+		.envirabox-title {
+			color: rgb(255, 255, 255);
+		}
+		h2::before {
+			margin: 0;
+			padding: 0;
+		}
+		h2.envirabox-title {
+			font-size: 28px;
+			text-align: center;
+			margin: 0;
+			padding: 0; //Override then
+			padding-top: 10px;
+		}
+	}
+	.envirabox-caption-wrap {
+		position: absolute;
+		bottom: -50px;
+		text-align: center;
+		width: 100%;
+		div {
+			display: inline-block;
+			margin: 0 auto;
+			color: $text-color;
+			padding: 5px 15px;
+			text-shadow: none;
+			border-radius: 0;
+			font-size: 18px;
+			line-height: 18px;
+		}
+		&.outside {
+			bottom: -47px;
+		}
+	}
+	/**
+	 * Actions
+	 */
+	.envirabox-toolbar {
+		background-color: rgb(30, 30, 30);
+		height: 100%;
+		position: fixed;
+		right: 0px;
+		top: 0px;
+		width: 50px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		div {
+		}
+		z-index: 999999;
+		.envirabox-close {
+			background: none;
+			svg {
+				fill: white;
+			}
+		}
+		.envirabox-audio-button {
+			a {
+				svg {
+					fill: white;
+				}
+			}
+		}
+		& > div {
+			display: inline-block;
+			position: relative;
+			margin-bottom: 2px;
+			&:before {
+				font-size: 16px;
+				text-indent: 0;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+
+			& a {
+				display: block;
+				position: relative;
+				z-index: 1;
+				background: none;
+			}
+		}
+
+		& a {
+			outline: none;
+		}
+		& .envira-download-button:before {
+			content: '\e90d';
+		}
+		& .envira-printing-button:before {
+			content: '\e90e';
+		}
+		& .envira-thumbs-button:before {
+			content: '\e90e';
+		}
+		& .envira-fullscreen-button:before {
+			content: '\e903';
+		}
+		& .envirabox-slideshow-button {
+			&:before {
+				content: '\e908';
+			}
+			&.playing:before {
+				content: '\e906';
+			}
+		}
+		& .envira-zoom-button {
+			&::before {
+				content: '\e90c';
+			}
+			& a:before {
+				content: '';
+			}
+			&.zoom-on:before {
+				content: '\e90b';
+			}
+		}
+	}
+
+	/**
+	 * Navigation
+	 */
+	.envirabox-navigation {
+		a {
+			width: 35px;
+			height: 70px;
+			&:hover {
+			}
+			svg {
+				fill: white;
+			}
+		}
+		/**
+		 * Previous Navigation
+		 */
+		.envirabox-arrow--left {
+			border-radius: 0 5px 5px 0;
+			left: 0px;
+		}
+
+		/**
+		 * Next Navigation
+		 */
+		.envirabox-arrow--right {
+			border-radius: 5px 0 0 5px;
+			right: 160px;
+		}
+	}
+
+	.envirabox-thumbs {
+		bottom: 0;
+		margin: 0;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		scrollbar-width: none; /* Firefox 64 */
+		padding: 2px 2px 4px 2px;
+		position: absolute;
+		right: 50px;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		top: 0;
+		width: auto;
+		z-index: 99995;
+		ul {
+			scrollbar-width: none;
+			font-size: 0;
+			height: 100%;
+			list-style: none;
+			margin: 0;
+			overflow-x: hidden;
+			overflow-y: auto;
+			padding: 0;
+			position: absolute;
+			position: relative;
+			white-space: nowrap;
+			width: 100%;
+		}
+		ul li a {
+			border: none;
+		}
+		ul li {
+			cursor: pointer;
+			margin: 16px 8px;
+			list-style: none;
+			border: 3px solid transparent;
+		}
+		ul li.active {
+			border: 3px solid #fff;
+			opacity: 1;
+		}
+		&.bottom {
+			bottom: 0;
+		}
+		& ul.mobile li {
+			margin: 10px 5px;
+		}
+	}
+
+	.envirabox-thumbs > ul > li {
+		border-color: transparent;
+	}
+
+	.envirabox-container--thumbs .envirabox-title-wrap,
+	.envirabox-container--thumbs .envirabox-controls,
+	.envirabox-container--thumbs .envirabox-slider-wrap {
+		right: 0;
+		bottom: 90px;
+	}
+	.envira-fullscreen-button {
+		svg {
+			fill: rgb(255,255,255);
+		}
+	}
+	/**
+	* Lightbox
+	*/
+	.envirabox-inner {
+		position: initial;
+		.envira-social-buttons {
+			display: block;
+			z-index: 988041; /* Beat the prev/next controls */
+			margin: 0;
+			&.orientation-vertical {
+				/**
+			* Outside
+			*/
+				&.outside {
+					position: absolute;
+					min-width: 50px;
+					max-width: 100%;
+					&.position-top-left {
+						top: 0;
+						left: -80px;
+					}
+					&.position-top-right {
+						top: 0;
+						right: -80px;
+					}
+					&.position-bottom-left {
+						bottom: 0;
+						left: -80px;
+					}
+					&.position-bottom-right {
+						bottom: 0;
+						right: -80px;
+					}
+				}
+
+				/**
+			* Button
+			*/
+				div.envira-social-network {
+					clear: both;
+					margin: 0;
+
+					&:last-child {
+						margin: 0;
+					}
+				}
+			}
+			/**
+	* Buttons for each Social Network
+	*/
+			div.facebook {
+				a {
+					background-image: url(../images/facebook.svg);
+					background-color: transparent !important;
+					background-size: 14px 14px;
+					box-shadow: none;
+				}
+			}
+			div.twitter {
+				a {
+					background-color: transparent !important;
+					background-size: 14px 14px;
+					box-shadow: none;
+				}
+			}
+			div.pinterest {
+				a {
+					background-color: transparent !important;
+					background-size: 14px 14px;
+					box-shadow: none;
+				}
+			}
+			div.whatsapp {
+				a {
+					background-color: transparent !important;
+					background-size: 14px 14px;
+					box-shadow: none;
+				}
+			}
+			div.linkedin {
+				a {
+					background-color: transparent !important;
+					background-size: 14px 14px;
+					box-shadow: none;
+				}
+			}
+			div.google {
+				a {
+					background-color: transparent !important;
+					background-size: 14px 14px;
+					box-shadow: none;
+				}
+			}
+			div.email {
+				a {
+					background-color: transparent !important;
+					background-size: 14px 14px;
+					box-shadow: none;
+				}
+			}
+			/**
+		* Button
+		*/
+			div.envira-social-network {
+				a.envira-social-button {
+					width: 44px;
+					height: 44px;
+					line-height: 25px;
+					background-size: 25px 25px;
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 800px) {
+	.envirabox-theme-base_dark {
+		.envirabox-thumbs {
+			display: none !important;
+		}
+		.envirabox-container--thumbs .envirabox-controls,
+		.envirabox-container--thumbs .envirabox-slider-wrap,
+		.envirabox-container--thumbs .envirabox-caption-wrap {
+			bottom: 0;
+		}
+	}
+}

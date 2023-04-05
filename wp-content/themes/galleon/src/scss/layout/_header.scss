@@ -1,0 +1,409 @@
+#ecu-skip-links {
+    margin-left: -99999px;
+    position: absolute;
+    top: 100px;
+    background-color: $white;
+    border: 2px solid $ecu-purple;
+    padding: $spacer;
+    z-index: 100;
+    width: 100%;
+    @include shadow;
+    @include breakpoint(sm){
+        width: 500px;
+    }
+
+    &:focus-within {
+        margin-left: 0px;
+    }
+    &.show {
+        margin-left: 0px;
+        @include breakpoint(sm){
+            margin-left: -250px;
+            left: 50%;
+            right: 50%;
+        }
+    }
+    ul {
+        margin: 0px;
+        padding: 0px;
+        line-height: 2;
+        li {
+            list-style: none;
+            text-align: center;
+            a {
+                display: block;
+                color: $ecu-purple;
+
+                font-family: $heading-font;
+                transition: color .2s;
+                &:hover {
+                    color: $dark-purple-1;
+                }
+            }
+        }
+    }
+}
+#main-nav {
+    background-color: $dark-purple-1;
+    >.container {
+        padding-right: 0px;
+        @include breakpoint(sm){
+            padding-right: $spacer;
+        }
+    }
+    #nav-wrap {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        .navbar-brand {
+            margin: 16px 0px;
+            padding: 0px;
+            color: $white;
+            img {
+                height: 38px;
+            }
+        }
+        #nav-right{
+            ul {
+                padding: 0px;
+                margin: 0px;
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    a,
+                    button,
+                    .has-dropdown {
+                        color: $white;
+                        font-family: $heading-font;
+                        cursor: pointer;
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            color: $ecu-gold;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            nav {
+                display: none;
+                @include breakpoint(lg){
+                    display: inline-block;
+                }
+                span,
+                a {
+                    font-size: 15.4px;
+                }
+                .drop-menu {
+                    background-color: $ecu-purple;
+                    top: 70px;
+                    li {
+                        margin-bottom: $spacer * .5;
+                        &:first-child{
+                            padding-top: ($spacer * .5);
+                        }
+                        &:last-child {
+                            padding-bottom: ($spacer * .5);
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+            #resource-wrap {
+                display: inline-block;
+                background-color: $ecu-purple;
+                margin-left: $spacer;
+                padding: 23px $spacer;
+                li {
+                    margin-right: 10px;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                    a {
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        text-decoration: none;
+                    }
+                }
+                #toggle-resources {
+                    background-color: $ecu-purple;
+                    border: 0px;
+                    transition: color .2s;
+                    font-size: 14px;
+                    padding: 0px;
+                    #resource-icon {
+                        width: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+nav {
+    li {
+        list-style: none;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    .drop-menu {
+        position: absolute;
+        z-index: 1020;
+        padding: 0px;
+        min-width: 150px;
+        li {
+            display: block !important;
+            margin-right: 0 !important;
+            margin-bottom: $spacer;
+            &:first-child{
+                padding-top: ($spacer);
+            }
+            &:last-child {
+                padding-bottom: ($spacer);
+                margin-bottom: 0px;
+            }
+            a {
+                display: block;
+                padding: 0 $spacer;
+            }
+        }
+    }
+}
+#resources-wrap {
+    background-color: $ecu-purple;
+    padding: ($spacer * 2) 0;
+    #top-level-resources {
+        margin-bottom: $spacer;
+        display: block;
+        @include breakpoint(lg){
+            display: none;
+        }
+        .h5 {
+            margin-top: $spacer;
+        }
+    }
+    .h5 {
+        color: $white;
+        text-transform: uppercase;
+        border-bottom: 1px solid $white;
+        padding-bottom: .5rem;
+    }
+    .resources-container {
+        margin-bottom: 30px;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        &#header-social {
+            display: inline-block;
+            position: absolute;
+            right: 51px;
+            //bottom: -2px;
+            li {
+                display: inline-block;
+                margin-right: 5px ;
+                a {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        li {
+            list-style: none;
+            a {
+                color: $white;
+                font-family: $heading-font;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $ecu-gold;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.search-group {
+    .search {
+        border-radius: 0px;
+        font-family: $heading-font;
+        @include focus;
+    }
+    .button-search {
+        background-color: $dark-purple-1;
+        color: $white;
+        border-color: $dark-purple-1;
+        border-radius: 0px;
+        transition: all .2s;
+        &:hover {
+            color: $ecu-gold;
+        }
+    }
+}
+#site-nav {
+    background-color: $white;
+    border-bottom: 1px solid $light-grey-3;
+    .h1 {
+        white-space: normal;
+        margin: 0px;
+        font-size: 1.625rem;
+        @include breakpoint(md){
+            padding: $spacer 0;
+        }
+    }
+    .navbar-brand {
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+    }
+    .container{
+        >.row{
+            width: 100%;
+        }
+    }
+    .nav-wrap {
+        @include breakpoint(lg){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+    }
+    .left-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include breakpoint(md){
+            margin: 0px;
+        }
+    }
+    #toggle-site-nav{
+        color: #949494;
+        border: 1px solid #ebebeb;
+        background-color: $white;
+        height: $spacer * 3;
+        width: $spacer * 4;
+        transition: all .2s;
+        font-size: 1.25rem;
+        border-radius: $spacer / 3;
+        width: 50px;
+        margin: $spacer 0 $spacer $spacer;
+        @include breakpoint(lg){
+            float: none;
+            width: auto;
+        }
+        &:hover {
+            background-color: $ecu-purple;
+            color: $white;
+        }
+    }
+    #primary-nav {
+        @include breakpoint(lg){
+            width: auto;
+            display: flex;
+            align-content: center;
+            margin-left: $spacer;
+        }
+        #menu-main-navigation-menu {
+            padding: 0px;
+            white-space: nowrap;
+            line-height: 2;
+            margin: 0 (-$spacer);
+            @include breakpoint(md){
+                margin: 0px;
+            }
+            @include breakpoint(lg){
+                display: flex;
+                align-items: center;
+            }
+            li {
+                display: block;
+                margin: 0px;
+                @include breakpoint(lg){
+                    //display: inline-block;
+                    //margin-right: 1.5rem;
+                }
+                &:last-child {
+                    margin-right: 0px;
+                }
+                .nav-link {
+                    padding: ($spacer / 2) $spacer;
+                    @include breakpoint(lg){
+                        padding: ($spacer / 2) 0;
+                    }
+                    &:hover {
+                        background-color: $light-grey-2;
+                    }
+                    @include breakpoint(lg){
+                        padding: 17px;
+                        &:hover {
+                            //background-color: transparent;
+                        }
+                    }
+                }
+                a,
+                .has-dropdown {
+                    color: $dark-purple-1;
+                    font-family: $heading-font;
+                    cursor: pointer;
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: $ecu-purple;
+                        text-decoration: none;
+                        background-color: $light-grey-2;
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                background-color: $white;
+                border-radius: 0px;
+                border: none;
+                margin: 0px;
+                padding: 0px;
+                @include breakpoint(md) {
+                    li {
+                        &:nth-child(n + 16) {
+                            display: none;
+                        }
+                    }
+                }
+                @include breakpoint(lg) {
+                    border: 1px solid #eee;
+                    margin: 0;
+                }
+                li {
+                    a {
+                        padding: 10px 25px;
+                    }
+                }
+            }
+
+            .drop-menu {
+                background-color: $white;
+                position: relative;
+                @include breakpoint(lg){
+                    top: 47px;
+                    border: 1px solid $light-grey-3;
+                    border-top: 0px;
+                    position: absolute;
+                }
+                li {
+                    margin: 0px;
+                    padding: 0px;
+                    a {
+                        padding: ($spacer / 2) ($spacer * 2);
+                        @include breakpoint(lg){
+                            padding: ($spacer / 2) $spacer;
+                        }
+                        &:hover {
+                            background-color: $light-grey-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

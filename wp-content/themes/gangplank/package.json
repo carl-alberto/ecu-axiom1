@@ -1,0 +1,22 @@
+{
+  "name": "gangplank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildTheme": "sass css/scss/theme.scss css/scss/theme.css && sass css/scss/theme.scss css/theme.css",
+    "buildAdmin": "sass css/scss/admin.scss css/scss/admin.css && sass css/scss/admin.scss css/admin.css",
+    "buildAll": "sass css/scss/theme.scss css/scss/theme.css && sass css/scss/theme.scss css/theme.css && sass css/scss/admin.scss css/scss/admin.css && sass css/scss/admin.scss css/admin.css",
+    "watchAll": "sass -w css/scss/:css/",
+    "parcelTheme": "parcel build css/scss/theme.scss --public-url /wp-content/themes/gangplank/css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.6.2",
+    "sass": "^1.54.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2"
+  }
+}

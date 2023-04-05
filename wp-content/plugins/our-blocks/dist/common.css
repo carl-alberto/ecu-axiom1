@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Quattrocento:400,700");
+.error-message {
+  color: #FF0000;
+  margin-top: -20px;
+  text-align: right;
+  font-size: 95%;
+}
+
+.wp-block {
+  max-width: 95%;
+}
+
+.wp-admin .editor-post-title__input {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400 !important;
+  color: #592A8A !important;
+}
+.wp-admin .wp-block h1, .wp-admin .wp-block h2, .wp-admin .wp-block h3, .wp-admin .wp-block h4, .wp-admin .wp-block h5, .wp-admin .wp-block h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400 !important;
+}
+
+#entry-content .btn-primary {
+  color: #FFFFFF !important;
+  background-color: #592A8A !important;
+  border-color: #000000 !important;
+  font-family: "Oswald", sans-serif;
+  border-radius: 0px !important;
+}
+#entry-content .btn-ribbon {
+  background: #FFFFFF;
+  color: #592A8A;
+  padding: 6px 12px;
+  border: 1px solid #592A8A;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  font-size: 0.875rem;
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+#entry-content .btn-ribbon:after {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  color: #592A8A;
+  margin-left: 5px;
+  transition: all 0.2s;
+}
+#entry-content .btn-ribbon:hover {
+  background: #592A8A;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#entry-content .btn-ribbon:hover:after {
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=common.css.map */

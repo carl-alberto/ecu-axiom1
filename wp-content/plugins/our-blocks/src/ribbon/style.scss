@@ -1,0 +1,165 @@
+:root {
+    --ribbon-bg: #FFFFFF;
+    --content-heading: #592A8A;
+    --ribbon-font: #333333;
+    --ribbon-callout: #592A8A;
+    --ribbon-callout-font: #FFFFFF;
+}
+.is-style-purple {
+    --ribbon-bg: #41215E;
+    --content-heading: #FFFFFF;
+    --ribbon-font: #FFFFFF;
+    --ribbon-callout: #77216F;
+    --ribbon-callout-font: #FFFFFF;
+}
+.is-style-grey {
+    --ribbon-bg: #D8D7D3;
+    --content-heading: #333333;
+    --ribbon-font: #333333;
+    --ribbon-callout: #7b746a;
+    --ribbon-callout-font: #FFFFFF;
+}
+.is-style-lavender {
+    --ribbon-bg: #b1afc5;
+    --content-heading: #333333;
+    --ribbon-font: #333333;
+    --ribbon-callout: #592A8A;
+    --ribbon-callout-font: #FFFFFF;
+}
+.is-style-teal {
+    --ribbon-bg: #4f7a8c;
+    --content-heading: #FFFFFF;
+    --ribbon-font: #FFFFFF;
+    --ribbon-callout: #004261;
+    --ribbon-callout-font: #FFFFFF;
+}
+.wp-block-wp-blocks-ribbon {
+    padding: 0 0 20px 0;
+    font-size: 16px;
+    background-color: var(--ribbon-bg);
+    position: relative;
+    &:after,
+    &:before {
+        background-color: var(--ribbon-bg);
+        content: '';
+        display: block;
+        position: absolute;
+        width: 999em;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    &:before {
+        right: -999em;
+        margin-right: 15px;
+    }
+    &:after{
+        left: -999em;
+        margin-left: 15px;
+    }
+    &.alignfull {
+        margin: 0px;
+    }
+    &.is-left {
+        .wp-block-wp-blocks-ribbon-content{
+            order: 2;
+        }
+        .wp-block-wp-blocks-ribbon-callout{
+            order: 1;
+        }
+    }
+    &.full-width {
+        padding: 0px;
+        .wp-block-wp-blocks-ribbon-content{
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        .wp-block-wp-blocks-ribbon-callout{
+            display: none;
+        }
+    }
+    &:not( .is-style-default ) {
+        .content {
+            word-break: break-word;
+            p,
+            figcaption,
+            a {
+                color: var( --ribbon-font );
+            }
+            a {
+                color: var( --ribbon-font );
+                text-decoration-color: var( --ribbon-font );
+                &:hover {
+                    color: var( --ribbon-font );
+                    text-decoration-color: var( --ribbon-font );
+                }
+            }
+            // padding: 0px 20px;
+        }
+    }
+    .callout {
+        word-break: break-word;
+        margin-top: -10px;
+        background-color: var(--ribbon-callout);
+        color: var(--ribbon-callout-font);
+        padding: 80px 20px;
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--ribbon-callout-font);
+        }
+        a, figcaption {
+            color: var(--ribbon-callout-font);
+            text-decoration-color: var(--ribbon-callout-font);
+            &:hover {
+                color: var(--ribbon-callout-font);
+                text-decoration-color: var(--ribbon-callout-font);
+            }
+        }
+    }
+    .wp-block-wp-blocks-ribbon-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+.wp-admin {
+    .wp-block-wp-blocks-ribbon {
+        padding: 0;
+        >.block-editor-inner-blocks {
+            >.block-editor-block-list__layout {
+                display: flex;
+                flex-direction: row;
+                >.block-editor-block-list__block {
+                    margin: 0;
+                }
+            }
+        }
+        [data-type="wp-blocks/ribbon-content"] {
+            display: block;
+            width: 75%;
+            order: 1;
+        }
+        [data-type="wp-blocks/ribbon-callout"] {
+            display: block;
+            width: 25%;
+            order: 2;
+        }
+        &.full-width {
+            [data-type="wp-blocks/ribbon-callout"] {
+                display: none;
+            }
+            [data-type="wp-blocks/ribbon-content"] {
+                width: 100%;
+            }
+        }
+        &.is-left {
+            [data-type="wp-blocks/ribbon-content"] {
+                order: 2;
+            }
+            [data-type="wp-blocks/ribbon-callout"] {
+                order: 1;
+            }
+        }
+        .block-list-appender {
+            text-align: center;
+        }
+    }
+}

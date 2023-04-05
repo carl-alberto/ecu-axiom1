@@ -1,0 +1,113 @@
+:root {
+    --heading: #592A8A;
+}
+
+.is-style-gold {
+    --heading: #B88B2D;
+}
+
+.is-style-lavender {
+    --heading: #757297 ;
+}
+
+.is-style-dark-purple {
+    --heading: #41215E;
+}
+
+.is-style-grey {
+    --heading: #6C6D68;
+}
+
+.wp-block-wp-blocks-dash-item {
+    margin: 0 0 15px 0;
+    .block-inner {
+        width: 100%;
+        background-color: var( --bg );
+        padding: 15px;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        font-family: "Quattrocento",sans-serif;
+    }
+    .block-header {
+        display: flex;
+        color: var( --heading );
+        font-family: "Oswald",sans-serif;
+        padding: 15px;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        &.isVertical {
+            flex-direction: column;
+        }
+        &.center {
+            align-items: center;
+        }
+        p {
+            margin: 0px;
+        }
+    }
+    a.block-header {
+        transition: all .2s;
+        text-decoration: none;
+        margin-bottom: 15px;
+        font-weight: 400;
+        &:hover {
+            background-color: var( --heading );
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    .block-content {
+        a {
+            color: #592A8A;
+        }
+    }
+    ol,
+    ul {
+        margin: 0 15px !important;
+        color: var( --heading );
+        padding: 0px !important;
+        li {
+            padding: 0px !important;
+            &::before {
+                margin-right: 10px;
+            }
+        }
+        a {
+            color: var( --heading );
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    ol li {
+        margin-left: 15px;
+    }
+    ul li {
+        list-style: none;
+        &::before {
+            content: '\f054';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+    }
+    p {
+        color: #333333;
+        margin: 0px !important;
+    }
+    figure {
+        margin: 0;
+        position: relative;
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+        button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 5px;
+        }
+    }
+}

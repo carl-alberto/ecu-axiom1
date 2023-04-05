@@ -1,0 +1,19 @@
+#lo-wrapper #learning-outcome-menu {
+  padding: 10px; }
+  #lo-wrapper #learning-outcome-menu label {
+    display: block;
+    font-family: 'Oswald', sans-serif; }
+  #lo-wrapper #learning-outcome-menu select {
+    width: 100%;
+    height: 2em;
+    padding: 5px;
+    border: 1px solid gainsboro; }
+
+#lo-content-wrap h1, #lo-content-wrap h2, #lo-content-wrap h3, #lo-content-wrap h4, #lo-content-wrap h5, #lo-content-wrap h6 {
+  margin-top: 15px; }
+#lo-content-wrap h2 {
+  color: #8c50ca; }
+#lo-content-wrap .lo-program-purpose, #lo-content-wrap .lo-learning-outcome {
+  margin: 25px; }
+
+/*# sourceMappingURL=learning_outcomes.css.map */

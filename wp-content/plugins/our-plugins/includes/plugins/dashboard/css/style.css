@@ -1,0 +1,80 @@
+.ui_dashboard {
+  margin-top: 15px; }
+  .ui_dashboard .ui_element_wrap {
+    margin-bottom: 15px; }
+    .ui_dashboard .ui_element_wrap a {
+      /* color: #000000; */}
+    .ui_dashboard .ui_element_wrap a:hover {
+      text-decoration: none;
+     /* color: #000000; */}
+    .ui_dashboard .ui_element_wrap .dashboard_icon {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap.ui_none .fa {
+          color: #592A8A !important; }
+        .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap img {
+          margin-left: auto;
+          margin-right: auto;
+          display: block; }
+        .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap.ui_icon-xl {
+          font-size: 144px;
+          height: 175px;
+          width: 175px; }
+          .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap.ui_icon-xl img {
+            height: 144px;
+            width: 144px; }
+        .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap.ui_icon-lg {
+          font-size: 96px;
+          height: 150px;
+          width: 150px; }
+          .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap.ui_icon-lg img {
+            height: 96px;
+            width: 96px; }
+        .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap.ui_icon-md {
+          font-size: 72px;
+          height: 125px;
+          width: 125px; }
+          .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap.ui_icon-md img {
+            height: 72px;
+            width: 72px; }
+        .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap.ui_icon-sm {
+          font-size: 64px;
+          height: 100px;
+          width: 100px; }
+          .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap.ui_icon-sm img {
+            height: 64px;
+            width: 64px; }
+        .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap.dash-no-bg {
+          background-color: rgba(255,255,255,0) !important;
+          background-position: center center !important;
+        }
+        .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap.ui_circle {
+          background: #592A8A;
+          border-radius: 124px;
+          color: #FFFFFF; }
+        .ui_dashboard .ui_element_wrap .dashboard_icon .icon-wrap.ui_square {
+          background: #592A8A;
+          color: #FFFFFF; }
+    .ui_dashboard .ui_element_wrap .dashboard_title {
+      font-size: 1.600em !important;
+      font-family: 'Oswald', sans-serif;
+      color: #592A8A !important;
+      margin-top: 10px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+/* tuckerm: added text underline if dashboard area is hovered over. */
+    .ui_element_wrap a:hover .dashboard_title {
+      text-decoration: underline;
+    }
+
+    .ui_dashboard .ui_element_wrap .dashboard_description {
+      margin-top: 5px;
+      text-align: center; }

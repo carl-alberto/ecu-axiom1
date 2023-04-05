@@ -1,0 +1,28 @@
+.wp-block-wp-blocks-social-media {
+    clear: both;
+    &.horizontal ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    h2 {
+        margin-bottom: 1em;
+        padding-bottom: .5em;
+        border-bottom: 1px dotted #592A8A;
+    }
+    ul {
+        padding: 0px !important;
+        margin: 0px !important;
+        list-style: none !important;
+        li {
+            margin-right: 1em;
+            a {
+                color: #592A8A;
+                &:hover {
+                    color: #41215E;
+                }
+            }
+        }
+    }
+}

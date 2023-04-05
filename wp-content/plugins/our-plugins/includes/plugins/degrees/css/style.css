@@ -1,0 +1,8 @@
+@CHARSET "ISO-8859-1";
+.degree-info-degreename {
+	font-weight: bold;
+}
+.degree-info-degreelink {
+	font-size: x-small;
+	margin-left: 1em;
+}

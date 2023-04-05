@@ -1,0 +1,163 @@
+.wp-caption {
+  background: #FFFFFF;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  max-width: 100%;
+  .wp-caption-text{
+    color: lighten($default-text, 20%);
+    font-size: .9rem;
+    line-height: 17px;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    font-style: italic;
+  }
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+}
+.alignright {
+  margin: 5px 0 20px 20px;
+  float: right;
+}
+.alignleft {
+  margin: 5px 20px 20px 0;
+  float: left;
+}
+.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+/* base/_bootstrap.scss */
+
+h2, .ecu-h2 { font-size: 26px !important;  }
+h3, .ecu-h3 { font-size: 24px !important;  }
+h4, .ecu-h4 { font-size: 22px !important;  }
+h5, .ecu-h5 { font-size: 20px !important;  }
+h6, .ecu-h6 { font-size: 18px !important;  }
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6  {
+    color:$ecu-purple;
+    font-weight: normal;
+    font-weight: 400;
+    font-family: $heading-font;
+}
+.lead {
+  font-weight: 300;
+  line-height: 1.4;
+}
+//Buttons
+.btn {
+	border-radius:0px !important;
+  display:inline-block !important;
+}
+.btn-default {
+	color:$black !important;
+}
+.btn-primary, .btn-sucess, .btn-info, .btn-warning, .btn-danger {
+	color:$white !important;
+}
+.btn-ecu, .btn-primary {
+	color: $white !important;
+    background-color: $ecu-purple !important;
+    border-color: darken($ecu-purple, 40%) !important;
+
+    &:hover {
+		background-color: darken($ecu-purple, 10%);
+		border-color: darken($ecu-purple, 50%);
+    }
+}
+//FORCE FULL WIDTH IMAGES TO BE 100%
+.ecu-full-img {
+    width:100%;
+}
+
+//SQUARE ALERTS
+.alert {
+    border-radius:0px !important;
+}
+
+// BOOTSTRAP CALLOUTS
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border-width:0px;
+    border-left-width:5px;
+    border-style:solid;
+    outline:1px solid #eee;
+
+    .header {
+		margin-top: 0;
+    	margin-bottom: 5px;
+    }
+
+    p:last-child {
+		margin-bottom: 0;
+    }
+
+    code {
+	    border-radius: 3px;
+	}
+	&+.bs-callout {
+	    margin-top: -5px;
+	}
+}
+.bs-callout-default {
+    border-left-color: #777;
+
+    .header {
+		color: #777;
+	}
+}
+.bs-callout-primary {
+    border-left-color: #428bca;
+
+    .header {
+		color: #428bca;
+    }
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+
+    .header {
+		color: #5cb85c;
+    }
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+
+    .header {
+		color: #d9534f;
+    }
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+
+    .header {
+		color: #f0ad4e;
+    }
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+
+    .header {
+		color: #5bc0de;
+    }
+}
+.bs-callout-ecu {
+    border-left-color: $ecu-purple;
+
+    .header {
+		color: $ecu-purple;
+    }
+}

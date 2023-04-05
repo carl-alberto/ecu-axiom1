@@ -1,0 +1,52 @@
+{
+  "name": "galleon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "del /q dist\\*",
+    "watch": "parcel watch src/public.js --public-url /wp-content/themes/galleon/dist/",
+    "watchLegacy": "parcel watch src/legacy.js",
+    "watchAdmin": "parcel watch src/admin.js",
+    "watchOptions": "parcel watch src/theme-options.js",
+    "build": "parcel build src/public.js --public-url /wp-content/themes/galleon/dist/ && parcel build src/legacy.js",
+    "buildAdmin": "parcel build src/theme-options.js && parcel build src/admin.js ",
+    "buildAll": "parcel build src/public.js --public-url /wp-content/themes/galleon/dist/ && parcel build src/theme-options.js && parcel build src/admin.js && parcel build src/legacy.js",
+    "buildThemeSass": "sass src/scss/legacy.scss:dist/legacy.css src/scss/public.scss:dist/public.css src/scss/theme-options.scss:dist/theme-options.css",
+    "buildThemeBlocksSass": "sass src/scss/components/blocks/blocks.scss:dist/blocks.css",
+    "watchThemeSass": "sass --watch src/scss/ -o dist/"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@types/react": "^16.14.11",
+    "@wordpress/components": "^10.2.0",
+    "@wordpress/compose": "^3.25.3",
+    "@wordpress/icons": "^2.10.3",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "deasync": "^0.1.28",
+    "jquery": "^3.6.0",
+    "jsx-control-statements": "^3.2.8",
+    "popper.js": "^1.16.1",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "^16.14.0",
+    "scss": "^0.2.4",
+    "slick-slider": "^1.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@wordpress/blocks": "^6.25.2",
+    "babel-plugin-jsx-control-statements": "^4.1.0",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.35.2"
+  }
+}

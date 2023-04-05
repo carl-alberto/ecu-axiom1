@@ -1,0 +1,103 @@
+.ff-stream {
+  padding: 0px !important;
+  background: $white !important;
+  min-height: 200px !important;
+  .ff-header {
+    display: none;
+  }
+  .ff-stream-wrapper {
+    margin: 0px -13px 15px -13px;
+    article {
+      margin-bottom: 10px !important;
+      @include breakpoint(sm){
+        margin-bottom: auto;
+      }
+      &.ff-item {
+        width: 100%;
+        @include breakpoint(sm){
+          width: auto;
+        }
+        h4 {
+          margin-top: 46px;
+          font-weight: 400 !important;
+        }
+        .ff-content {
+          &:first-child {
+            margin-top: 46px;
+          }
+        }
+        .picture-item__inner {
+          background-color: #e7e7e7 !important;
+          // border: 1px solid $ecu-purple;
+          color: $black !important;
+          border-radius: 0px !important;
+          .ff-label-wrapper {
+            margin: 5% 5% 0% 0% !important;
+            left: auto !important;
+            right: 0;
+            .ff-icon {
+              .ff-icon-inner {
+                background: $ecu-purple !important;
+              }
+            }
+          }
+          .ff-item-bar {
+            background: $dark-purple !important;
+            >a {
+              opacity: 1 !important;
+            }
+            .ff-share-wrapper {
+              float: none !important;
+              position: absolute !important;
+              bottom: 7px;
+              right: 7%;
+              .ff-icon-share {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+body {
+  .ff-loadmore-wrapper {
+    .ff-btn {
+      background-color: $ecu-purple !important;
+      font-family: $heading-font;
+      color: $white !important;
+      transition: all;
+      &:hover {
+        background-color: $dark-purple !important;
+      }
+    }
+  }
+}
+#ff-stream-1, #ff-stream-2, #ff-stream-3, #ff-stream-4, #ff-stream-5, #ff-stream-6, #ff-stream-7, #ff-stream-8, #ff-stream-9, #ff-stream-10 {
+  &.ff-stream {
+    background-color: transparent !important;
+    .ff-item{
+      .ff-content {
+        a {
+          color:$ecu-purple !important;
+          &:hover {
+            color: $dark-purple !important;
+          }
+        }
+      }
+      .ff-name, .ff-nickname, .ff-timestamp, .ff-item-bar, .ff-item-bar-i, h4 {
+        color: $black !important;
+      }
+      .ff-icon-reply, .ff-icon-shares, .ff-item-bar a, .ff-icon-share {
+        color: $white !important;
+      }
+    }
+    .ff-share-popup {
+      background-color: $ecu-purple;
+      &:after {
+        background: $ecu-purple !important;
+      }
+    }
+  }
+}

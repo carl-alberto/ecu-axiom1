@@ -1,0 +1,149 @@
+//vars
+$purp: #592A8A;
+$white: #FFF;
+$ecu-dark-purple:#592A8A;
+$ecu-pink-purple:#77216F;
+
+#main,
+aside {
+	.gsc-control-searchbox-only {
+		font-family: "Quattrocentro", Times New Roman, serif;
+
+		table {
+			margin: 0;
+		}
+
+		td.gsc-search-button {
+			padding: 0em;
+			height: 40px;
+		}
+
+		td.gsc-input {
+			font-family: 'Oswald',sans-serif;
+			padding-right: 0px !important;
+			padding-left: 0px;
+			height: 100%;
+		}
+
+		table,
+		tr,
+		td {
+			border: none;
+		}
+
+		.gsc-search-button-v2 {
+			background-color: $purp;
+			margin-left: 0px !important;
+			padding: 10px 27px;
+			border-radius: 0;
+			margin: 0;
+
+			&:hover {
+				background-color: lighten($purp, 10%)
+			}
+
+			svg {
+				max-width: none;
+			}
+		}
+
+		a {
+			border-bottom: none !important;
+		}
+
+		input {
+			background-image: none !important;
+			text-indent: initial !important;
+
+		}
+	}
+
+	.gsc-control-cse {
+		width: 100% !important;
+
+		table,
+		tr,
+		td {
+			border: none;
+		}
+
+		.gsc-above-wrapper-area {
+			table {
+				margin: 0;
+			}
+		}
+
+		.gs-title {
+			font-family: "Oswald", Arial, sans-serif;
+		}
+
+		.gs-snippet {
+			font-family: "Quattrocento", Times, serif;
+		}
+
+		.gsc-result-info-container {
+			padding: 35px 0;
+		}
+
+		*,
+		*::before,
+		*::after {
+			word-break: normal !important;
+			word-wrap: normal !important;
+		}
+
+		.gsc-option-menu {
+			z-index: 1000000 !important;
+		}
+
+		.gcsc-find-more-on-google {
+			svg {
+				display: inline;
+			}
+		}
+	}
+
+	.gs-no-results-result .gs-snippet,
+	.gs-error-result .gs-snippet {
+		color: $ecu-dark-purple !important;
+		border: 1px solid $ecu-dark-purple !important;
+		background-color: lighten($purp, 60%) !important;
+	}
+
+	// Pagination
+	.gsc-cursor-box {
+		margin: 15px 0px;
+
+		.gsc-cursor {
+			margin: 0px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.gsc-cursor-page {
+				border-top: 1px solid $white;
+				border-bottom: 1px solid $white;
+				border-left: 1px solid $white;
+				cursor: pointer;
+				padding: 8px 12px;
+				margin-right: 0px !important;
+
+				background-color: $purp;
+				color: $white;
+				text-decoration: none;
+
+				&:last-child {
+					border-right: 1px solid #CCC;
+				}
+
+				&:hover {
+					background-color: $ecu-dark-purple;
+					text-decoration: none;
+				}
+
+				&.gsc-cursor-current-page {
+					background-color: $ecu-pink-purple;
+				}
+			}
+		}
+	}
+}

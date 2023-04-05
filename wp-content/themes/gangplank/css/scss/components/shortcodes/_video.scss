@@ -1,0 +1,147 @@
+$ecu-purple : #572C86;
+$ecu-dark-purple : #41215E;
+$ecu-burnt-gold : #B88B2D;
+$ecu-manatee : #8683A3;
+$ecu-gold: #FEC923;
+$ecu-dark-teal : #59849b;
+
+.ecu-video-wrap {
+	//stolen css from the net -- thanks guy -- make videos responsive
+	.mejs-controls {
+		z-index:100;
+	}
+	.wp-video {
+	}
+	.wp-video, video.wp-video-shortcode, .mejs-container, .mejs-overlay.load {
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.mejs-container {
+		padding-top: 56.25%;
+		&:focus {
+			outline: -webkit-focus-ring-color auto 5px;
+		}
+	}
+	.wp-video, video.wp-video-shortcode {
+		max-width: 100% !important;
+	}
+	video.wp-video-shortcode {
+		position: relative;
+	}
+	.mejs-mediaelement {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	// https://github.ecu.edu/ATWebDev/wordpress-cms/issues/446
+	// .mejs-controls {
+	// 	display:none;
+	// }
+	.mejs-overlay-play {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: auto !important;
+		height: auto !important;
+	}
+	// end thievery
+
+	.title-wrap {
+		float:left;
+		width:100%;
+		.ecu-video-title {
+			max-width:75%;
+			font-family: 'Oswald', sans-serif;
+			font-size:1.5em;
+			display:inline-block;
+			padding:15px 40px;
+		}
+		.label-left {
+			text-align:left;
+		}
+		.label-right {
+			text-align:right;
+			float:right;
+		}
+		.top {
+			padding-bottom:0px;
+			margin-bottom:-15px;
+			margin-top: 15px;
+			-webkit-border-top-left-radius: 5px;
+			-webkit-border-top-right-radius: 5px;
+			-moz-border-radius-topleft: 5px;
+			-moz-border-radius-topright: 5px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		.bottom {
+			// border-top: 5px solid transparent;
+			padding-top:0px;
+			margin-top:-15px;
+			margin-bottom: 15px;
+			-webkit-border-bottom-right-radius: 5px;
+			-webkit-border-bottom-left-radius: 5px;
+			-moz-border-radius-bottomright: 5px;
+			-moz-border-radius-bottomleft: 5px;
+			border-bottom-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+		.ecu-purple {
+			background-color:$ecu-purple;
+			border-color:$ecu-purple;
+			color:white;
+		}
+		.ecu-dark-purple {
+			background-color:$ecu-dark-purple;
+			border-color:$ecu-dark-purple;
+			color:white;
+		}
+		.ecu-gold {
+			background-color:$ecu-gold;
+			border-color:$ecu-gold;
+			color:#555;
+		}
+		.ecu-burnt-gold {
+			background-color:$ecu-burnt-gold;
+			border-color:$ecu-burnt-gold;
+			color:white;
+		}
+		.ecu-manatee {
+			background-color:$ecu-manatee;
+			border-color:$ecu-manatee;
+			color:white;
+		}
+		.ecu-dark-teal {
+			background-color:$ecu-dark-teal;
+			border-color:$ecu-dark-teal;
+			color:white;
+		}
+	}
+	.top {
+		border-bottom: 15px solid transparent;
+	}
+	.bottom {
+		border-top: 15px solid transparent;
+	}
+	.ecu-purple {
+		border-color:$ecu-purple;
+	}
+	.ecu-dark-purple {
+		border-color:$ecu-dark-purple;
+	}
+	.ecu-gold {
+		border-color:$ecu-gold;
+	}
+	.ecu-burnt-gold {
+		border-color:$ecu-burnt-gold;
+	}
+	.ecu-manatee {
+		border-color:$ecu-manatee;
+	}
+	.ecu-dark-teal {
+		border-color:$ecu-dark-teal;
+	}
+}

@@ -1,0 +1,11 @@
+.basic-nfo {
+	width: 100%;
+}
+
+.userNfo h3{
+	border-bottom: 1px solid;
+}
+
+[v-cloak] {
+	display: none;
+}

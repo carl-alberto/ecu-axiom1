@@ -1,0 +1,48 @@
+body {
+    background-color: $light-grey !important;
+    #main-content {
+        position: relative;
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: $ecu-purple;
+        }
+        a {
+            color: $ecu-purple;
+            transition: 0.2s all;
+            font-weight: 500;
+            border-bottom: 1px solid $light-purple;
+            &:hover {
+                text-decoration: none;
+                border-bottom: 1px solid $drk-purple;
+            }
+        }
+        blockquote {
+            border-left: 5px solid $ecu-purple;
+            padding: 1rem 0 1rem 1rem;
+            p {
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        .post-meta {
+            color: $dark-grey;
+        }
+    }
+    .page-template-page-ribbons {
+        #main-content {
+            padding-bottom: 0px;
+            .ribbon-content {
+                padding-bottom: 30px;
+            }
+        }
+    }
+}

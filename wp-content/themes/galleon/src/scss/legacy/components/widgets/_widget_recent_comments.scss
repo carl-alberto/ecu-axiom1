@@ -1,0 +1,12 @@
+.widget_recent_comments {
+  @include well;
+  @include chevronlist;
+  .screen-reader-text {
+      display: none;
+  }
+  ul {
+    li {
+      padding: 5px 10px;
+    }
+  }
+}

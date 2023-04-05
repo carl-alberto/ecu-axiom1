@@ -1,0 +1,25 @@
+$danger-color:#d43f3a;
+$success-color:#398439;
+
+.ecu-alert-widget {
+	padding:20px;
+	.alert-icon	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.alert-content	{
+		display: flex;
+		align-items: center;
+		justify-content:  flex-start;
+	}
+
+	&.bs-callout-danger {
+		.fa { color:$danger-color; }
+		.header { color:$danger-color; }
+	}
+	&.bs-callout-success {
+		.fa { color:$success-color; }
+		.header { color:$success-color; }
+	}
+}

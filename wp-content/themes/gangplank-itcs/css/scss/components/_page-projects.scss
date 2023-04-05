@@ -1,0 +1,30 @@
+
+		.project-term {
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			padding:25px;
+			height:100%;
+			.goal-icon {
+				font-size: 3em;
+				text-align: center;
+				line-height: 1em;
+				color: $ecu-purple;
+			}
+			.btn-wrap {
+				.btn {
+					border: 1px solid $ecu-purple !important;
+					&:hover {
+						color: white !important;
+						&:after {
+							color: white;
+						}
+					}
+				}
+			}
+
+		}
+
+.tax-goals {
+	.table-bordered {
+		border: 0px;
+	}
+}

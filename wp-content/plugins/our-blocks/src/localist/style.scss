@@ -1,0 +1,106 @@
+:root {
+    --localist-bg: #FFFFFF;
+    --localist-heading: #592A8A;
+    --localist-font: #333333;
+    --localist-date-font: #FFFFFF;
+}
+.is-style-purple {
+    --localist-bg: #41215E;
+    --localist-heading: #FFFFFF;
+    --localist-font: #FFFFFF;
+    --localist-date-font: #41215E;
+}
+.is-style-grey {
+    --localist-bg: #D8D7D3;
+    --localist-heading: #333333;
+    --localist-font: #333333;
+    --localist-date-font: #FFFFFF;
+}
+.is-style-lavender {
+    --localist-bg: #b1afc5;
+    --localist-heading: #333333;
+    --localist-font: #333333;
+    --localist-date-font: #FFFFFF;
+}
+.is-style-teal {
+    --localist-bg: #4f7a8c;
+    --localist-heading: #FFFFFF;
+    --localist-font: #FFFFFF;
+    --localist-date-font: #4f7a8c;
+}
+.wp-block-wp-blocks-localist {
+    background-color: var(--localist-bg);
+    padding: 15px 0;
+    margin: 15px 0;
+    &.admin {
+        padding: 15px;
+    }
+    h2 {
+        color: var(--localist-heading)!important;
+        margin: 0 !important;
+        padding: 0 0 20px 0;
+        line-height: 40px;
+    }
+    .event {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 2em;
+        .date {
+            .datewrap {
+                background-color: var(--localist-bg);
+                border: 1px solid var(--localist-heading);
+                margin-right: 20px;
+                width: 80px;
+                text-align: center;
+                .month {
+                    text-transform: uppercase;
+                    color: var(--localist-date-font);
+                    background-color: var(--localist-heading);
+                    display: block;
+                    font-family: "Oswald",sans-serif;
+                    font-size: 16.8px;
+                    line-height: 24px;
+                }
+                .day {
+                    font-size: 42px;
+                    font-weight: 600;
+                    line-height: 60px;
+                    color: var(--localist-heading);
+                    font-family: "Oswald",sans-serif;
+                }
+            }
+        }
+        .details {
+            h3 {
+                font-size: 18.48px;
+                margin: 0;
+                padding-bottom: 5px;
+                line-height: 26.4px;
+                a {
+                    color: var(--localist-heading);
+                    font-weight: 400;
+                    font-family: "Oswald",sans-serif;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                        text-decoration-thickness: 1px;
+                        text-decoration-color: var(--localist-date);
+                    }
+                }
+            }
+            .location,
+            .time,
+            p {
+                color: var(--localist-font);
+                font-size: 15.4px;
+                line-height: 22px;
+            }
+            .location {
+                display: block;
+            }
+            p {
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+}

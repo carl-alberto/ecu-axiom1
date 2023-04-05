@@ -1,0 +1,34 @@
+//vars
+$purp: #592A8A;
+$white: #FFF;
+$ecu-dark-purple:#592A8A;
+$ecu-pink-purple:#77216F;
+
+
+#lo-wrapper {
+	#learning-outcome-menu {
+		padding:10px;
+		label {
+			display:block;
+			font-family: 'Oswald', sans-serif;
+		}
+		select	{
+			width: 100%;
+		    height: 2em;
+		    padding: 5px;
+		    border: 1px solid gainsboro;
+		}
+	}
+}
+
+#lo-content-wrap {
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 15px;
+	}
+	h2 {
+		color: lighten($purp, 20%);
+	}
+	.lo-program-purpose, .lo-learning-outcome {
+		margin:25px;
+	}
+}

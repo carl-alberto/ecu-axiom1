@@ -1,0 +1,11 @@
+.wp-admin {
+    .update-nag {
+        display: none;
+    }
+    .MuiButtonGroup-vertical {
+        width: 100%;
+        button {
+            text-align: left;
+        }
+    }
+}

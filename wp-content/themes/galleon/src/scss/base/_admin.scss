@@ -1,0 +1,140 @@
+$wp-blue: #0085ba;
+
+// .wp-admin select {
+//     padding: .375rem .75rem;
+//     line-height: 1.5;
+//     height: calc(1.5em + .75rem + 2px);
+//     vertical-align: baseline;
+// }
+
+small {
+    font-size: 90%;
+}
+h1 {
+    padding: 0px !important;
+    margin-bottom: 2rem !important;
+}
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: $white;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.widgets-php {
+    h2 {
+        font-size: 1.3em;
+    }
+    #widget-crud {
+        width: 38%;
+    }
+    .widget-icon {
+        position: absolute;
+        top: 15px;
+        right: 60px;
+        color: #a00;
+        border: 0px;
+        z-index: 100;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+label {
+    &.btn {
+        &:not(.active) {
+            border-color: $teal;
+            background-color: transparent;
+            color: $teal;
+            transition: all 0.2s;
+            &:hover {
+                background-color: $teal;
+                color: #ffffff;
+            }
+        }
+        @include focus;
+    }
+    &.btn-primary {
+        &.focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.post-type-page {
+    #home_hero {
+        #hero_type {
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+.postbox {
+    // .row {
+    //     width: 100% !important;
+    // }
+    .btn-group-toggle {
+        width: 100%;
+    }
+    .form-group .select2 {
+        width: 100% !important;
+    }
+}
+#page_sidebar {
+    display: none;
+}
+
+.form-group {
+    label:not(.btn) {
+        font-weight: 700;
+    }
+    button,
+    select {
+        box-sizing: border-box;
+    }
+}
+
+#hero_type {
+    margin-bottom: 1em;
+}
+#hero_image_preview,
+#hero_video_preview {
+    margin-bottom: 1em;
+    display: block;
+    max-height: 200px !important;
+}
+.modal {
+    overflow-y: scroll;
+}
+.slide {
+    border: 1px solid $light-grey-3;
+    padding: $spacer;
+    position: relative;
+    &:not(:first-child) {
+        margin-top: $spacer;
+    }
+    select {
+        width: 100%;
+        display: block;
+    }
+    .remove_slide {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+}
+.modal-content {
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(199, 199, 199, 1);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(199, 199, 199, 1);
+    box-shadow: 0px 0px 10px 5px rgba(199, 199, 199, 1);
+    .btn-group-toggle {
+        width: 50%;
+    }
+}
+.modal-backdrop {
+    width: 0 !important;
+    height: 0 !important;
+}

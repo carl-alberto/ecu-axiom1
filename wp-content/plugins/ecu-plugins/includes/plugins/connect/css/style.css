@@ -1,0 +1,38 @@
+.ecu-connect-td {
+  a, a:hover,a:focus,a:active,a:visited {
+       border-bottom: none;
+  }
+}
+
+.ecu-connect-social-image {
+	padding:5px;
+}
+
+.pagination {
+	margin:0;
+}
+
+.ecu-connect-td {
+	vertical-align: middle !important;
+}
+
+.ecu-connect-info {
+	padding: 6px 0;
+}
+
+.pagination {
+	li{
+		a, span {
+			color: inherit;
+		}
+	}
+}
+
+.pagination {
+	.active {
+		a, a:hover, a:focus, span, span:hover, span:focus{
+			background-color: #572C86 !important;
+		    border-color: #572C86 !important;
+		}
+	}
+}

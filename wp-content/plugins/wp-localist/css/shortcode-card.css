@@ -1,0 +1,199 @@
+.wp-localist-shortcode-hl ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Oswald",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-list {
+  clear: both;
+  position: relative;
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-list li {
+  margin-bottom: 20px;
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-card {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  background: #fff;
+  border: 2px solid #efefef;
+  color: #989694;
+}
+
+.wp-localist-shortcode-hl .wp-localist-cover {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-indent: -9999px;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-card header {
+  overflow: hidden;
+  position: relative;
+  height: 13.538em;
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-list .wp-localist-event-overview .wp-localist-content {
+  height: 7.615384615em;
+  border: 1px solid #efefef;
+  border-width: 0 1px;
+  padding: 23px 20px 19px;
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-card .wp-localist-content:before {
+  background: #fff;
+  bottom: 0;
+  content: '';
+  height: 17px;
+  left: 1px;
+  position: absolute;
+  right: 1px;
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-card .wp-localist-content p {
+  overflow: hidden;
+  margin: 0;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  line-height: 1.5em;
+  font-family: Georgia,serif;
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-span {
+  background: rgba(0,0,0,0.8) left top;
+  bottom: 0;
+  color: #fff !important;
+  font-weight: 700;
+  left: 0;
+  overflow: hidden;
+  padding: 7px 20px 5px;
+  position: absolute;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+  z-index: 1;
+  /*line-height: 1.875rem;*/
+  font-size: 1.4rem !important;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  outline: 0;
+  vertical-align: baseline;
+  border: 0;
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-title {
+  color: #fff !important;
+  left: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 1;
+  font-size: 1.8rem !important;
+  font-weight: 700;
+
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-short-date {
+  font-family:'Oswald', sans-serif;
+  background: #572C86;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: .25em 0;
+  color: #fff;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.111111111em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-card .wp-localist-content:before {
+  position: absolute;
+  background: #fff;
+  left: 1px;
+  bottom: 0;
+  right: 1px;
+  content: '';
+  height: 17px;
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-img {
+  position: relative;
+  width: auto;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  display: block;
+  bottom: 75%;
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-card img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.wp-localist-shortcode-hl .wp-localist-event-card .wp-localist-event-short-date {
+  background: #572C86;
+}
+
+
+.wp-localist-shortcode-hl .wp-localist-event-short-date abbr {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.181818182em;
+  border: 0 none;
+}
+
+.wp-localist-shortcode-hl * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 30em) {
+  .wp-localist-shortcode-hl .wp-localist-event-list>li:nth-child(2n+1) {
+    clear: left;
+  }
+}
+
+@media only screen and (min-width: 30em) {
+  .wp-localist-shortcode-hl .wp-localist-event-list>li {
+    float: left;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    width: 47.5%;
+  }
+}
+
+@media only screen and (min-width: 45em) {
+  .wp-localist-shortcode-hl .wp-localist-event-list>li {
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+}
+.wp-localist-event-span{padding-bottom:10px !important;}
+.wp-localist-shortcode-hl .wp-localist-event-card h2{margin:5px 0px !important;}
+.wp-localist-shortcode-hl .wp-localist-event-card{color:inherit; border:1px solid #efefef;}
+.wp-localist-shortcode-hl .wp-localist-event-list .wp-localist-event-overview .wp-localist-content{border:none;}
+.wp-localist-shortcode-hl .wp-localist-event-card .wp-localist-event-short-date{background:#572C86;border:1px solid white}
+.wp-localist-event:hover .wp-localist-event-img{opacity:.6;}

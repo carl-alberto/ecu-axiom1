@@ -1,0 +1,38 @@
+When updating this plugin be sure to make the following changes:
+
+Change Line 4 To  
+
+ * Plugin Name: Ninja Forms - Layout & Styles - SEE ECU UPATE README FOR HOW TO UPDATE!!!!
+
+ Comment Out Lines 54 - 58
+
+/*    include 'styles/ninja-forms-styles.php';
+    if( ! function_exists( 'NF_Styles' ) ) {
+        function NF_Styles() { return NF_Styles::instance(); }
+    }
+    NF_Styles();*/
+
+ Comment Out Lines 71 - 89
+
+ /*add_filter( 'ninja_forms_upgrade_settings', 'ninja_forms_styles_upgrade_form_settings' );
+if( ! function_exists( 'ninja_forms_styles_upgrade_form_settings' ) ) {
+    function ninja_forms_styles_upgrade_form_settings( $data ){
+
+        if( ! isset( $data[ 'settings' ][ 'style' ][ 'groups' ] ) ) return $data;
+
+        foreach( $data[ 'settings' ][ 'style' ][ 'groups' ] as $group => $settings ){
+
+            if( 'field' == $group ) $group = 'element';
+
+            foreach( $settings as $setting => $value ){
+                $setting = $group . '_styles_' . $setting;
+                $data[ 'settings' ][ $setting ] = $value;
+            }
+        }
+
+        return $data;
+    }
+}*/
+
+
+This removes the ability to do custom css.

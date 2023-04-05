@@ -1,0 +1,111 @@
+.page-template-page-blank {
+    #main-content {
+        padding: 0;
+    }
+}
+#main-content {
+    padding: 1rem 0;
+    h1 {
+        margin-bottom: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $ecu-purple;
+    }
+    blockquote {
+        border-left: 5px solid $ecu-purple;
+        padding: 1rem 0 1rem 1rem;
+        p {
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    button,
+    .btn {
+        font-family: $heading-font;
+    }
+    ol,
+    ul {
+        li {
+            p:empty {
+                display: none;
+            }
+        }
+    }
+    a {
+        color: $ecu-purple;
+        transition: 0.2s all;
+        border-bottom: 1px solid $light-purple;
+        &.ecu-connect-link {
+            border-bottom: 0px;
+            &:hover {
+                border-bottom: 0px;
+            }
+        }
+        &:hover {
+            text-decoration: none;
+            border-bottom: 1px solid $dark-purple;
+        }
+        &.btn-ribbon {
+            background: $white;
+            color: $ecu-purple;
+            padding: 6px 12px;
+            border: 1px solid $ecu-purple;
+            font-family: $heading-font;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: all 0.2s;
+            font-size: 0.875rem;
+            display: inline-block;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1em;
+            &:after {
+                font-family: $font-awesome;
+                content: "\f054";
+                color: $ecu-purple;
+                margin-left: 5px;
+            }
+            &:hover {
+                background: $ecu-purple;
+                color: $white;
+                &:after {
+                    color: $white;
+                }
+            }
+        }
+
+        &.btn-ribbon-simple {
+            background: $white;
+            color: $ecu-purple;
+            padding: 6px 12px;
+            border: 1px solid $ecu-purple;
+            font-family: $heading-font;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: all 0.2s;
+            margin-top: 10px;
+            font-size: 0.875rem;
+            display: table;
+            &:hover {
+                background: $ecu-purple;
+                color: $white;
+            }
+        }
+    }
+}
+.page-template-page-ribbons {
+    #main-content {
+        padding-bottom: 0px;
+        .ribbon-content {
+            padding-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,243 @@
+/* purple background - plum callout */
+&.style-1 {
+	background-color: $ribbon-1-main;
+	  color: $ribbon-1-main-text !important;
+
+	// Headings
+	  .ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+		  color: $white;
+	  }
+
+	  a {
+		  color: $ribbon-1-main-text;
+		  border-color: $white;
+	  }
+	  blockquote {
+	  border-left: 5px solid $ribbon-1-sup;
+	  padding: 1rem 0 1rem 1rem;
+	  p {
+		&:last-child {
+		  margin-bottom: 0px;
+		}
+	  }
+	}
+	@include rib_btn($white, $ribbon-1-main, $ribbon-1-main, $white);
+
+	hr {
+	  border-color: lighten($ribbon-1-main, 15%);
+  }
+	  .pagination-wrap {
+		  .pagination {
+			  border: 1px solid $white;
+			  li {
+				  border-right: 1px solid $white;
+				  a {
+					  color: $white !important;
+					  &:hover {
+						  background-color: $white;
+						  color: $ribbon-1-main !important;
+					  }
+				  }
+				  &:last-child {
+					  border-right: 0px;
+				  }
+		  &.active {
+			a {
+			  background-color: $white;
+						  color: $ribbon-1-main !important;
+			}
+		  }
+			  }
+		  }
+	  }
+
+
+	  /**************************\
+		  SHORTCODES + PLUGINS
+	  \**************************/
+
+	  // Tablepress
+	  .tablepress {
+		  thead {
+			  th {
+				  background-color: $ribbon-1-sup;
+				  color: $ribbon-1-sup-text;
+				  border-bottom: 0px;
+			  }
+		  }
+		  tbody {
+			  tr {
+				  td {
+					  border-top: 0px !important;
+				  }
+				  &.even {
+					  td {
+						  background-color: darken($ribbon-1-main, 5%) !important;
+						  color: $ribbon-1-main-text !important;
+					  }
+				  }
+				  &.odd {
+					  td {
+						  background-color: $ribbon-1-main !important;
+						  color: $ribbon-1-main-text !important;
+					  }
+				  }
+			  }
+		  }
+	  }
+	  .dataTables_filter {
+		  input {
+			  border: 1px solid $ribbon-1-sup;
+		  }
+	  }
+	  .dataTables_paginate {
+		  a {
+			  border-bottom: 0px;
+			  cursor: pointer;
+			  &.next {
+				  &:after {
+					  text-shadow: none;
+					  color: $ribbon-1-main-text;
+				  }
+			  }
+			  &.previous {
+				  &:before {
+					  text-shadow: none;
+					  color: $ribbon-1-main-text;
+				  }
+			  }
+		  }
+	  }
+
+	  // Fancyquote
+	  .blockquotes {
+		  .fancy {
+			  hr {
+				  border: 2px solid $white;
+			  }
+			  .fa {
+				  color: $white;
+			  }
+		  }
+	  }
+
+	  // Linked / Tabbed grid
+	  .ui_tabbed_grid, .ui_linked_grid {
+		  .grid_post {
+			  &:hover {
+				  span {
+					  background: rgba($ribbon-1-sup, 1);
+				  }
+			  }
+			  span {
+				  background: rgba($ribbon-1-sup, .5);
+			  }
+		  }
+	  }
+
+	.ui_link_farm {
+	  .ui_link_farm_header {
+		p {
+		  color: $white !important;
+		}
+	  }
+	}
+
+	.ecu-news {
+	  .ecu-news-column {
+		.ecu-header-section {
+		  border-bottom: none;
+		}
+		.ecu-news-item {
+		  border-bottom: none;
+		  a {
+			border-bottom: 0px !important;
+		  }
+		  .ecu-news-info {
+			p {
+			  color: $white;
+			  &.read-more {
+				  background-color: $ribbon-1-sup;
+				color: $white;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  .container {
+	#wp-localist-grid {
+		.wp-localist-calendar {
+			border: 1px solid $white;
+			div {
+				color: $white;
+			}
+		   .wp-localist-day {
+			  color: $white;
+		   }
+		  .wp-localist-month {
+			color: $ribbon-1-main;
+			background-color: $white;
+		  }
+		}
+		.wp-localist-event-details {
+			div {
+				color: $white;
+			}
+		}
+		.wp-localist-event-title {
+			color: $white;
+		}
+	}
+}
+	#wp-localist-list {
+		.wp-localist-calendar {
+			.wp-localist-day {
+				color: $white;
+			}
+		}
+		.wp-localist-event-details {
+			border-left: 1px solid $white;
+			div {
+				color: $white;
+			}
+		}
+	}
+
+	  // Dashboard
+	  .ui_dashboard {
+		  .ui_element_wrap {
+			  .dashboard_title {
+				  color: $white !important;
+			  }
+			  .dashboard_icon {
+				  .icon-wrap {
+					  background: $ribbon-1-sup;
+					  &.ui_none {
+						  .fa {
+							  color: $ribbon-1-sup-text !important;
+						  }
+					  }
+				  }
+			  }
+		  }
+	  }
+
+	  /**************************\
+			 RIBBONS
+	  \**************************/
+
+	  .ribbon-callout {
+		  background-color: $ribbon-1-sup;
+		  color: $ribbon-1-sup-text !important;
+
+		  // Headings
+		  .ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+			  color: $ribbon-1-sup-text !important;
+		  }
+		  @include rib_btn($white, $ribbon-1-sup, $ribbon-1-sup, $white);
+		  blockquote {
+		  border-left: 5px solid $ribbon-1-main;
+		}
+	  }
+  }

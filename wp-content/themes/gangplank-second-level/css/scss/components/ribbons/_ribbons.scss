@@ -1,0 +1,48 @@
+/** components/_ribbons.scss **/
+
+#main-content {
+  .ribbon {
+    padding: 30px 0px;
+    min-height: 200px;
+    clear: both;
+    .ribbon-header {
+      font-size: 28px;
+      font-family: $heading-font;
+      line-height: 40px;
+      display: block;
+      text-transform: uppercase;
+      margin: 0px 0px 15px 0px;
+    }
+    .ribbon-callout {
+      padding: 30px 20px;
+      margin-top: -30px!important;
+      margin-bottom: 15px;
+      @include breakpoint(lg){
+        padding: 70px 20px 40px!important;
+      }
+      @include breakpoint(lg){
+        margin-bottom: 0px;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+      a {
+        border-bottom: 1px solid $white !important;
+        color: $white !important;
+      }
+    }
+    &.ribbon-colored {
+      .content-image{
+        background-color: $white;
+        padding: .25rem;
+      }
+    }
+    @import 'style-0';
+    @import 'style-1';
+    @import 'style-2';
+    @import 'style-3';
+    @import 'style-4';
+    @import 'style-5';
+  }
+}

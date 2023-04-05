@@ -1,0 +1,1 @@
+Comment out the network menu actions in the constructor of wordpress-cms/wp-content/plugins/advanced-custom-fields-pro/includes/admin/admin-upgrade.php after upgrade

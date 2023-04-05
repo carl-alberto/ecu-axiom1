@@ -1,0 +1,38 @@
+#itcs-logins {
+    //background-color: #f0f0f6;
+    padding: 1em 0;
+    .login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 0px !important;
+        &:hover {
+            .login-img {
+                //border: 3px solid $ecu-purple;
+                -webkit-box-shadow: 3px 3px 2px 1px rgba(0,0,0,0.2);
+                box-shadow: 3px 3px 2px 1px rgba(0,0,0,0.2);
+            }
+        }
+        .login-img {
+            background-color: #4F7A8C;
+            -webkit-box-shadow: 3px 3px 2px 1px rgba(0,0,0,0.05); 
+            box-shadow: 3px 3px 2px 1px rgba(0,0,0,0.05);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid transparent;
+            transition: all .2s;
+            margin: 25px 0px;
+            width:80%;       
+            img {
+                width:100%;
+            }                 
+        }
+        h2 {
+            margin: .5em 0 0 0;
+            font-size: 1.4em !important;
+        }
+    }
+}

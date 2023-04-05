@@ -1,0 +1,61 @@
+.is-style-default {
+  color: #212529;
+  background-color: transparent;
+  font-family: "Quattrocento", sans-serif;
+  font-size: 1em;
+}
+
+.is-style-paragraph-block-large {
+  color: #592A8A;
+  background-color: transparent;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25em;
+}
+
+.is-style-paragraph-block-larger {
+  color: #592A8A;
+  background-color: transparent;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.375em;
+}
+
+.is-style-paragraph-block-largest {
+  color: #592A8A;
+  background-color: transparent;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+}
+
+.is-style-paragraph-block-large address, .is-style-paragraph-block-large del, .is-style-paragraph-block-large mark, .is-style-paragraph-block-large s, .is-style-paragraph-block-large ins, .is-style-paragraph-block-large u, .is-style-paragraph-block-large small, .is-style-paragraph-block-large strong, .is-style-paragraph-block-large em, .is-style-paragraph-block-large ul, .is-style-paragraph-block-large ol, .is-style-paragraph-block-large li, .is-style-paragraph-block-large p, .is-style-paragraph-block-large a,
+.is-style-paragraph-block-larger address,
+.is-style-paragraph-block-larger del,
+.is-style-paragraph-block-larger mark,
+.is-style-paragraph-block-larger s,
+.is-style-paragraph-block-larger ins,
+.is-style-paragraph-block-larger u,
+.is-style-paragraph-block-larger small,
+.is-style-paragraph-block-larger strong,
+.is-style-paragraph-block-larger em,
+.is-style-paragraph-block-larger ul,
+.is-style-paragraph-block-larger ol,
+.is-style-paragraph-block-larger li,
+.is-style-paragraph-block-larger p,
+.is-style-paragraph-block-larger a,
+.is-style-paragraph-block-largest address,
+.is-style-paragraph-block-largest del,
+.is-style-paragraph-block-largest mark,
+.is-style-paragraph-block-largest s,
+.is-style-paragraph-block-largest ins,
+.is-style-paragraph-block-largest u,
+.is-style-paragraph-block-largest small,
+.is-style-paragraph-block-largest strong,
+.is-style-paragraph-block-largest em,
+.is-style-paragraph-block-largest ul,
+.is-style-paragraph-block-largest ol,
+.is-style-paragraph-block-largest li,
+.is-style-paragraph-block-largest p,
+.is-style-paragraph-block-largest a {
+  font-family: "Oswald", sans-serif;
+}
+
+/*# sourceMappingURL=blocks.css.map */

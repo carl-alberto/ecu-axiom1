@@ -1,0 +1,43 @@
+$oswald         :   'Oswald', sans-serif;
+$quattrocento   :   'Quattrocento', sans-serif;
+$fontawesome    :   'Font Awesome 5 Free';
+
+// Greys
+$white          :   #FFFFFF;
+$light-grey-3   :   #EEEEEE;
+$light-grey-2   :   #F5F5F5;
+$light-grey-1   :	#D7D7D7;
+$grey           :   #6C6D68; // ECU Official
+$dark-grey-1    :   #404041;
+$dark-grey-2    :   #373738;
+$dark-grey-3    :   #242424;
+$black          :   #000000;
+// Purples
+$ecu-purple     :   #592A8A; // ECU Official
+$light-purple-1 :   #BE9FDF;
+$dark-purple    :   #41215E; // ECU Official
+$dark-purple-1  :   #42145F;
+$pink-purple    :   #77216F; // ECU Official
+// Golds
+$dark-gold-1    :   #EAAB00;
+$ecu-gold       :   #FEC923; // ECU Official
+$light-gold-1   :   #FFD36C;
+// Other
+$teal           :   #00818F; // ECU Official
+$teal-1         :   #00818F;
+$dark-teal-1    :   #004261; // ECU Official
+$alert-red      :   #E53935;
+
+// Functional
+$footer-bg      :   $grey;
+$heading-font   :   $oswald;
+$body-font      :   $quattrocento;
+
+// Screen Widths
+$screen-sm-min  :   576px;
+$screen-md-min  :   768px;
+$screen-lg-min  :   992px;
+$screen-xl-min  :   1200px;
+
+// Margin/Padding
+$spacer         :   15px;

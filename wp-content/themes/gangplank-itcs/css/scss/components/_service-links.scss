@@ -1,0 +1,89 @@
+#service-links {
+    .link-group {
+        margin-bottom: 1em;
+
+        &.tags {
+            strong {
+                color: $dark-purple;
+                font-family: $heading-font;
+                display: block;
+                border-bottom: 1px dashed rgba(0,0,0,0.1);
+                margin-bottom: .5rem;
+                padding-bottom: .25rem;
+            }
+            a {
+                background-color: $bs-light-grey;
+                display: inline-block;
+                padding: 0px 10px;
+                margin-right: 5px;
+                border-radius: 20px;
+                font-size: .8rem;
+                border: 1px solid darken($bs-light-grey, 20%) !important;
+                color: $default-text !important;
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+            ul {
+                li {
+                    margin-bottom: .5rem;
+                    a {
+                        display: inline-block !important;
+                    }
+                }
+            }
+        }
+         a.tag {
+            display: inline-block;
+            padding: 2px 10px;
+            margin-right: 5px;
+            border-radius: 20px;
+            font-size: .85rem;
+            margin-bottom:4px;
+            background-color:white;
+            &.audience {
+                border: 1px solid $ecu-dark-teal!important;
+                color: $ecu-dark-teal !important;
+                &:hover {
+                    background-color:$ecu-dark-teal;
+                    color:$white!important;
+                }
+            }
+            &.category {
+                border: 1px solid $ecu-pink-purple!important;
+                color: $ecu-pink-purple !important;
+                &:hover {
+                    background-color:$ecu-pink-purple;
+                    color:$white!important;
+                }
+            }
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+        ul {
+            padding: 0px;
+            margin: 0px;
+            li {
+                list-style: none;
+                a {
+                    display: flex !important;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: $white;
+                    background-color: $ecu-purple;
+                    &:after {
+                        color: $white;
+                    }
+                    &:hover {
+                        color: $ecu-purple;
+                        background-color: $white;
+                        &:after {
+                            color: $ecu-purple;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

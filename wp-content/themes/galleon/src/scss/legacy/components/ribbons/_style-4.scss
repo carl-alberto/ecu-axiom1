@@ -1,0 +1,246 @@
+/* light teal background - dark teal callout */
+&.style-4 {
+	background-color: $ribbon-4-main;
+	  color: $ribbon-4-main-text !important;
+
+	// Headings
+	  .ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+		  color: $white;
+	  }
+
+	  a {
+		  color: $ribbon-4-main-text;
+		  border-color: $ribbon-4-main-text;
+	  }
+	  blockquote {
+	  border-left: 5px solid $ribbon-4-sup;
+	  padding: 1rem 0 1rem 1rem;
+	  p {
+		&:last-child {
+		  margin-bottom: 0px;
+		}
+	  }
+	}
+	@include rib_btn($ribbon-4-main-text, $ribbon-4-main, $ribbon-4-main, $ribbon-4-main-text);
+
+	#wp-localist-list {
+		.wp-localist-calendar {
+			div {
+				color: $white;
+			}
+		  .wp-localist-day {
+			  color: $white;
+		  }
+
+		}
+		.wp-localist-event-details {
+			border-left: 1px solid $white;
+			div {
+				color: $white;
+			}
+		}
+		.wp-localist-event-title {
+			color: $white;
+		}
+	}
+
+	#wp-localist-grid {
+		.wp-localist-calendar {
+			border: 1px solid $white;
+			.wp-localist-day {
+				color: $white;
+			}
+			.wp-localist-month {
+				color: $ribbon-4-main;
+				background-color: $white;
+			}
+		}
+		.wp-localist-event-details {
+			div {
+				color: $white;
+			}
+		}
+	}
+
+	  .pagination-wrap {
+		  .pagination {
+			  border: 1px solid $ribbon-4-sup;
+			  li {
+				  border-right: 1px solid $ribbon-4-sup;
+				  a {
+					  color: $default-text !important;
+					  &:hover {
+						  background-color: $ribbon-4-sup;
+						  color: $ribbon-4-sup-text !important;
+					  }
+				  }
+				  &:last-child {
+					  border-right: 0px;
+				  }
+		  &.active {
+			a {
+			  background-color: $ribbon-4-sup;
+						  color: $ribbon-4-sup-text !important;
+			}
+		  }
+			  }
+		  }
+	  }
+
+	  /**************************\
+		  SHORTCODES + PLUGINS
+	  \**************************/
+
+	  // Tablepress
+	  .tablepress {
+		  thead {
+			  th {
+				  background-color: $ribbon-4-sup;
+				  color: $ribbon-4-sup-text;
+				  border-bottom: 0px;
+			  }
+		  }
+		  tbody {
+			  tr {
+				  td {
+					  border-top: 0px !important;
+				  }
+				  &.even {
+					  td {
+						  background-color: darken($ribbon-4-main, 5%) !important;
+						  color: $ribbon-4-main-text !important;
+					  }
+				  }
+				  &.odd {
+					  td {
+						  background-color: $ribbon-4-main !important;
+						  color: $ribbon-4-main-text !important;
+					  }
+				  }
+			  }
+		  }
+	  }
+	  .dataTables_filter {
+		  input {
+			  border: 1px solid $ribbon-4-sup;
+		  }
+	  }
+	  .dataTables_paginate {
+		  a {
+			  border-bottom: 0px;
+			  cursor: pointer;
+			  &.next {
+				  &:after {
+					  text-shadow: none;
+					  color: $ribbon-4-main-text;
+				  }
+			  }
+			  &.previous {
+				  &:before {
+					  text-shadow: none;
+					  color: $ribbon-4-main-text;
+				  }
+			  }
+		  }
+	  }
+
+
+
+	  // Fancyquote
+	  .blockquotes {
+		  .fancy {
+			  hr {
+				  border: 2px solid $ribbon-4-sup;
+			  }
+			  .fa {
+				  color: $ribbon-4-sup;
+			  }
+		  }
+	  }
+
+	  // Linked / Tabbed grid
+	  .ui_tabbed_grid, .ui_linked_grid {
+		  .grid_post {
+			  &:hover {
+				  span {
+					  background: rgba($ribbon-4-sup, 1);
+				  }
+			  }
+			  span {
+				  background: rgba($ribbon-4-sup, .5);
+			  }
+		  }
+	  }
+
+	.ui_link_farm {
+	  .ui_link_farm_header {
+		p {
+		  color: $ribbon-4-main-text !important;
+		}
+	  }
+	}
+
+	.ecu-news {
+	  .ecu-news-column {
+		.ecu-header-section {
+		  border-bottom: none;
+		}
+		.ecu-news-item {
+		  border-bottom: none;
+		  a {
+			border-bottom: 0px !important;
+		  }
+		  .ecu-news-info {
+			  p{
+				  color: white;
+			  }
+			  .read-more {
+				  background-color: $ribbon-4-sup;
+				  color: $white;
+				  text-decoration: none;
+			}
+		  }
+		}
+	  }
+	}
+
+	  // Dashboard
+	  .ui_dashboard {
+		  .ui_element_wrap {
+			  .dashboard_title {
+				  color: $default-text !important;
+			  }
+			  .dashboard_icon {
+				  .icon-wrap {
+					  background: $ribbon-4-sup;
+					  &.ui_none {
+						  .fa {
+							  color: $ribbon-4-sup-text !important;
+						  }
+					  }
+				  }
+			  }
+		  }
+	  }
+
+	  //dashboard
+
+
+	  /**************************\
+			 RIBBONS
+	  \**************************/
+
+	  .ribbon-callout {
+		  background-color: $ribbon-4-sup;
+		  color: $ribbon-4-sup-text !important;
+
+		  // Headings
+		  .ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+			  color: $ribbon-4-sup-text !important;
+		  }
+		  @include rib_btn($white, $ribbon-4-sup, $ribbon-4-sup, $white);
+		  blockquote {
+		  border-left: 5px solid $ribbon-4-main;
+		}
+	  }
+  }

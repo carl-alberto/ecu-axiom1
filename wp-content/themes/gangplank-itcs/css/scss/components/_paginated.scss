@@ -1,0 +1,117 @@
+#paginated {
+    #view-0 {
+        ul {
+            margin: 0px;
+            padding: 0px;
+            li {
+                list-style: none;
+                button {
+                    background-color: $white;
+                    border: 0px;
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    color: $dark-purple;
+                    transition: .2s all;
+                    margin-bottom: .75rem;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .view-heading {
+            border-bottom: 1px dashed rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        .faq-header {
+            display: flex;
+            align-items: center;
+            min-height: 44px;
+            font-weight: bold;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+    }
+    .view-nav {
+        display: flex;
+        justify-content: center;
+        @include breakpoint(md){
+            justify-content: flex-end;
+        }
+        ul {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include breakpoint(md){
+                width: auto;
+            }
+            li {
+                flex: 1;
+                @include breakpoint(md){
+                    flex: none;
+                }
+                list-style: none;
+                display: inline-block;
+                    &:first-child {
+                        button {
+                            order: 2;
+                            @include breakpoint(md){
+                                margin-right: 1rem;
+                            }
+                        }
+                    }
+
+                button {
+                    width: 100%;
+                    @include breakpoint(md){
+                        width: auto;
+                    }
+                    background: #fff;
+                    color: #572C86;
+                    padding: 6px 12px;
+                    border: 1px solid #572C86;
+                    font-family: "Oswald",sans-serif;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    transition: all .2s;
+                    font-size: .875rem;
+                    display: table;
+                    cursor: pointer;
+                    &:hover {
+                        background: $dark-purple;
+                        color: $white;
+                    }
+                    &.next {
+                        &:after {
+                            font-family: "FontAwesome";
+                            content: "\f054";
+                            color: #572C86;
+                            margin-left: 5px;
+                        }
+                        &:hover {
+                            &:after {
+                                color: $white;
+                            }
+                        }
+                    }
+                    &.previous {
+                        &:before {
+                            font-family: "FontAwesome";
+                            content: "\f053";
+                            color: #572C86;
+                            margin-right: 5px;
+                        }
+                        &:hover {
+                            &:before {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

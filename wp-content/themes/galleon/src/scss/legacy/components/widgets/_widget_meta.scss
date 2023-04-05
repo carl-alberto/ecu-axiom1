@@ -1,0 +1,7 @@
+.widget_meta {
+  @include well;
+  @include chevronlist;
+  .screen-reader-text {
+      display: none;
+  }
+}

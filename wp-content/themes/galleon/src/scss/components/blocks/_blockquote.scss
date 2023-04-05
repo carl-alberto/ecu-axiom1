@@ -1,0 +1,55 @@
+/** Block Quote Block **/
+.wp-block-quote {
+    border-left: 0px;
+    padding-left: 0px;
+    border-top: 2px solid $ecu-purple;
+    border-bottom: 2px solid $ecu-purple;
+    position: relative;
+    margin: 2em 0;
+    &::before,
+    &::after {
+        font-family: $fontawesome;
+        font-weight: 900;
+        font-size: 2em;
+        position: relative;
+        color: $ecu-purple;
+        background-color: $white;
+        padding: 0 .5em;
+        left: 43%;
+        @include breakpoint(sm){
+            left: 44%;
+        }
+        @include breakpoint(md){
+            left: 45.5%;
+        }
+        @include breakpoint(lg){
+            left: 47%;
+        }
+    }
+    &::before {
+        top: -.75em;
+        content: "\f10d";
+    }
+    &::after {
+        bottom: -.75em;
+        content: "\f10e";
+    }
+    p {
+        font-size: 1.5em;
+        line-height: 1.5em;
+        text-align: center;
+        &::after,
+        &::before {
+            content: '"';
+        }
+    }
+    cite,
+    .wp-block-quote__citation {
+        font-family: $heading-font;
+        font-size: 1.3em;
+        font-weight: bold;
+        text-align: right;
+        margin-right: 2em;
+        display: block;
+    }
+}

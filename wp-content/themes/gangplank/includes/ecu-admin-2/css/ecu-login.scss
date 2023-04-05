@@ -1,0 +1,152 @@
+$drk-purple: #FFFFFF;
+$light-purple: #AAA;
+
+/* CUSTOM LOGIN STYLES */
+.login {
+	font-family: 'Quattrocento', sans-serif !important;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#572c86+0,41215e+75 */
+	background: #572c86; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #572c86 0%, #41215e 75%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #572c86 0%,#41215e 75%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #572c86 0%,#41215e 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#572c86', endColorstr='#41215e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	#login {
+		// Disable login message
+		h1 {
+			&.login-msg {
+				padding-bottom: .5em;
+				font-size: 2.4em;
+				color: #FFFFFF;
+			}
+		}
+		#subtitle {
+			padding: 1em;
+			text-align: center;
+			font-size: 1.2em;
+			color: #FFFFFF;
+			a{
+				color: #FFFFFF;
+			}
+		}
+		
+		//Wordmark
+		h1 {
+			a {
+				background-image: url("../images/ECU_lockup_primary_White.svg");
+				height: 140px;
+				width: 320px;
+				background-size: 320px 140px;
+				background-repeat: no-repeat;
+				background-position: center;
+				margin-bottom:25px;
+				padding-bottom:20px;
+			}
+		}
+
+		//Error, e.g. "Wrong Password
+		#login_error {
+			border-left: 10px solid #FEC923;
+		}
+
+		//Message, e.g. "You are now logged out"
+		.message {
+			border-left: 10px solid #FEC923;
+		}
+
+		//Login Form
+		#loginform {
+			background-color: rgba(255, 255, 255, 0);
+			box-shadow: none;
+			padding: 0px;
+			border: 0;
+			
+			p:nth-child(3) {
+				a {
+					color: #FFFFFF;
+				}
+			}
+
+			label, p {
+				color: #FFFFFF;
+			}
+
+			label[for="user_login"] {
+				color: rgba(255, 255, 255, 0);
+				font-size: 0px;
+			}
+
+			label[for="user_login"]:before {
+				font-size: 13px;
+				content: "Pirate ID";
+				color: #FFFFFF;
+				height: 300px;
+				width: 300px;
+			}
+
+			label[for="rememberme"] {
+				font-size: 14px;
+			}
+
+			input {
+				font-size: 16px !important;
+				border-radius: 0px;
+			}
+			input[type="text"], input[type="password"] {
+				padding: 10px !important;
+			}
+
+			.submit {
+				#wp-submit {
+					margin-top: 15px;
+					width: 100%;
+					background: #32165d;
+					border-color: #1c073c;
+					text-shadow: none;
+					box-shadow: none;
+					padding: 5px;
+					height: auto;
+					color: #FFFFFF;
+					transition: all .25s;
+					border-radius: 0px;
+
+					&:hover {
+						color: #FFFFFF;
+						background: #260e4b;
+					}
+				}
+			}
+		}
+
+		#nav {
+			margin: 10px 0px 0px 0px;
+			padding: 0px;
+			a {
+			  color: $drk-purple;
+			  border-bottom: 1px solid $light-purple;
+			  text-decoration: none;
+			    &:hover,&:focus,&:active {
+			      color: $drk-purple;
+			      border-bottom: 1px solid $drk-purple;
+			      text-decoration: none;
+			    }
+			}
+		}
+
+		#backtoblog {
+			margin: 10px 0px 0px 0px;
+			padding: 0px;
+			a {
+			  color: $drk-purple;
+			  border-bottom: 1px solid $light-purple;
+			  text-decoration: none;
+			    &:hover,&:focus,&:active {
+			      color: $drk-purple;
+			      border-bottom: 1px solid $drk-purple;
+			      text-decoration: none;
+			    }
+			}
+		}
+	}
+}

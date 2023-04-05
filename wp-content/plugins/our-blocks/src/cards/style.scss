@@ -1,0 +1,72 @@
+:root {
+    --bg: #ffffff;
+    --text: #373738;
+    --link: #592A8A;
+}
+.is-style-hotpink {
+    --bg: #77216F;
+    --text: #ffffff;
+    --link: #ffffff;
+}
+.is-style-darkpurple {
+    --bg: #41215E;
+    --text: #ffffff;
+    --link: #ffffff;
+}
+.is-style-ecupurple {
+    --bg: #592A8A;
+    --text: #ffffff;
+    --link: #ffffff;
+}
+.is-style-goldgrey {
+    --bg: #6C6D68;
+    --text: #ffffff;
+    --link: #ffffff;
+}
+.is-style-darkteal {
+    --bg: #004261;
+    --text: #ffffff;
+    --link: #ffffff;
+}
+.is-style-darkergrey {
+    --bg: #373738;
+    --text: #ffffff;
+    --link: #ffffff;
+}
+.is-style-teal {
+    --bg: #00818F;
+    --text: #ffffff;
+    --link: #ffffff;
+}
+.is-style-lavender {
+    --bg: #ffffff;
+    --text: #ffffff;
+    --link: #ffffff;
+}
+.wp-block-wp-blocks-card {
+    margin-bottom: 15px;
+    &.hasShadow {
+        .block-content {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+    }
+    .block-content {
+        background-color: var( --bg );
+        border: 1px solid rgba(0,0,0,0.125);
+        .card-heading {
+            padding: 12px 20px;
+            background-color: rgba(0,0,0,0.03);
+            color: var( --text );
+            margin: 0px;
+            display: block;
+        }
+        .card-content {
+            padding: 0.75rem 1.25rem;
+            color: var( --text );
+            a {
+                color: var( --link );
+                text-decoration-color: var( --link );
+            }
+        }
+    }
+}

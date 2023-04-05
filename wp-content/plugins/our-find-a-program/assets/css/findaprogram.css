@@ -1,0 +1,37 @@
+#ecuFindAProgramDataTables_filter {
+    display: none;
+}
+
+.ecu_findaprogram_wrapper .card.bg-primary {
+    background-color: #572C86 !important;
+    padding: 10px;
+}
+.ecu_findaprogram_wrapper .card.bg-primary h4 {
+    color: white !important;
+}
+
+#clearFilters
+{
+    margin-bottom: 10px;
+}
+
+#ecuFindAProgramDataTables a {
+	text-decoration-line: underline!important;
+}
+
+#ecu-fp-gre {
+	font-size: 1rem;
+    vertical-align: middle;
+    font-weight: normal;
+    font-family: "Oswald",sans-serif;
+    padding: .55em .55em;
+}
+
+#ecu-fp-apply {
+	margin-right:5px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 380px) {
+	#ecu-fp-gre {
+		margin-top:5px;
+	}

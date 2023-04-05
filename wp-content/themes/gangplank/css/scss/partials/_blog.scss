@@ -1,0 +1,118 @@
+/* Blog listing */
+.blog-post {
+  margin-bottom: 1rem;
+  border: 1px solid #e1e1e8;
+  background-color: #f7f7f9;
+  border-bottom: 1px solid #e1e1e8 !important;
+  transition: all .2s;
+  padding: 15px;
+  img {
+    margin-bottom: 15px;
+    @include breakpoint(md){
+      margin-bottom: 0px;
+    }
+  }
+  &:hover {
+      background-color: darken(#f7f7f9, 5%);
+    .blog-content {
+      i {
+        margin-left: 10px;
+      }
+    }
+  }
+  .blog-meta {
+    font-family: $heading-font;
+    font-size: .9rem;
+    display: block;
+    font-weight: 400;
+    width: 100%;
+    .post-categories {
+      padding: 0px;
+      margin: 0px;
+      display: inline;
+      float: right;
+      li {
+        display: inline;
+        list-style: none;
+        font-size: .9rem;
+        &:after {
+          content: ", ";
+        }
+        &:last-child {
+          &:after {
+            content: none;
+          }
+        }
+        a {
+          font-size: .9rem;
+          font-weight: 400 !important;
+        }
+      }
+    }
+  }
+  .blog-content {
+    h2 {
+      font-size: 1.25rem;
+      margin-top: .75rem;
+    }
+    p {
+      color: $bs-color;
+    }
+    i {
+      transition: all .2s;
+      font-size: .75rem;
+      color: $ecu-purple;
+    }
+  }
+  &.expanded {
+      padding: 0px;
+      .content {
+          padding: 15px;
+      }
+      img {
+          margin: 0px;
+      }
+      &:hover {
+          background-color: #f7f7f9;
+      }
+  }
+}
+.pagination-wrap{
+  text-align: center;
+  margin-bottom: 1rem;
+  @include breakpoint(md){
+    margin-bottom: 0px;
+  }
+  .pagination{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    border: 1px solid $ecu-purple;
+    border-radius: 0px;
+    li {
+      display: inline-block;
+      border-right: 1px solid $ecu-purple;
+      &:last-child {
+        border-right: none;
+      }
+      span:not(.fa) {
+        padding: 5px 10px;
+        font-family: $heading-font;
+        display: block;
+        background: $light-grey;
+        color: $black;
+        cursor: not-allowed;
+      }
+      a {
+        padding: 5px 10px;
+        border-bottom: 0px !important;
+        font-family: $heading-font;
+        display: block;
+        &:hover {
+          background: $ecu-purple;
+          color: $white !important;
+        }
+      }
+    }
+  }
+}

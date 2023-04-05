@@ -1,0 +1,22 @@
+.toplevel_page_theme_options {
+    h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    nav {
+        margin-bottom: 1rem;
+    }
+    .components-select-control {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+}
+
+#widget-crud {
+    h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}

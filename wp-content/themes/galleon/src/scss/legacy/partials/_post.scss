@@ -1,0 +1,41 @@
+.single-post {
+  #main {
+    h1 {
+      margin-bottom: 1rem;
+    }
+    .secondary-title {
+      margin-top: 10px;
+    }
+  }
+}
+.post-meta {
+  border-bottom: 1px solid $bs-dark-grey;
+  border-top: 1px solid $bs-dark-grey;
+  font-family: $heading-font;
+  text-transform: uppercase;
+  color: $grey;
+  font-size: .9rem;
+  padding: 5px 0px;
+  margin-bottom: 15px;
+  ul {
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    li {
+      display: inline;
+      list-style: none;
+      font-size: .9rem;
+      &:after {
+        content: ", ";
+      }
+      &:last-child {
+        &:after {
+          content: none;
+        }
+      }
+      a {
+        font-size: .9rem;
+      }
+    }
+  }
+}

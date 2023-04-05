@@ -1,0 +1,227 @@
+<div id="app">
+	<form v-on:submit.prevent="submitForm()">
+		<div class="row form-group">
+			<div class="col-lg">
+				<label for="first">First Name:&nbsp;*</label>
+				<span v-if="$v.$dirty && $v.first.$invalid" class="error-message" v-text="firstErrorMsg"></span>
+				<input type="text" id="first" class="form-control" :class="{ error: $v.first.$error }" v-model.trim="first" @input="$v.first.$touch()" maxlength="200">
+			</div>
+			<div class="col-lg">
+				<label for="middle">Middle Name:&nbsp;</label>
+				<input type="text" id="middle" class="form-control" :class="{ error: $v.middle.$error }" v-model.trim="middle" maxlength="100">
+			</div>
+			<div class="col-lg">
+				<label for="last">Last Name:&nbsp;*</label>
+				<span v-if="$v.$dirty && $v.last.$invalid" class="error-message" v-text="lastErrorMsg"></span>
+				<input type="text" id="last" class="form-control" :class="{ error: $v.last.$error }" v-model.trim="last" @input="$v.last.$touch()" maxlength="200">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-lg">
+				<label for="email">Email:&nbsp;*</label>
+				<span v-if="$v.$dirty && $v.email.$invalid" class="error-message" v-text="emailErrorMsg"></span>
+				<input type="text" id="email" class="form-control" :class="{ error: $v.email.$error }" v-model.trim="email" @input="$v.email.$touch()" maxlength="200">
+			</div>
+			<div class="col-lg">
+				<label for="phone">Phone:&nbsp;</label>
+				<input type="text" id="phone" class="form-control" v-model.trim="phone" maxlength="200">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col">
+				<label for="address1">Address Line 1:&nbsp;</label>
+				<input type="text" id="address1" class="form-control" v-model.trim="address1" maxlength="200">
+			</div>
+			<div class="col-lg">
+				<label for="address2">Address Line 2:&nbsp;</label>
+				<input type="text" id="address2" class="form-control" v-model.trim="address2" maxlength="200">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-lg">
+				<label for="city">City:&nbsp;</label>
+				<input type="text" id="city" class="form-control" v-model.trim="city" maxlength="100">
+			</div>
+			<div class="col-lg">
+				<label for="blah">State:&nbsp;</label>
+				<span v-if="$v.$dirty && $v.state.$invalid" class="error-message" v-text="stateErrorMsg"></span>
+				<input type="text" id="state" class="form-control" v-model.trim="state" @input="$v.state.$touch()" maxlength="50">
+			</div>
+			<div class="col-lg">
+				<label for="zip">Zip Code:&nbsp;</label>
+				<input type="text" id="zip" class="form-control" v-model.trim="zip" maxlength="20">
+			</div>
+			<div class="col-lg">
+				<label for="county">County:&nbsp;*</label>
+				<span v-if="$v.$dirty && $v.county.$invalid" class="error-message" v-text="countyErrorMsg"></span>
+				<input type="text" id="county" class="form-control" :class="{ error: $v.county.$error }" v-model.trim="county" @input="$v.county.$touch()" maxlength="100">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-lg">
+				<label for="school">Current School:&nbsp;</label>
+				<input type="text" id="school" class="form-control" v-model.trim="school" maxlength="200">
+			</div>
+			<div class="col-lg">
+				<label for="education">Current Education Level:&nbsp;</label>
+				<select id="education" class="form-control" v-model="education">
+					<option value="">Select education level</option>
+					<option>Attending high school</option>
+					<option>High school graduate</option>
+					<option>Attending college</option>
+					<option>Associate's degree graduate</option>
+					<option>Bachelor's degree graduate</option>
+					<option>Master's degree</option>
+					<option>Doctoral or professional degree</option>
+					<option>Other</option>
+				</select>
+			</div>
+		</div>
+		<hr class="mt-5">
+		<h5 class="text-center">Select All Programs of Interest</h5>
+		<span v-if="$v.$dirty && $v.programs.$invalid" class="error-message" v-text="programsErrorMsg"></span>
+		<div class="row">
+			<div class="col-lg border p-2 m-2">
+
+				<h3>Undergraduate</h3>
+
+				<div class="form-check">
+					<input type="checkbox" id="C_1" name="C_1" value="C_1" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_1">BSN</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_200" name="C_200" value="C_200" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_200">Accelerated Second-Degree BSN</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_2" name="C_2" value="C_2" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_2">RN/BSN</label>
+				</div>
+			</div>
+			<div class="col-lg col-lg-offset-2 border p-2 m-2">
+				<h3>MSN</h3>
+				<div class="form-check">
+					<input type="checkbox" id="C_8" name="C_8" value="C_8" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_8">MSN - Adult-Gerontology Clinical Nurse Specialist</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_210" name="C_210" value="C_210" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_210">MSN - Neonatal Clinical Nurse Specialist</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_10" name="C_10" value="C_10" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_10">MSN - Neonatal Nurse Practitioner</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_12" name="C_12" value="C_12" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_12">MSN - Nurse Midwifery</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_13" name="C_13" value="C_13" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_13">MSN - Nursing Education</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_14" name="C_14" value="C_14" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_14">MSN - Nursing Leadership</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_23" name="C_23" value="C_23" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_23">MSN - Psychiatric-Mental Health Nurse
+						Practitioner</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg border p-2 m-2">
+				<h3>Post-Master&#39;s Certificate</h3>
+				<div class="form-check">
+					<input type="checkbox" id="C_16" name="C_16" value="C_16" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_16">Post-Master&#39;s Certificate -
+						Adult-Gerontology</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_220" name="C_220" value="C_220" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_220">Post-Master&#39;s Certificate - Neonatal Clinical
+						Nurse
+						Specialist</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_18" name="C_18" value="C_18" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_18">Post-Master&#39;s Certificate - Neonatal Nurse
+						Practitioner</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_20" name="C_20" value="C_20" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_20">Post-Master&#39;s Certificate - Nurse
+						Midwifery</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_21" name="C_21" value="C_21" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_21">Post-Master&#39;s Certificate - Nursing
+						Education</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_22" name="C_22" value="C_22" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_22">Post-Master&#39;s Certificate - Nursing
+						Leadership</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_24" name="C_24" value="C_24" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_24">Post-Master&#39;s Certificate - Psychiatric-Mental
+						Health
+						Nurse Practitioner</label>
+				</div>
+			</div>
+			<div class="col-lg col-lg-offset-2 border p-2 m-2">
+				<h3>DNP</h3>
+				<div class="form-check">
+					<input type="checkbox" id="C_103" name="C_103" value="C_103" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_103">BSN to DNP - Adult Gerontology Primary Care Nurse
+						Practitioner</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_104" name="C_104" value="C_104" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_104">BSN to DNP - Family Nurse Practitioner</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_107" name="C_107" value="C_107" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_107">BSN to DNP - Nurse Anesthesia</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_105" name="C_105" value="C_105" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_105">Post-Master's DNP - APRN</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_106" name="C_106" value="C_106" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_106">Post-Master's DNP - Leadership</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg border p-2 m-2">
+				<h3>PhD</h3>
+				<div class="form-check">
+					<input type="checkbox" id="C_300" name="C_300" value="C_300" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_300">BSN to PhD - Nursing Education</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_310" name="C_310" value="C_310" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_310">BSN to PhD - Nursing Leadership</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_320" name="C_320" value="C_320" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_320">DNP to PhD</label>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" id="C_6" name="C_6" value="C_6" class="form-check-input" v-model="programs">
+					<label class="form-check-label" for="C_6">PhD</label>
+				</div>
+			</div>
+		</div>
+		<span v-if="$v.$dirty && $v.programs.$invalid" class="error-message" v-text="programsErrorMsg"></span>
+
+		<div class="text-center">
+			<button type="submit" class="btn btn-primary mb-2">Submit</button>
+		</div>
+	</form>
+</div>

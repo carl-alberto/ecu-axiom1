@@ -1,0 +1,5 @@
+[data-wpview-type="ninja_forms"]:before {
+  height: 20px;
+  width: 200px;
+  content: "[ninja_forms /]";
+}

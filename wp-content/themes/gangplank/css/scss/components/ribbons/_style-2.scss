@@ -1,0 +1,233 @@
+/* grey background - pablo callout */
+&.style-2 {
+	background-color: $ribbon-2-main;
+	  color: $ribbon-2-main-text !important;
+  
+	// Headings
+	  .ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+		  color: $default-text;
+	  }
+  
+	  a {
+		  color: $ribbon-2-main-text;
+		  border-color: $ribbon-2-main-text;
+	  }
+	  blockquote {
+	  border-left: 5px solid $ribbon-2-sup;
+	  padding: 1rem 0 1rem 1rem;
+	  p {
+		&:last-child {
+		  margin-bottom: 0px;
+		}
+	  }
+	}
+  
+	@include rib_btn($black, $ribbon-2-main, $white, $ribbon-2-sup);
+  
+	  .pagination-wrap {
+		  .pagination {
+			  border: 1px solid $ribbon-2-sup;
+			  li {
+				  border-right: 1px solid $ribbon-2-sup;
+				  a {
+					  color: $default-text !important;
+					  &:hover {
+						  background-color: $ribbon-2-sup;
+						  color: $ribbon-2-sup-text !important;
+					  }
+				  }
+				  &:last-child {
+					  border-right: 0px;
+				  }
+		  &.active {
+			a {
+			  background-color: $ribbon-2-sup;
+						  color: $ribbon-2-sup-text !important;
+			}
+		  }
+			  }
+		  }
+	  }
+	  #wp-localist-grid {
+		.wp-localist-calendar {
+			border: 1px solid#333;
+			.wp-localist-day {
+				color: #333;
+			}
+			.wp-localist-month {		
+				color: $ribbon-2-main;
+				background-color: #333;
+			}
+		}
+		.wp-localist-event-details {
+			div {
+				color: #333;
+			}
+		}
+	}
+  
+	  /**************************\
+		  SHORTCODES + PLUGINS
+	  \**************************/
+  
+	  // Tablepress
+	  .tablepress {
+		  thead {
+			  th {
+				  background-color: $ribbon-2-sup;
+				  color: $ribbon-2-sup-text;
+				  border-bottom: 0px;
+			  }
+		  }
+		  tbody {
+			  tr {
+				  td {
+					  border-top: 0px !important;
+				  }
+				  &.even {
+					  td {
+						  background-color: darken($ribbon-2-main, 5%) !important;
+						  color: $ribbon-2-main-text !important;
+					  }
+				  }
+				  &.odd {
+					  td {
+						  background-color: $ribbon-2-main !important;
+						  color: $ribbon-2-main-text !important;
+					  }
+				  }
+			  }
+		  }
+	  }
+	  .dataTables_filter {
+		  input {
+			  border: 1px solid $ribbon-2-sup;
+		  }
+	  }
+	  .dataTables_paginate {
+		  a {
+			  border-bottom: 0px;
+			  cursor: pointer;
+			  &.next {
+				  &:after {
+					  text-shadow: none;
+					  color: $ribbon-2-main-text;
+				  }
+			  }
+			  &.previous {
+				  &:before {
+					  text-shadow: none;
+					  color: $ribbon-2-main-text;
+				  }
+			  }
+		  }
+	  }
+  
+	  // Fancyquote
+	  .blockquotes {
+		  .fancy {
+			  hr {
+				  border: 2px solid $ribbon-2-sup;
+			  }
+			  .fa {
+				  color: $ribbon-2-sup;
+			  }
+		  }
+	  }
+  
+	  // Linked / Tabbed grid
+	  .ui_tabbed_grid, .ui_linked_grid {
+		  .grid_post {
+			  &:hover {
+				  span {
+					  background: rgba($ribbon-2-sup, 1);
+				  }
+			  }
+			  span {
+				  background: rgba($ribbon-2-sup, .5);
+			  }
+		  }
+	  }
+  
+	.ui_link_farm {
+	  .ui_link_farm_header {
+		p {
+		  color: $ribbon-2-main-text !important;
+		}
+	  }
+	}
+  
+	.ecu-news {
+	  .ecu-news-column {
+		.ecu-header-section {
+			border-bottom:none;
+		}
+		.ecu-news-item {
+		  border-bottom: none;
+		  a {
+			border-bottom: 0px !important;
+		  }
+		  .ecu-news-info {
+			.read-more {
+				background-color: $ribbon-2-sup;
+			  color: $white;
+			}
+		  }
+		}
+	  }
+	}
+  
+	#wp-localist-list {
+		.wp-localist-calendar {
+		  .wp-localist-day {
+			  color: $default-text;
+		  }
+		}
+		.wp-localist-event-title {
+			color: $default-text;
+		}
+	}
+  
+	  // Dashboard
+	  .ui_dashboard {
+		  .ui_element_wrap {
+			  .dashboard_title {
+				  color: $default-text !important;
+			  }
+			  .dashboard_icon {
+				  .icon-wrap {
+					  background: $ribbon-2-sup;
+					  &.ui_none {
+						  .fa {
+							  color: $ribbon-2-sup-text !important;
+						  }
+					  }
+				  }
+			  }
+		  }
+	  }
+  
+	  /**************************\
+			 RIBBONS
+	  \**************************/
+  
+	  .ribbon-callout {
+		  background-color: $ribbon-2-sup;
+		  color: $ribbon-2-sup-text !important;
+  
+		  // Headings
+		  .ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+			  color: $ribbon-2-sup-text !important;
+		  }
+  
+		  a {
+			  color: $ribbon-2-sup-text;
+			  border-color: $white;
+		  }
+		  @include rib_btn($white, $ribbon-2-sup, $ribbon-2-sup, $white);
+		  blockquote {
+		  border-left: 5px solid $ribbon-2-main;
+		}
+	  }
+  }
+  

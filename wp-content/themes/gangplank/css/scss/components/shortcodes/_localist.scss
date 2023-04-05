@@ -1,0 +1,24 @@
+#wp-localist-grid {
+  .wp-localist-event-card {
+    .wp-localist-calendar {
+      .wp-localist-day {
+        margin-top: 0px;
+        font-family: $heading-font;
+        font-weight:600;        
+      }
+      .wp-localist-month {      
+        font-family: $heading-font;      
+      }
+      .wp-localist-event-title {
+        color:#333;
+        font-family: $heading-font;
+      }
+      .wp-localist-event-details {
+        color: #333;
+        font-size: 1.2rem;
+        line-height: 26.4px;
+        font-family: $heading-font;
+      }
+    }
+  }
+}

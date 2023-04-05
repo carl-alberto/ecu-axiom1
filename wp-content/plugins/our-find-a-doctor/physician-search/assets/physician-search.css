@@ -1,0 +1,87 @@
+#physician_search .physician {
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+}
+#physician_search h3 {
+    font-family: 'Oswald';
+    margin-bottom: .75em;
+}
+
+#physician_search .physician .img-wrap {
+    flex-shrink: 0;
+}
+#physician_search .physician img {
+    width: 120px;
+    height: 168px;
+}
+#physician_search .physician p {
+    margin-bottom: .5rem;
+}
+#physician_search .physician_name {
+    font-size: 16px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#physician_search .image {
+    float: left;
+    width: 125px;
+    height: auto;
+    align-self: flex-start;
+}
+/* IE11 Hack */
+@media all and (-ms-high-contrast:none){
+    #physician_search .image {
+        height: 180px !important;
+    }
+}
+#physician_search .content {
+    float: left;
+    padding-left: 15px;
+}
+#physician_search .clearfix {
+    clear: both;
+}
+#physician_search .btn-sm {
+    background-color: #572c86;
+    border-color: #41215e !important;
+    color: white;
+}
+#physician_search .btn-sm:hover {
+    background-color: #41215e;
+}
+
+#physician_search hr {
+    border-top: 1px dashed rgba(0,0,0,.1);
+}
+
+.pagination {
+    margin-top: 30px;
+}
+
+.pagination .page-item span,
+.pagination .page-item a {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    background-color: #fff;
+    border: 1px solid #ddd !important;
+    transition: all .2s;
+}
+
+.pagination .page-item a:hover {
+    background-color: #572c86;
+    border-color: #572c86 !important;
+    color: #FFFFFF !important;
+}
+
+.pagination .page-item span {
+    z-index: 2;
+    color: #fff;
+    background-color: #41215e;
+    border-color: #41215e !important;
+}

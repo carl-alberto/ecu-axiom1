@@ -1,0 +1,36 @@
+html {
+  font-size: $body-font-size !important;
+  box-sizing: border-box;
+  body {
+    font-family: $body-font !important;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+    font-weight: 400;
+  }
+  p, a, ul, ol, li {
+    font-size: 1rem;
+  }
+  p, li {
+    line-height: 1.5rem;
+  }
+  .btn {
+    cursor: pointer;
+  }
+  section {
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 1rem;
+    }
+  }
+  figcaption {
+    font-style: italic;
+    text-align: center;
+    color: lighten($default-text, 20%);
+    font-size: .9rem;
+    line-height: 17px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

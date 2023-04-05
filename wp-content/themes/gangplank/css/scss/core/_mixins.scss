@@ -1,0 +1,101 @@
+@mixin breakpoint($class) {
+	@if $class == xl {
+		@media screen and (min-width: $screen-xl-min) { @content; }
+	}
+	@else if $class == lg {
+		@media screen and (min-width: $screen-lg-min) { @content; }
+	}
+	@else if $class == md {
+		@media screen and (min-width: $screen-md-min) { @content; }
+	}
+	@else if $class == sm {
+		@media screen and (min-width: $screen-sm-min) { @content; }
+	}
+	@else {
+		@warn "Breakpoint mixin supports: lg, md, sm, xs";
+	}
+}
+
+@mixin ie(){
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    	@content;
+	}
+}
+
+@mixin safari(){
+	@media screen and (min-width:0\0) {
+		@content;
+	}
+}
+@mixin rib_btn($color, $bg, $hover, $hoverbg){
+	.btn-ribbon, .btn-ribbon-simple {
+      background: $bg;
+      color: $color;
+      border: 1px solid $color;
+	  transition: all .2s;
+      &:after {
+        color:$color;
+      }
+      &:hover {
+        background: rgba(0,0,0,.25);
+        color: $white;
+        border: 1px solid $hoverbg;
+        &:after {
+          color: $white;
+        }
+      }
+    }
+}
+@mixin well(){
+	.widget-title {
+		padding: 0px 10px;
+	}
+	border: 1px solid #e1e1e8;
+	background-color: #f7f7f9;
+	padding: 10px 0px;
+	select {
+		height: calc(2.25rem + 2px);
+		display: block;
+	    width: 100%;
+	    padding: .375rem .75rem;
+	    font-size: 1rem;
+	    line-height: 1.5;
+	    color: #495057;
+	    background-color: #fff;
+	    background-clip: padding-box;
+	    border: 1px solid #ced4da;
+	    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		text-transform: none;
+		margin: 0;
+    	font-family: inherit;
+	}
+}
+
+@mixin chevronlist(){
+	ul {
+		padding: 0px;
+		margin: 0px;
+	 li {
+		 list-style: none;
+		 a {
+			 display: block;
+			 border-bottom: 0px !important;
+			 padding: 5px 10px;
+			 line-height: 1.5rem;
+			 &:hover {
+				 background-color: darken(#f7f7f9, 5%);
+			 }
+			 // &:before {
+				//  content: "\f054";
+				//  font-family: $font-awesome;
+				//  margin-right: 10px;
+				//  font-size: .70rem;
+			 // }
+		 }
+	 }
+ }
+}
+
+@mixin text-tags($primary, $secondary, $primarytxt, $secondarytext, $primaryalt, $secondaryalt){
+
+}

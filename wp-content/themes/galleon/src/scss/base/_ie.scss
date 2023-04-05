@@ -1,0 +1,14 @@
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+main {
+    margin-top: 132px;
+}
+.content-wrap {
+    min-height: 88vh;
+}
+.navbar-brand img {
+    max-width: none !important;
+}

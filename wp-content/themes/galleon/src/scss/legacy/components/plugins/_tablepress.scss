@@ -1,0 +1,17 @@
+.tablepress {
+  thead {
+
+  }
+  tbody {
+    td {
+      font-size: $body-font-size !important;
+      font-family: $body-font !important;
+    }
+  }
+
+  th {
+    background-color: #592A8A;
+    color: #fff;
+    transition: all .2s;
+  }
+}

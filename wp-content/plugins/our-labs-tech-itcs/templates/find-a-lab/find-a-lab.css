@@ -1,0 +1,26 @@
+#ecuLabsDataTables_filter {
+    display: none;
+}
+
+#ecuLabs_controls .card.bg-default {
+    padding: 10px;
+    margin: 20px -15px;
+}
+
+#ecuLabs_controls .icon {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+#ecuLabsDataTables .sorting_disabled {
+    text-decoration: none !important;
+}
+#ecuLabsDataTables .sorting_disabled:hover {
+    text-decoration: none !important;
+}
+
+#ecuLabs_wrapper #software {
+    width: 100%;
+}

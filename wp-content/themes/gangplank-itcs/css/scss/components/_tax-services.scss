@@ -1,0 +1,44 @@
+.tax-service-category, .tax-audience {
+    h1 {
+        margin-bottom: 1.5rem !important;
+    }
+    #breadcrumbs {
+        margin-bottom: 0px;
+        border: 0px;
+    }
+    #service-cat-header {
+        background-color: $dark-purple;
+        padding: .75em 0;
+        margin-bottom: 1.5rem;
+        h1 {
+            margin-bottom: 0px !important;
+            color: $white !important;
+            .cat-icon {
+                margin-right: .75rem;
+            }
+        }
+    }
+    #services {
+        .service {
+            margin-bottom: 30px;
+            h2 {
+                font-size: 16pt !important;
+            }
+            hr {
+                margin: 10px 0px;
+            }
+            .actions {
+                a {
+                    color: $ecu-purple !important;
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    transition: .2s all;
+                    border: 0px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

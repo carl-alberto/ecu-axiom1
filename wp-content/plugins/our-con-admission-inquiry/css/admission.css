@@ -1,0 +1,12 @@
+.error {
+	border: 1px solid red;
+}
+
+.error-message {
+	color: red;
+	font-weight: bold;
+}
+
+.form-check {
+	margin-left: 2.5rem;
+}

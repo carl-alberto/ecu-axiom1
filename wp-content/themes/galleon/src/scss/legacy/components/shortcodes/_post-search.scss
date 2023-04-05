@@ -1,0 +1,32 @@
+.shortcode-post-search {
+    h2.h5 {
+        font-size: 1.25rem!important;
+        font-weight: 500;
+        font-family: $heading-font;
+    }
+    .block-link {
+        text-decoration: underline;
+        text-decoration-color: $light-purple;
+        transition: text-decoration-color .2s;
+        &:hover {
+            text-decoration: underline !important;
+            text-decoration-color: $dark-purple;
+        }
+    }
+    .post-search-results {
+        margin-top: 2em;
+    }
+    .post-entry {
+        margin-bottom: 1.5em;
+    }
+    .notice {
+        margin-top: 1.5em;
+    }
+    .date {
+        color: $ecu-purple;
+        margin-top: .5em;
+        margin-bottom: 0px;
+        font-size: .9em;
+        font-weight: bold;
+    }
+}

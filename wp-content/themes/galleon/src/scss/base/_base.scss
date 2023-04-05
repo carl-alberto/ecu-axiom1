@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    min-height: 100vh;
+    font-family: $body-font !important;
+    .content-wrap {
+        flex: 1 0 0;
+    }
+}
+
+.widget {
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#google_translate_element {
+    .goog-te-gadget {
+        color: #FFFFFF !important;
+        select {
+            height: 34px !important;
+            padding: 6px 12px !important;
+            font-size: 14px !important;
+            line-height: 1.42857143 !important;
+            color: #555 !important;
+            background-color: #fff !important;
+            background-image: none !important;
+            border: 1px solid #ccc !important;
+            border-radius: 0px !important;
+        }
+
+        a {
+            color: #FFFFFF !important;
+            &:hover {
+                color: #FEC923 !important;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.ecu-h2,
+.ecu-h3,
+.ecu-h4,
+.ecu-h5,
+.ecu-h6 {
+    color: $ecu-purple;
+    font-weight: normal;
+    font-weight: 400;
+    font-family: $heading-font;
+}
+
+.wp-caption {
+    max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+main {
+    padding-top: $spacer * 2;
+    padding-bottom: $spacer * 2;
+    #entry-content {
+        overflow-x: hidden;
+        // &>*{
+        //     margin-left: auto;
+        //     margin-right: auto;
+        // }
+        // &>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+        //     width: 100%;
+        //     padding-left: 15px;
+        //     padding-right: 15px;
+        //     @include breakpoint(sm){
+        //         width: 510px;
+        //         max-width: 1140px;
+        //         width: calc(100% - 4rem);
+        //         margin-left: auto;
+        //         margin-right: auto;
+        //     }
+        //     @include breakpoint(md){
+        //         width: 690px;
+        //     }
+        //     @include breakpoint(lg){
+        //         width: 930px;
+        //     }
+        //     @include breakpoint(xl){
+        //         width: 1140px;
+        //     }
+        // }
+        .alignleft {
+            float: left;
+            margin-right: $spacer;
+        }
+        .alignright {
+            float: right;
+            margin-left: $spacer;
+        }
+    }
+    table {
+        margin-bottom: 1rem;
+    }
+}
+
+// Removes border; changes display to inline block so link will have height relative to content; useful when hyperlinking transparent images
+.block-link {
+    border: 0px;
+    display: block;
+}
+
+// Displays underline by default for link
+.underline {
+    text-decoration: underline;
+    transition: all .2s;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+input[value="Submit"] {
+    cursor: pointer;
+}
+
+html figcaption {
+    font-style: italic;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 17px;
+}

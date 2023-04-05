@@ -1,0 +1,32 @@
+.ui_tabbed_grid {
+  .ui_tabbed_grid_nav {
+    li {
+      margin-left: 15px;
+      &:first-child {
+        margin-left: 0px;
+      }
+      a {
+
+      }
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      a {
+        border-bottom: 0px !important;
+        padding: 0%;
+        .tab-container {
+          &.col-md-4 {
+            width: 33%;
+          }
+          &.col-md-6 {
+            width: 50%;
+          }
+          &.col-md-12 {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

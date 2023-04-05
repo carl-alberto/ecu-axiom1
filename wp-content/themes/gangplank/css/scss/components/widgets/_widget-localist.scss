@@ -1,0 +1,81 @@
+.so-widget-ecu-localist {
+	margin-bottom: 10px;
+
+	.localist-widget-list {
+		list-style-type: none;
+		padding-left: 0;
+		margin-left: 0;
+		margin-bottom: 10px;
+		padding: 0px;
+
+		li {
+			display: block;
+			padding: 0px;
+			margin-bottom: 10px;
+			cursor: pointer;
+
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
+
+		a {
+			color: #000;
+
+			&:hover {
+				text-decoration:none;
+			}
+		}
+	}
+
+	.localist-widget-event-date {
+		width: 50px;
+		background-color: #572C86
+;
+		display: inline-block;
+		padding: 10px 10px;
+
+		.localist-widget-event-date-month {
+			text-transform: uppercase;
+			text-align: center !important;
+			font-size: 1.125em;
+			color: #fff !important;
+			-webkit-font-smoothing: antialiased;
+		}
+		.localist-widget-event-date-day {
+			font-size: 2em;
+			text-align: center;
+			color: #fec923;
+			-webkit-font-smoothing: antialiased;
+		}
+	}
+
+	.localist-widget-event-info {
+		display: inline-block;
+		vertical-align: top;
+		max-width: 60% !important;
+		color: #333;
+		padding-left: 10px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		zoom: 1; /* give it layout (this can be some other css that does likewise) */
+		*display: inline;
+
+		&:hover {
+			color: #572C86
+;
+		}
+
+		.localist-widget-event-info-title {
+			font-weight: bold;
+		}
+	}
+
+	.localist-widget-align-right {
+		text-align: right;
+		float: right;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+	}
+}

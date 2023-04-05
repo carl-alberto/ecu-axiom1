@@ -1,0 +1,42 @@
+# Copyright (C) 2015 Envira Gallery - ZIP Importer Addon
+# This file is distributed under the same license as the Envira Gallery - ZIP Importer Addon package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Envira Gallery - ZIP Importer Addon 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/envira-zip-"
+"importer\n"
+"POT-Creation-Date: 2015-12-21 11:47+0100\n"
+"PO-Revision-Date: 2016-02-23 16:08+0100\n"
+"Last-Translator: José Luis Pérez-Lozana <joseluis.perez.lozana@gmail."
+"com>\n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: includes/admin/metaboxes.php:72
+msgid "ZIP Files"
+msgstr "Archivos ZIP"
+
+#. Plugin Name of the plugin/theme
+msgid "Envira Gallery - ZIP Importer Addon"
+msgstr "Envira Gallery - Complemento ZIP Importer"
+
+#. Plugin URI of the plugin/theme
+msgid "http://enviragallery.com"
+msgstr "http://enviragallery.com"
+
+#. Description of the plugin/theme
+msgid "Enables ZIP file uploads directly into Envira Galleries"
+msgstr "Permite la carga de archivos ZIP directamente en Galerías Envira"
+
+#. Author of the plugin/theme
+msgid "Envira Team"
+msgstr "Envira Team"
+
+#. Author URI of the plugin/theme
+msgid "http://enviragallery.com"
+msgstr "http://enviragallery.com"

@@ -1,0 +1,78 @@
+{
+    "name": "wp-blocks",
+    "version": "1.0.0",
+    "description": "Plugin providing ECU custom blocks",
+    "main": "src/wp-blocks.js",
+    "source": {
+        "src/**/*.css": "dist/styles"
+    },
+    "author": "atwebdev",
+    "license": "ISC",
+    "browserslist": [
+        "defaults",
+        "not op_mob 59"
+    ],
+    "scripts": {
+        "start": "parcel src/wp-blocks.js",
+        "watch": "parcel watch src/wp-blocks.js",
+        "build": "parcel build src/wp-blocks.js",
+        "buildSassOurBlocksPlugin": "sass src/wp-blocks.scss:dist/wp-blocks.css",
+        "watchSassOurBlocksPlugin": "sass --watch src/scss/ -o dist/"
+    },
+    "resolutions": {
+        "browserslist": "4.14.2",
+        "caniuse-lite": "1.0.30001129"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.10",
+        "@wordpress/api-fetch": "^3.21.1",
+        "@wordpress/babel-plugin-makepot": "^3.10.0",
+        "@wordpress/babel-preset-default": "^4.20.0",
+        "@wordpress/blocks": "^6.25.1",
+        "@wordpress/compose": "^3.23.1",
+        "@wordpress/element": "^2.19.0",
+        "axios": "^0.21.1",
+        "bootstrap": "^4.5.3",
+        "browserslist": "^4.14.4",
+        "classnames": "^2.2.6",
+        "install": "^0.13.0",
+        "jquery": "^3.5.1",
+        "lodash": "^4.17.20",
+        "npm": "^6.14.11",
+        "parcel-bundler": "^1.12.5",
+        "popper.js": "^1.16.1",
+        "postcss-modules": "^2.0.0",
+        "precss": "^4.0.0",
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0",
+        "sass": "^1.32.2",
+        "shortid": "^2.2.16",
+        "webpack": "^4.45.0"
+    },
+    "babel": {
+        "presets": [
+            "@wordpress/default"
+        ]
+    },
+    "postcss": {
+        "plugins": [
+            "precss",
+            "postcss-nested"
+        ]
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.30",
+        "@fortawesome/free-brands-svg-icons": "^5.14.0",
+        "@fortawesome/free-regular-svg-icons": "^5.14.0",
+        "@fortawesome/free-solid-svg-icons": "^5.14.0",
+        "@fortawesome/react-fontawesome": "^0.1.11",
+        "@wordpress/block-editor": "^5.2.1",
+        "@wordpress/components": "^10.2.0",
+        "@wordpress/icons": "^2.9.0",
+        "jquery": "^3.5.1",
+        "parcel": "^2.8.3",
+        "popper.js": "^1.16.1",
+        "prop-types": "^15.7.2",
+        "react-transition-group": "^4.4.1"
+    }
+}

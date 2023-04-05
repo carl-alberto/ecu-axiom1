@@ -1,0 +1,19 @@
+#postbox-container-1 {
+    width: 100% !important;
+}
+.postbox-container {
+    .title {
+        padding: 0px !important;
+        margin-bottom: 15px !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        line-height: 16px !important;
+    }
+    .alert {
+        border-radius: 0px;
+        i {
+            margin-right: 15px;
+            font-size: 15px;
+        }
+    }
+}

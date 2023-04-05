@@ -1,0 +1,68 @@
+#wp-localist-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#wp-localist-list .wp-localist-event-details {
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*width: 82%;*/
+    zoom: 1;
+    border-left: 1px solid #41215E;
+
+}
+
+#wp-localist-list li {
+    display: block;
+    cursor: pointer;
+}
+
+#wp-localist-list .wp-localist-month abbr {
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+#wp-localist-list .wp-localist-calendar {
+    text-align:center;
+    /*margin-right: 10px;*/
+    display:inline-block;
+    vertical-align: top;
+    /*width: 30px;*/
+    padding: 10px 0;
+    zoom: 1;
+}
+
+#wp-localist-list .wp-localist-calendar .wp-localist-month {
+    text-transform: uppercase;
+}
+
+#wp-localist-list .wp-localist-calendar .wp-localist-day {
+    color:#41215E;
+    font-size:2.0em;
+}
+
+#wp-localist-list .wp-localist-event-title {
+    color:#000000;
+}
+
+#wp-localist-list .wp-localist-event-location {
+    color:#000000;
+}
+
+#wp-localist-list .wp-localist-event-time {
+    color:#000000;
+}
+
+#wp-localist-list a {
+    color:#000000;
+}
+
+#wp-localist-list a:hover, #wp-localist-list a:focus, #wp-localist-list a:active {
+    text-decoration:none;
+}

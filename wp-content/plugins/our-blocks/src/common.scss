@@ -1,0 +1,102 @@
+ @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Quattrocento:400,700');
+
+$oswald         :   'Oswald', sans-serif;
+$quattrocento   :   'Quattrocento', sans-serif;
+
+$black: #000000;
+$brown: #D8D7D3;
+$dark-brown: #7B746A;
+$dark-teal: #004261;
+$ecu-purple: #592A8A;
+$dark-purple: #42145F;
+$lavender: #B1AFC5;
+$plum: #77216F;
+$red: #FF0000;
+$teal: #00818F;
+$text: #333333;
+$white: #FFFFFF;
+
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+@mixin breakpoint($class) {
+	@if $class == xl {
+		@media screen and (min-width: $screen-xl-min) { @content; }
+	}
+	@else if $class == lg {
+		@media screen and (min-width: $screen-lg-min) { @content; }
+	}
+	@else if $class == md {
+		@media screen and (min-width: $screen-md-min) { @content; }
+	}
+	@else if $class == sm {
+		@media screen and (min-width: $screen-sm-min) { @content; }
+	}
+	@else {
+		@warn "Breakpoint mixin supports: lg, md, sm, xs";
+	}
+}
+
+.error-message {
+	color: $red;
+	margin-top: -20px;
+	text-align: right;
+	font-size: 95%;
+}
+.wp-block {
+    max-width: 95%;
+}
+.wp-admin {
+	.editor-post-title__input {
+		font-family: $oswald;
+		font-weight: 400 !important;
+		color: $ecu-purple !important;
+	}
+	.wp-block {
+		h1, h2, h3, h4, h5, h6 {
+			font-family: $oswald;
+			font-weight: 400 !important;
+		}
+	}
+}
+#entry-content {
+    .btn-primary {
+        color: $white !important;
+        background-color: $ecu-purple !important;
+        border-color: $black !important;
+        font-family: $oswald;
+        border-radius: 0px !important;
+    }
+    .btn-ribbon {
+        background: $white;
+        color: $ecu-purple;
+        padding: 6px 12px;
+        border: 1px solid $ecu-purple;
+        font-family: $oswald;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: all 0.2s;
+        font-size: 0.875rem;
+        display: inline-block;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1em;
+        &:after {
+            font-family: "Font Awesome 5 Free";
+            content: "\f054";
+            color: $ecu-purple;
+            margin-left: 5px;
+            transition: all 0.2s;
+        }
+        &:hover {
+            background: $ecu-purple;
+            color: $white;
+            text-decoration: none;
+            &:after {
+                color: $white;
+            }
+        }
+    }
+}

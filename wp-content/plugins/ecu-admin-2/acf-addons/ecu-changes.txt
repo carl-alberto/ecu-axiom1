@@ -1,0 +1,1 @@
+Change .cancel-crop-button text to 'Skip Cropping' in acf-image-crop

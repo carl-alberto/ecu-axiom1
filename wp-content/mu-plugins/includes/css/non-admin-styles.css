@@ -1,0 +1,43 @@
+/* Hides Flow Flow tabs for non admins */
+li[data-tab="grid"], li[data-tab="stylings"], li[data-tab="css"] {
+  display: none !important;
+}
+/* Hides envira's add ons menu */
+#menu-posts-envira > ul > li:nth-child(5),
+#menu-posts-envira > ul > li:nth-child(6){
+  display: none !important;
+}
+
+/* Hides Ninja Form Add Form Button */
+.nf-insert-form {
+  display: none !important;
+}
+/* Hides insert post element on tablepress */
+.toplevel_page_tablepress .shortcake-add-post-element {
+  display: none !important;
+}
+
+#toplevel_page_edit-post_type-acf-field-group{
+  display: none !important;
+}
+
+/* Hides the menus we don't want users to access for ninja forms */
+#wpbody-content > div.wrap > h2 > a[href="/wp-admin/admin.php?page=ninja-forms-uploads&tab=external"], /* external settings tab on file uploads page */
+#ninja-forms-dashboard > div > nav[class="sections"], /* Menu on dashboard page */
+#wpbody-content > div.wrap > h2 > a[href = "/wp-admin/admin.php?page=nf-settings&tab=licenses"],/* Licenses tab on settings page */
+#toplevel_page_ninja-forms > ul > li > a[href = "admin.php?page=nf-system-status"], /* menu link */
+#toplevel_page_ninja-forms > ul > li > a[href = "admin.php?page=nf-import-export"], /* menu link */
+#toplevel_page_ninja-forms > ul > li > a[href = "admin.php?page=ninja-forms#apps"], /* menu link */
+#toplevel_page_ninja-forms > ul > li > a[href = "admin.php?page=nf-styling"] {   /* menu link */
+	display: none !important;
+}
+
+/* Hides cron menus from non-admins */
+[href*="wp-cron-control"], [href*="crontrol_admin_options_page"], [href*="crontrol_admin_manage_page"] {
+  display: none !important;
+}
+
+/* Hides comments from non-admins */
+#menu-comments {
+  display: none !important;
+}

@@ -1,0 +1,241 @@
+/* light teal background - dark teal callout */
+&.style-4 {
+  background-color: $ribbon-4-main;
+	color: $ribbon-4-main-text !important;
+
+  // Headings
+	.ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+		color: $white;
+	}
+
+	a {
+		color: $ribbon-4-main-text;
+		border-color: $ribbon-4-main-text;
+		&:hover {
+			border-color: darken($ribbon-4-main-text, 40%);
+		}
+	}
+	blockquote {
+    border-left: 5px solid $ribbon-4-sup;
+    padding: 1rem 0 1rem 1rem;
+    p {
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .btn-ribbon,.btn-ribbon-simple {
+    background: $ribbon-4-main !important;
+    color: $ribbon-4-main-text !important;
+    border: 1px solid $white !important;
+    &:hover {
+      background: $ribbon-4-main-text !important;
+      color: $ribbon-4-main !important;
+      border: 1px solid $ribbon-4-main !important;
+      &:after {
+        color: $ribbon-4-main !important;
+      }
+    }
+  }
+
+	.pagination-wrap {
+		.pagination {
+			border: 1px solid $ribbon-4-sup;
+			li {
+				border-right: 1px solid $ribbon-4-sup;
+				a {
+					color: $default-text !important;
+					&:hover {
+						background-color: $ribbon-4-sup;
+						color: $ribbon-4-sup-text !important;
+					}
+				}
+				&:last-child {
+					border-right: 0px;
+				}
+        &.active {
+          a {
+            background-color: $ribbon-4-sup;
+						color: $ribbon-4-sup-text !important;
+          }
+        }
+			}
+		}
+	}
+
+	/**************************\
+	    SHORTCODES + PLUGINS
+	\**************************/
+
+	// Tablepress
+	.tablepress {
+		thead {
+			th {
+				background-color: $ribbon-4-sup;
+				color: $ribbon-4-sup-text;
+				border-bottom: 0px;
+			}
+		}
+		tbody {
+			tr {
+				td {
+					border-top: 0px !important;
+				}
+				&.even {
+					td {
+						background-color: darken($ribbon-4-main, 5%) !important;
+						color: $ribbon-4-main-text !important;
+					}
+				}
+				&.odd {
+					td {
+						background-color: $ribbon-4-main !important;
+						color: $ribbon-4-main-text !important;
+					}
+				}
+			}
+		}
+	}
+	.dataTables_filter {
+		input {
+			border: 1px solid $ribbon-4-sup;
+		}
+	}
+	.dataTables_paginate {
+		a {
+			border-bottom: 0px;
+			cursor: pointer;
+			&.next {
+				&:after {
+					text-shadow: none;
+					color: $ribbon-4-main-text;
+				}
+			}
+			&.previous {
+				&:before {
+					text-shadow: none;
+					color: $ribbon-4-main-text;
+				}
+			}
+		}
+	}
+
+
+
+	// Fancyquote
+	.blockquotes {
+		.fancy {
+			hr {
+				border: 2px solid $ribbon-4-sup;
+			}
+			.fa {
+				color: $ribbon-4-sup;
+			}
+		}
+	}
+
+	// Linked / Tabbed grid
+	.ui_tabbed_grid, .ui_linked_grid {
+		.grid_post {
+			&:hover {
+				span {
+					background: rgba($ribbon-4-sup, 1);
+				}
+			}
+			span {
+				background: rgba($ribbon-4-sup, .5);
+			}
+		}
+	}
+
+  .ui_link_farm {
+    .ui_link_farm_header {
+      p {
+        color: $ribbon-4-main-text !important;
+      }
+    }
+  }
+
+  .ecu-news {
+    .ecu-news-column {
+      .ecu-header-section {
+        border-bottom: 1px solid $ribbon-4-main-text;
+      }
+      .ecu-news-item {
+        border-bottom: 1px solid $ribbon-4-main-text;
+        a {
+          border-bottom: 0px !important;
+        }
+        .ecu-news-info {
+          .read-more {
+            color: $ribbon-4-main-text;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+	// Dashboard
+	.ui_dashboard {
+		.ui_element_wrap {
+			.dashboard_title {
+				color: $default-text !important;
+			}
+			.dashboard_icon {
+				.icon-wrap {
+					background: $ribbon-4-sup;
+					&.ui_none {
+						.fa {
+							color: $ribbon-4-sup-text !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//dashboard
+
+
+	/**************************\
+           RIBBONS
+	\**************************/
+
+	.ribbon-callout {
+		background-color: $ribbon-4-sup;
+		color: $ribbon-4-sup-text !important;
+
+		// Headings
+		.ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+			color: $ribbon-4-sup-text !important;
+		}
+
+		a {
+			color: $ribbon-4-sup-text !important;
+			&:hover {
+				border-color: lighten($ribbon-4-sup, 40%) !important;
+				&:after {
+					color: $ribbon-4-sup-text;
+				}
+			}
+		}
+    .btn-ribbon {
+      background: $ribbon-4-sup !important;
+      color: $white !important;
+      border: 1px solid $white !important;
+      &:hover {
+        background: $white !important;
+        color: $ribbon-4-sup !important;
+        border: 1px solid $ribbon-4-sup !important;
+        &:after {
+          color: $ribbon-4-sup !important;
+        }
+      }
+    }
+		blockquote {
+	    border-left: 5px solid $ribbon-4-main;
+	  }
+	}
+}

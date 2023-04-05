@@ -1,0 +1,364 @@
+.ecu-news-item {
+	/*padding: 5px;*/
+}
+
+.ecu-news-horizontal-list-center ul {
+	display: table;
+	/*margin-right: auto;*/
+	/*margin-left: auto;*/
+   	padding: 0;
+}
+
+.ecu-news-horizontal-list li {
+	list-style-type:none;
+    float:left;
+    /*max-width: 194px;*/
+    /*margin-right: 20px;*/
+ }
+
+.ecu-video-controls {
+	background-color: rgba(255, 255, 255, 0.7);
+	top: 10px;
+	font-size: 12px;
+	line-height: 1;
+	padding: 0.75em;
+	position: absolute;
+	right: 10px;
+}
+
+.ecu-more-link {
+	margin-top: 11px;
+    float: right;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ecu-no-underline:hover {
+    text-decoration: none !important;
+}
+
+.ecu-video {
+	line-height: 0;
+	position: relative;
+}
+
+.ecu-text-underline:hover {
+    text-decoration: underline;
+}
+
+.ecu-video-banner {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+   	left: 58%;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	color: #fff;
+	transform: translate(-50%, -50%);
+}
+.ecu-video-banner-title {
+	font-size: 4em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+.ecu-video-banner-teaser {
+	font-size: 24px;
+    display: inline-block;
+	font-family: 'UniversRoman',Arial,sans-serif;
+	line-height: 1em;
+	margin-top: 10px;
+}
+
+/* ECU custom carousel styles*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: inherit !important;
+	height: inherit !important;
+}
+.ecu-carousel-indicators {
+	position: absolute;
+	top: 103%;
+	right: 45%;
+	z-index: 5;
+	margin: 0;
+	list-style: none;
+}
+.ecu-carousel-indicators li {
+	display: block;
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin-left: 5px;
+	text-indent: -999px;
+	background-color: #cdaeed;
+	background-color: rgba(89, 42, 138, 0.25);
+	border-radius: 5px;
+}
+.ecu-carousel-indicators .active {
+	background-color: #592a8a;
+}
+.ecu-carousel-caption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background: #000000;
+	background: rgba(0, 0, 0, 0.55);
+}
+@media (max-width: 480px) {
+	.ecu-carousel-caption {
+		background: #482071;
+	}
+}
+
+.ecu-carousel-caption a {
+	background: #000000;
+}
+
+.ecu-carousel-title {
+	color: #fff;
+	font-family: Times, serif;
+	font-weight: normal;
+	font-size: 2.25em;
+	text-rendering: optimizelegibility;
+	border: 0;
+    line-height: 34px;
+    margin: 0;
+}
+.ecu-play {
+	text-decoration: none;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+.ecu-pause {
+	text-decoration: none;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+.ecu-play:hover {
+	text-decoration: none;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.ecu-pause:hover {
+	text-decoration: none;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.ecu-features-archive {
+	text-align: right;
+}
+.ecu-control-links {
+	margin-top: -15px;
+}
+
+/* Carousel fade transition */
+.carousel .item {
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-ms-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+.carousel .active.left {
+	left: 0;
+	opacity: 0;
+	z-index: 2;
+}
+.carousel-inner > .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 2;
+}
+.carousel .next {
+	left: 0;
+	opacity: 1;
+	z-index: 1;
+}
+
+.ecu-mylinks-mobile {
+	padding-bottom: 25px;
+}
+
+/* ECU Homepage styles */
+/*.ecu-news-column {
+	padding-right: 15px;
+}*/
+
+.ecu-news-item {
+	margin-bottom: 10px;
+	/*padding: 15px 0;*/
+	border-bottom: 1px solid #ddd;
+}
+.ecu-news-item a {
+	border: none !important;
+}
+.ecu-news-item a > p {
+	font-weight: normal;
+	color: #000;
+}
+
+.ecu-news-item a:hover {
+	text-decoration: none;
+}
+.ecu-news-item:last-child {
+	border-bottom: none;
+}
+.ecu-news-title {
+	font-family: Times, serif;
+	font-weight: normal;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	line-height: 20px;
+	margin-bottom: 10px;
+	border: 0;
+}
+.ecu-news-info p {
+	color: #000;
+}
+.ecu-news-info p.read-more {
+	font-family: "Oswald", sans-serif !important;
+  font-weight: 300;
+  background-color: #572C86;
+  color: #fff;
+  display: inline-block;
+  padding: 7px 10px;
+	text-align: center;
+  transition: all;
+	text-transform: uppercase;
+	font-weight: 500;
+	cursor: pointer;
+}
+.ecu-news-info p.read-more:hover {
+	text-decoration: none;
+}
+.ecu-news-thumb img {
+	border: 0px solid #000;
+	width: 100% !important;
+}
+.ecu-sidebar {
+	color: #333;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.ecu-header-section > a {
+	margin-top: 11px;
+	float: right;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.ecu-header-section {
+	border-bottom: 1px #999 solid;
+	margin-bottom: 15px;
+}
+
+.ecu-connect img {
+	margin: 0 3px 5px;
+}
+.ecu-mylinks-mobile {
+	overflow: hidden;
+}
+.ecu-mylinks-mobile h3 {
+	font-family: Times, serif;
+	font-weight: normal;
+	color: #592a8a;
+	border-bottom: 1px #999 solid;
+}
+.ecu-mylinks {
+	background-color: #ededed;
+	padding: 10px;
+}
+.ecu-mylinks-list {
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+}
+.ecu-mylinks-list-item, .ecu-mylinks-list-item a {
+	color: #592a8a;
+	font-weight: bold;
+}
+.ecu-mylinks ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+
+.ecu-footer-logo {
+	margin-left: 2px;
+}
+
+.ecu-footer-text {
+	overflow: hidden;
+}
+/* Fix padding when switching to < 767 */
+@media (max-width: 767px) {
+	.ecu-content-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.ecu-news-column {
+		padding-right: 0;
+	}
+
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	.ecu-event-info {
+		width: 70%;
+	}
+	.ecu-event-date {
+		padding-right: 8px;
+	}
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (max-width: 768px) {
+	.ecu-connect {
+		margin-bottom: 20px;
+	}
+	.ecu-events {
+		margin-bottom: 0px;
+	}
+	.ecu-news-item {
+		margin-bottom: 10px;
+		padding-bottom: 0px;
+	}
+	.ecu-features-archive {
+		padding-right: 10px;
+	}
+	.ecu-play-pause {
+		padding-left: 10px;
+	}
+
+}
+
+/* Phone landscape */
+@media (max-width: 480px) {
+	.ecu-carousel-caption {
+		position: static;
+	}
+	.carousel-inner .item a:hover {
+		text-decoration: none;
+	}
+	.ecu-event-info {
+		max-width: 160px;
+	}
+	.ecu-news-thumb {
+		display: none !important;
+	}
+	.ecu-news-info {
+		width: auto !important;
+	}
+
+}

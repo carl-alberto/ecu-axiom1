@@ -1,0 +1,117 @@
+#main .gsc-control-searchbox-only,
+aside .gsc-control-searchbox-only {
+  font-family: "Quattrocentro", Times New Roman, serif; }
+  #main .gsc-control-searchbox-only table,
+  aside .gsc-control-searchbox-only table {
+    margin: 0; }
+  #main .gsc-control-searchbox-only td.gsc-search-button,
+  aside .gsc-control-searchbox-only td.gsc-search-button {
+    padding: 0em;
+    height: 40px; }
+  #main .gsc-control-searchbox-only td.gsc-input,
+  aside .gsc-control-searchbox-only td.gsc-input {
+    font-family: 'Oswald',sans-serif;
+    padding-right: 0px !important;
+    padding-left: 0px;
+    height: 100%; }
+  #main .gsc-control-searchbox-only table,
+  #main .gsc-control-searchbox-only tr,
+  #main .gsc-control-searchbox-only td,
+  aside .gsc-control-searchbox-only table,
+  aside .gsc-control-searchbox-only tr,
+  aside .gsc-control-searchbox-only td {
+    border: none; }
+  #main .gsc-control-searchbox-only .gsc-search-button-v2,
+  aside .gsc-control-searchbox-only .gsc-search-button-v2 {
+    background-color: #592A8A;
+    margin-left: 0px !important;
+    padding: 10px 27px;
+    border-radius: 0;
+    margin: 0; }
+    #main .gsc-control-searchbox-only .gsc-search-button-v2:hover,
+    aside .gsc-control-searchbox-only .gsc-search-button-v2:hover {
+      background-color: #7236b1; }
+    #main .gsc-control-searchbox-only .gsc-search-button-v2 svg,
+    aside .gsc-control-searchbox-only .gsc-search-button-v2 svg {
+      max-width: none; }
+  #main .gsc-control-searchbox-only a,
+  aside .gsc-control-searchbox-only a {
+    border-bottom: none !important; }
+  #main .gsc-control-searchbox-only input,
+  aside .gsc-control-searchbox-only input {
+    background-image: none !important;
+    text-indent: initial !important; }
+#main .gsc-control-cse,
+aside .gsc-control-cse {
+  width: 100% !important; }
+  #main .gsc-control-cse table,
+  #main .gsc-control-cse tr,
+  #main .gsc-control-cse td,
+  aside .gsc-control-cse table,
+  aside .gsc-control-cse tr,
+  aside .gsc-control-cse td {
+    border: none; }
+  #main .gsc-control-cse .gsc-above-wrapper-area table,
+  aside .gsc-control-cse .gsc-above-wrapper-area table {
+    margin: 0; }
+  #main .gsc-control-cse .gs-title,
+  aside .gsc-control-cse .gs-title {
+    font-family: "Oswald", Arial, sans-serif; }
+  #main .gsc-control-cse .gs-snippet,
+  aside .gsc-control-cse .gs-snippet {
+    font-family: "Quattrocento", Times, serif; }
+  #main .gsc-control-cse .gsc-result-info-container,
+  aside .gsc-control-cse .gsc-result-info-container {
+    padding: 35px 0; }
+  #main .gsc-control-cse *,
+  #main .gsc-control-cse *::before,
+  #main .gsc-control-cse *::after,
+  aside .gsc-control-cse *,
+  aside .gsc-control-cse *::before,
+  aside .gsc-control-cse *::after {
+    word-break: normal !important;
+    word-wrap: normal !important; }
+  #main .gsc-control-cse .gsc-option-menu,
+  aside .gsc-control-cse .gsc-option-menu {
+    z-index: 1000000 !important; }
+  #main .gsc-control-cse .gcsc-find-more-on-google svg,
+  aside .gsc-control-cse .gcsc-find-more-on-google svg {
+    display: inline; }
+#main .gs-no-results-result .gs-snippet,
+#main .gs-error-result .gs-snippet,
+aside .gs-no-results-result .gs-snippet,
+aside .gs-error-result .gs-snippet {
+  color: #592A8A !important;
+  border: 1px solid #592A8A !important;
+  background-color: #f3edf9 !important; }
+#main .gsc-cursor-box,
+aside .gsc-cursor-box {
+  margin: 15px 0px; }
+  #main .gsc-cursor-box .gsc-cursor,
+  aside .gsc-cursor-box .gsc-cursor {
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    #main .gsc-cursor-box .gsc-cursor .gsc-cursor-page,
+    aside .gsc-cursor-box .gsc-cursor .gsc-cursor-page {
+      border-top: 1px solid #FFF;
+      border-bottom: 1px solid #FFF;
+      border-left: 1px solid #FFF;
+      cursor: pointer;
+      padding: 8px 12px;
+      margin-right: 0px !important;
+      background-color: #592A8A;
+      color: #FFF;
+      text-decoration: none; }
+      #main .gsc-cursor-box .gsc-cursor .gsc-cursor-page:last-child,
+      aside .gsc-cursor-box .gsc-cursor .gsc-cursor-page:last-child {
+        border-right: 1px solid #CCC; }
+      #main .gsc-cursor-box .gsc-cursor .gsc-cursor-page:hover,
+      aside .gsc-cursor-box .gsc-cursor .gsc-cursor-page:hover {
+        background-color: #592A8A;
+        text-decoration: none; }
+      #main .gsc-cursor-box .gsc-cursor .gsc-cursor-page.gsc-cursor-current-page,
+      aside .gsc-cursor-box .gsc-cursor .gsc-cursor-page.gsc-cursor-current-page {
+        background-color: #77216F; }
+
+/*# sourceMappingURL=google-search.css.map */

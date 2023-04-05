@@ -1,0 +1,275 @@
+/* Yellow background - dark yellow callout */
+&.style-5 {
+	background-color: $ribbon-5-main;
+	  color: $ribbon-5-main-text !important;
+  
+	// Headings
+	  .ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+		  color: $default-text;
+	  }
+  
+	  a {
+		  color: $ribbon-5-main-text !important;
+		  border-color: $ribbon-5-main-text;
+		  &:hover {
+			  border-color: darken($ribbon-5-main-text, 40%);
+		  }
+	  }
+	  blockquote {
+	  border-left: 5px solid $ribbon-5-sup;
+	  padding: 1rem 0 1rem 1rem;
+	  p {
+		&:last-child {
+		  margin-bottom: 0px;
+		}
+	  }
+	}
+  
+	.btn-ribbon, .btn-ribbon-simple {
+	  background: $ribbon-5-main !important;
+	  color: $white !important;
+	  border: 1px solid $white !important;
+	  &:hover {
+		background: $white !important;
+		color: $ribbon-5-main !important;
+		border: 1px solid $ribbon-5-main !important;
+		&:after {
+		  color: $ribbon-5-main !important;
+		}
+	  }
+	}
+  
+	  .pagination-wrap {
+		  .pagination {
+			  border: 1px solid $ribbon-5-sup;
+			  li {
+				  border-right: 1px solid $ribbon-5-sup;
+				  a {
+					  color: $default-text !important;
+					  &:hover {
+						  background-color: $ribbon-5-sup;
+						  color: $ribbon-5-sup-text !important;
+					  }
+				  }
+				  &:last-child {
+					  border-right: 0px;
+				  }
+		  &.active {
+			a {
+			  background-color: $ribbon-5-sup;
+						  color: $ribbon-5-sup-text !important;
+			}
+		  }
+			  }
+		  }
+	  }
+  
+	  /**************************\
+		  SHORTCODES + PLUGINS
+	  \**************************/
+  
+	// Flowflow
+	.ff-stream {
+	  .ff-header {
+	  }
+	  .ff-stream-wrapper {
+		article {
+		  &.ff-item {
+			h4 {
+			}
+			.ff-content {
+			  &:first-child {
+			  }
+			}
+			.picture-item__inner {
+			  .ff-label-wrapper {
+				.ff-icon {
+				  .ff-icon-inner {
+					background: $ecu-purple !important;
+				  }
+				}
+			  }
+			  .ff-item-bar {
+				background: $ecu-purple !important;
+				>a {
+				}
+				.ff-share-wrapper {
+				  .ff-icon-share {
+				  }
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  
+	  // Tablepress
+	  .tablepress {
+		  thead {
+			  th {
+				  background-color: $ribbon-5-sup;
+				  color: $ribbon-5-sup-text;
+				  border-bottom: 0px;
+			  }
+		  }
+		  tbody {
+			  tr {
+				  td {
+					  border-top: 0px !important;
+				  }
+				  &.even {
+					  td {
+						  background-color: lighten($ribbon-5-main, 5%) !important;
+						  color: $ribbon-5-main-text !important;
+					  }
+				  }
+				  &.odd {
+					  td {
+						  background-color: $ribbon-5-main !important;
+						  color: $ribbon-5-main-text !important;
+					  }
+				  }
+			  }
+		  }
+	  }
+	  .dataTables_filter {
+		  input {
+			  border: 1px solid $ribbon-5-sup;
+		  }
+	  }
+	  .dataTables_paginate {
+		  a {
+			  border-bottom: 0px;
+			  cursor: pointer;
+			  &.next {
+				  &:after {
+					  text-shadow: none;
+					  color: $ribbon-5-main-text;
+				  }
+			  }
+			  &.previous {
+				  &:before {
+					  text-shadow: none;
+					  color: $ribbon-5-main-text;
+				  }
+			  }
+		  }
+	  }
+  
+	  //dashboard
+  
+	  // Fancyquote
+	  .blockquotes {
+		  .fancy {
+			  hr {
+				  border: 2px solid $ribbon-5-sup;
+			  }
+			  .fa {
+				  color: $ribbon-5-sup;
+			  }
+		  }
+	  }
+  
+	  // Linked / Tabbed grid
+	  .ui_tabbed_grid, .ui_linked_grid {
+		  .grid_post {
+			  &:hover {
+				  span {
+					  background: rgba($ribbon-5-sup, 1);
+				  }
+			  }
+			  span {
+				  background: rgba($ribbon-5-sup, .5);
+			  }
+		  }
+	  }
+  
+	.ui_link_farm {
+	  .ui_link_farm_header {
+		p {
+		  color: $ribbon-5-main-text !important;
+		}
+	  }
+	}
+  
+	.ecu-news {
+	  .ecu-news-column {
+		.ecu-header-section {
+		  border-bottom: 1px solid lighten($ribbon-5-main, 10%);
+		}
+		.ecu-news-item {
+		  border-bottom: 1px solid lighten($ribbon-5-main, 10%);
+		  a {
+			border-bottom: 0px !important;
+		  }
+		  .ecu-news-info {
+			.read-more {
+			  color: darken($ribbon-5-main, 50%);
+			  text-decoration: underline;
+			}
+		  }
+		}
+	  }
+	}
+  
+	  // Dashboard
+	  .ui_dashboard {
+		  .ui_element_wrap {
+			  .dashboard_title {
+				  color: $default-text !important;
+			  }
+			  .dashboard_icon {
+				  .icon-wrap {
+					  background: $ribbon-5-sup;
+					  &.ui_none {
+						  .fa {
+							  color: $ribbon-5-sup-text !important;
+						  }
+					  }
+				  }
+			  }
+		  }
+	  }
+  
+	  /**************************\
+			 RIBBONS
+	  \**************************/
+  
+	  .ribbon-callout {
+		  background-color: $ribbon-5-sup;
+		  color: $ribbon-5-sup-text !important;
+  
+		  // Headings
+		  .ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+			  color: $ribbon-5-sup-text !important;
+		  }
+  
+		  a {
+			  color: $ribbon-5-sup-text !important;
+			  &:hover {
+				  border-color: lighten($ribbon-5-sup, 40%) !important;
+				  &:after {
+					  color: $ribbon-5-sup-text;
+				  }
+			  }
+		  }
+	  .btn-ribbon {
+		background: $ribbon-5-sup !important;
+		color: $white !important;
+		border: 1px solid $white !important;
+		&:hover {
+		  background: $white !important;
+		  color: $ribbon-5-sup !important;
+		  border: 1px solid $ribbon-5-sup !important;
+		  &:after {
+			color: $ribbon-5-sup !important;
+		  }
+		}
+	  }
+		  blockquote {
+		  border-left: 5px solid $ribbon-5-main;
+		}
+	  }
+  }
+  

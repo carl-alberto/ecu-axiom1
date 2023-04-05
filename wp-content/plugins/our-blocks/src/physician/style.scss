@@ -1,0 +1,25 @@
+.wp-block-wp-blocks-physician {
+    .physician {
+        background-color: #f2f2f2;
+        padding: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        width: 100%;
+        h4 {
+            font-family: 'Oswald';
+            margin: 0 0 .75em 0;
+            color: #592A8A !important;
+        }
+        .physician_name {
+            font-size: 16px !important;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .image {
+            float: left;
+            width: 125px;
+            height: auto;
+            align-self: flex-start;
+        }
+    }
+}

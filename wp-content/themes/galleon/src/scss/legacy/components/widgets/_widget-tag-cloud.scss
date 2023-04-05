@@ -1,0 +1,9 @@
+.widget_tag_cloud {
+  @include well;
+  h3 {
+    font-size: .875rem;
+    text-transform: uppercase;
+    margin: 0px;
+    line-height: 1.1375rem;
+  }
+}

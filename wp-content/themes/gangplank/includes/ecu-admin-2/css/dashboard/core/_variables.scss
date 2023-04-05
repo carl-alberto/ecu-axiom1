@@ -1,0 +1,73 @@
+// Defaults
+$global-body-font-size: 16px; // sets base size for rem to work (1rem = 15px)
+$body-font-size: 1rem;
+$body-line-height: 1.5rem;
+$default-text: #212529;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Quattrocento:400,700');
+$heading-font: 'Oswald', sans-serif;
+$body-font: 'Quattrocento', sans-serif;
+$font-awesome: 'FontAwesome';
+$body-font-size: 16px;
+
+// Screen Size Breakpoints
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+// ECU Colors
+$ecu-purple: #572C86;
+$dark-purple: #41215E;
+$light-purple: #be9fdf;
+$ecu-gold: #FEC923;
+$off-gold: #ffe187;
+$footer-bg: #6C6D68;
+$black: #000000;
+$light-grey: #f5f5f5;
+$grey: #6C6D68;
+$dark-grey: #404041;
+$darker-grey: #373738;
+$white: #FFFFFF;
+$burnt-gold : #B88B2D;
+$manatee : #8683A3;
+$dark-teal : #59849b;
+
+// BS Colors
+$bs-light-grey: #f8f9fa;
+$bs-dark-grey: #d6d8d9;
+$bs-color: #212529;
+
+// Ribbons
+$ribbon-default-main: $white;
+$ribbon-default-text: $default-text;
+
+$ribbon-1-main: #41215E;
+$ribbon-1-main-text: $white;
+$ribbon-1-sup: #782670;
+$ribbon-1-sup-text: $white;
+
+$ribbon-2-main: #D8D7D3;
+$ribbon-2-main-text: $dark-grey;
+$ribbon-2-sup: #7b7569;
+$ribbon-2-sup-text: $white;
+
+$ribbon-3-main: #B1AFC5;
+$ribbon-3-main-text: $dark-grey;
+$ribbon-3-sup: #572C86;
+$ribbon-3-sup-text: $white;
+$ribbon-3-accent: #C3C1D2;
+
+//teal
+$ribbon-4-main: #4F7A8C;//light teal 89, 132, 155
+$ribbon-4-main-text: $white;
+$ribbon-4-sup: #004261;//dark teal
+$ribbon-4-sup-text: $white;
+$ribbon-4-accent: #C3C1D2;
+//yellow
+$ribbon-5-main: #e0cb8a; //224, 206, 138
+$ribbon-5-main-text: $dark-grey;
+$ribbon-5-sup: #8F6F24;
+$ribbon-5-sup-text: $white;
+$ribbon-5-accent: #C3C1D2;

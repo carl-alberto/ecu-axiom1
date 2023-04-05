@@ -1,0 +1,112 @@
+#main {
+	#ecu-directory {
+		label {
+			font-family: "Oswald", sans-serif;
+			color: #592a8a;
+			margin: 10px auto 5px;
+			&.radio {
+				display:block!important;
+				margin: 10px auto 5px;
+			}
+		}
+
+		#people-form-wrap, #department-form-wrap, #reverse-form-wrap {
+			margin-bottom:25px;
+			.card {
+				border-radius: 0;
+			}
+			button {
+				margin: 10px 0;
+				font-family: "Oswald", sans-serif;
+				display:block!important;
+				padding: 5px 72px;
+
+			}
+		}
+		nav.nav {
+			border-bottom: 1px solid lightgray;
+		}
+		.nav-tabs {
+			a {
+				border-bottom: 5px solid lightgray;
+				border-radius: 0;
+				font-family:"Oswald", sans-serif;
+				&.active {
+					border-bottom: 5px solid #592a8a;
+				}
+				&.hover {
+					border-bottom: 5px solid darkgray!important;
+				}
+			}
+		}
+		#department-menu-wrap {
+			.ecu-h5 {
+				margin-bottom: 10px;
+			}
+			ul.menuList {
+				padding-inline-start:0px;
+				max-width: 1051px;
+	    		margin-right: auto;
+	    		margin-left: auto;
+				li {
+					display: inline;
+					line-height:40px;
+					button {
+						cursor: pointer;
+						font-family: "Oswald", sans-serif;
+						text-decoration:none;
+						line-height: 20px;
+						padding: 5px 16px;
+						background-color: #592a8a;
+						border: 1px solid white;
+						color: #fff;
+						&:hover {
+							text-decoration:none;
+							background-color: grey;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+
+		#people-results, #department-results, #reverse-results  {
+			th {
+				background-color:#592a8a;
+				color:white;
+			}
+			margin-bottom:25px;
+			button {
+				color: #592a8a;
+			}
+			.card-header {
+				border-radius: 0;
+				background-color: rgb(255,255,255);
+			}
+			.card {
+				border-radius: 0;
+			}
+			.card-body strong{
+				font-family: "Oswald", sans-serif;
+				font-weight: normal;
+			}
+		}
+
+		.loading-gif {
+			img {
+				display: block;
+				margin:0 auto;
+			}
+		}
+
+
+		table.results td a {
+			text-decoration:underline; display:block; padding:0px; height:100%;
+		}
+
+		#people-form {
+			margin:0;
+			padding:0;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.ecu-text-banner-text {
+    text-align: center;
+    font-family: "Oswald",sans-serif !important;
+}
+
+@media only screen and (max-width : 768px) {
+    .ecu-text-banner-text {
+        font-size: 4em !important;
+    }
+}
+
+    /* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .ecu-text-banner-text {
+        font-size: 2em !important;
+    }
+}
+
+.ecu-text-banner {
+	margin-bottom: 5px;
+}
+
+.ecu-text-banner {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,215 @@
+
+  #footer {
+    position:relative;
+    // background-image:url('../images/footer-bg.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:50% 0;
+    color:$white;
+    padding:20px 0px 30px 0px;
+    border-top:5px solid $ecu-gold;
+    max-height:90vh;
+    min-height:40vh;
+    padding: 15px 0px;
+    font-family:$heading-font;
+
+    .filter {
+      position:absolute;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      background: $dark-purple; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(rgba($dark-purple,1), rgba($dark-purple,.2));
+      background: -o-linear-gradient(rgba($dark-purple,1), rgba($dark-purple,.2));
+      background: linear-gradient(rgba($dark-purple,1), rgba($dark-purple,.2)); /*Safari 5.1-6*/ /*Opera 11.1-12*/ /*Fx 3.6-15*/ /*Standard*/
+    }
+
+    ul {
+      font-size:1em;
+      list-style:none;
+      margin-bottom:0px;
+      padding:0px;
+
+      li {
+        padding-top:2px;
+        padding-bottom:2px;
+
+        a {
+          color:darken($white, 5%);
+
+          &.footer-social-link {
+            font-size:1.4em;
+
+            &:not(:last-child){
+              margin-right: 5px;
+            }
+          }
+
+          &:hover {
+            color:$ecu-gold;
+            text-decoration:none;
+          }
+        }
+      }
+    }
+  }
+
+  //University Address Footer
+  #univ-footer {
+    background-color:$ecu-purple;
+    padding:20px 0px;
+    color:$white;
+    font-family:$heading-font;
+
+    #univ-name {
+      color:$white;
+      font-size:1.5em;
+
+    }
+    #univ-address {
+      margin-bottom:4px;
+      a {
+        color:$white;
+        border-bottom:1px solid lighten($ecu-purple, 40%);
+        &:hover {
+          color:$ecu-gold;
+          text-decoration:none;
+          border-bottom:1px solid $ecu-gold;
+        }
+      }
+    }
+    #access-links {
+      margin-bottom:4px;
+      a {
+        color:$white;
+        border-bottom:1px solid lighten($ecu-purple, 40%);
+        &:hover {
+          color:$ecu-gold;
+          text-decoration:none;
+          border-bottom:1px solid $ecu-gold;
+        }
+      }
+    }
+    #last-updated {
+      margin-bottom:4px;
+    }
+    #univ-actions {
+      margin-top:10px;
+      margin-bottom:10px;
+
+      .btn {
+        &:hover {
+          //color:#fff;
+        }
+      }
+    }
+    #google_translate_element {
+      .goog-te-gadget {
+        color:#fff !important;
+        select {
+          height: 34px !important;
+            padding: 6px 12px !important;
+            font-size: 14px !important;
+            line-height: 1.42857143 !important;
+            color: #555 !important;
+            background-color: #fff !important;
+            background-image: none !important;
+            border: 1px solid #ccc !important;
+            border-radius: 0px !important;
+        }
+        a {
+          color:#fff !important;
+          &:hover {
+            color:$ecu-gold !important;
+            text-decoration:underline;
+          }
+        }
+      }
+    }
+  }
+
+
+//sm
+@media (min-width: 768px) {
+  	body{
+		//Links Footer
+		#footer {
+			min-height:500px;
+			padding:20px 0px 30px 0px;
+
+			.filter {
+				background: none; /* For browsers that do not support gradients */
+			}
+
+			ul {
+				font-size:1.2em;
+			}
+		}
+
+		//University Address Footer
+		#univ-footer {
+			padding:20px 0px;
+			color:$white;
+
+			#univ-name {
+
+			}
+			#univ-address {
+				margin-bottom:0px;
+			}
+			#access-links {
+
+			}
+			#last-updated {
+				margin-bottom:0px;
+			}
+			#univ-actions {
+
+			}
+			#google-translate {
+
+			}
+		}
+	}
+}
+
+
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  	body {
+		#footer {
+			min-height:770px;
+			padding:40px 0px 30px 0px;
+		}
+	}
+}
+
+
+
+/* Extra Large devices (large desktops, 1600px and up) */
+@media (min-width: 1600px) {
+  body {
+    //Features Carousel
+
+    #footer {
+      min-height:1200px;
+      padding:50px 0px 30px 0px;
+    }
+  }
+}
+
+/* Extra Large devices (large desktops, 2000px and up) */
+@media (min-width: 2000px) {
+  body {
+    //Features Carousel
+
+    #footer {
+      min-height:770px;
+      padding:50px 0px 30px 0px;
+    }
+  }
+}

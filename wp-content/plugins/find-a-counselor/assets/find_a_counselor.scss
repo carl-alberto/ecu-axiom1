@@ -1,0 +1,169 @@
+.single-counselor {
+    h1 {
+        span {
+            text-transform: uppercase;
+            font-weight: 400;
+            color: #212529;
+            font-size: 1.75rem !important;
+        }
+    }
+    .post-img-wrap {
+        margin-bottom: 1.5rem;
+        @media screen and (min-width: 768px) {
+            max-width: 300px;
+            float: left;
+            margin-right: 1.5rem;
+        }
+        .wp-post-image {
+            margin-bottom: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .main-btn {
+            width: 100%;
+        }
+    }
+    .counselor-schools {
+        padding: 10px;
+        background-color: #f7f7f9;
+        border: 1px solid #e1e1e8;
+        border-radius: 4px;
+        margin-top: 1rem;
+        strong {
+            font-family: "Oswald", sans-serif;
+            color: #592A8A;
+        }
+        ul {
+            margin: 0px;
+        }
+    }
+    .mail-btn {
+        display: block;
+        background-color: #592A8A;
+        border: 1px solid #41215e !important;
+        border-radius: .5rem;
+        color: white !important;
+        transition: .2s color;
+        margin-bottom: 1.5rem;
+        padding-right: .5rem;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0px;
+        }
+        span {
+            padding: .5rem 1rem;
+            border-top-left-radius: .5rem;
+            border-bottom-left-radius: .5rem;
+            background-color: #41215e;
+            display: inline-block;
+            margin-right: .5rem;
+        }
+        &:hover {
+            color: #fec923 !important;
+        }
+    }
+}
+#ecu_find_a_counselor {
+    .btn-group {
+        display: flex;
+        .btn {
+            flex: 1;
+            &.focus,
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    .btn-wrap {
+        display: flex;
+        .btn {
+            flex: 1;
+        }
+    }
+    .btn {
+        font-family: "Oswald", sans-serif;
+        font-size: 16px;
+        background-color: transparent;
+        border: 1px solid #41215e;
+        transition: all .2s;
+        &.active,
+        &:hover {
+            background-color: #41215e;
+            color: white;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .form-control {
+        &:focus {
+            border-color: #41215e;
+        }
+    }
+    .align-center {
+        justify-content: center;
+    }
+    #counselor_county,
+    #counselor_state {
+        border-radius: 0px;
+        &:disabled {
+            cursor: not-allowed;
+        }
+    }
+
+    #counselor_search {
+        font-size: 16px;
+        &:hover {
+            &:disabled {
+                color: #495057;
+            }
+        }
+        &:disabled {
+            color: #495057;
+            opacity: 1;
+            background-color: #e9ecef;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            font-weight: 400;
+            cursor: not-allowed;
+        }
+    }
+    hr {
+        border-top: 1px dashed rgba(0,0,0,.1);
+    }
+    .counselor {
+        border: 1px solid #e1e1e8;
+        background-color: #f7f7f9;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        img {
+            width: 100px;
+            height: 125px;
+            flex-shrink: 0;
+        }
+        .counselor-meta {
+            width: 100%;
+            h2 {
+                text-transform: uppercase;
+                font-size: 16px !important;
+                font-weight: 500;
+                span {
+                    font-weight: 400;
+                    color: #212529;
+                    font-size: 14px !important;
+                }
+            }
+            .email {
+                font-weight: 300;
+                font-family: "Oswald", sans-serif;
+                margin: 0px;
+            }
+            .btn {
+                margin-top: 15px;
+                padding: .25rem .5rem;
+                font-size: .875rem;
+            }
+        }
+    }
+}

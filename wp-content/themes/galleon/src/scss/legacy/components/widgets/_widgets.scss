@@ -1,0 +1,50 @@
+aside {
+  .widget {
+    margin-bottom: 1rem;
+    h3 {
+      font-size: 24px;
+      margin: 0px 0px 10px 0px;
+      font-weight: 400;
+    }
+    select, input, button, optgroup, textarea {
+      max-width: 100%;
+    }
+    input[type="submit"]{
+      display: inline-block;
+      text-align: center;
+      padding: 3px 12px 6px 12px;
+      font-size: .875rem;
+      line-height: 1.42857;
+      font-family: $heading-font;
+      transition: all .2s;
+      text-transform: uppercase;
+      background-color: $ecu-purple;
+      color: $white !important;
+      border: 1px solid $dark-purple;
+      cursor: pointer;
+      &:hover {
+        background-color: $dark-purple;
+        border: 1px solid $dark-purple;
+        color: $white !important;
+      }
+    }
+    .widget-wrap {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@import 'widget_recent_entries';
+@import 'widget_categories';
+@import 'widget_archive';
+@import 'widget_related-posts';
+@import 'widget-tag-cloud';
+@import 'widget-nav-menu';
+@import 'widget-alert';
+@import 'widget-dept-alert';
+@import 'widget-featured-posts';
+@import 'widget-localist';
+@import 'widget-ninjaforms';
+@import 'widget-tag-cloud';
+@import 'widget_meta';
+@import 'widget_recent_comments';

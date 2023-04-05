@@ -1,0 +1,91 @@
+.accordion {
+    .card {
+        border: 0px;
+        border-radius: 0px;
+        .card-header {
+            padding: 0px;
+            border-radius: 0px;
+            background-color: inherit;
+            border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+            h2 {
+                button {
+                    font-size: 1.15rem;
+                    padding: 10px 0px;
+                    color: $ecu-purple;
+                    text-align: left;
+                    width: 100%;
+                    &:hover, &:active, &:focus {
+                        text-decoration: none;
+                    }
+                    &:before {
+                        content: "\f067";
+                        font-family: $font-awesome;
+                        margin-right: 10px;
+                        font-size: .75em;
+                    }
+                    &.active {
+                        &:before {
+                            content: "\f068";
+                            font-family: $font-awesome;
+                        }
+                    }
+                }
+            }
+        }
+        .card-body {
+            padding: 1rem 0px;
+            .actions-wrap {
+                display: block;
+                margin-top: 2rem;
+                p {
+                    margin: 0px;
+                    font-weight: bold;
+                }
+                .actions {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    .form-control {
+                        border-radius: 0px;
+                    }
+                    .btn {
+                        background-color: $white;
+                        color: $default-text;
+                        border: 1px solid rgba(0,0,0,0.15) !important;
+                        &:focus {
+                            outline: 0px;
+                            box-shadow: none;
+                        }
+                        &:hover {
+                            background-color: rgba(0,0,0,0.15);
+                        }
+                        &:last-child {
+                            border-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        &:first-child {
+            .card-header {
+                h5 {
+                    button {
+                        padding: 0px 0px 10px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Lets not let people screw these up
+.accordion {
+    .accordion {
+        display: none;
+    }
+}
+aside {
+    .accordion {
+        display: none;
+    }
+}

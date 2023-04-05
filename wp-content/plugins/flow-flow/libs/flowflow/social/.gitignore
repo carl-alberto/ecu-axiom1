@@ -1,0 +1,5 @@
+composer.lock
+bin
+docs
+vendor
+/.env.test

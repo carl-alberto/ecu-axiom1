@@ -1,0 +1,37 @@
+.ecu-iconpicker {
+    margin-bottom: 1em;
+    .ecu-iconpicker-icon {
+        margin-bottom: 10px;
+    }
+}
+.ecu-iconpicker-picker {
+    .components-popover__content {
+        padding: 5px;
+    }
+    .components-base-control {
+        margin-bottom: 0px;
+    }
+    .iconpicker-icon-list{
+        height: 150px;
+        padding-right: 10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        .icon-option {
+            background-color: transparent;
+            border: 0px;
+            padding: 5px;
+            text-align: left;
+            display: block;
+            width: 100%;
+            text-transform: capitalize;
+            cursor: pointer;
+            &:hover {
+                background-color: var(--wp-admin-theme-color-darker-10);
+                color: white;
+            }
+            .fa-icon {
+                margin-right: 5px;
+            }
+        }
+    }
+}

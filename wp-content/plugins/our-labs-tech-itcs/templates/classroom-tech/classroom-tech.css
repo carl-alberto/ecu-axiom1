@@ -1,0 +1,30 @@
+#ecuClassroomTechDataTable_filter {
+    display: none;
+}
+
+#ecuClassroomTech_controls .card.bg-default {
+    padding: 10px;
+    margin: 20px -15px;
+}
+
+#ecuClassroomTech_controls .icon {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+#ecuClassroomTechDataTable .sorting_disabled {
+    text-decoration: none !important;
+}
+#ecuClassroomTechDataTable .sorting_disabled:hover {
+    text-decoration: none !important;
+}
+
+#ecuClassroomTechDataTable #equipment {
+    width: 100%;
+}
+
+.ecu-spinner-overlay-wrapper .buttons-csv {
+    float: right;
+}

@@ -1,0 +1,41 @@
+.pagination {
+    .screen-reader-text {
+        display: none;
+    }
+    .nav-links {
+        display: flex;
+        border-radius: .25rem;
+        .page-numbers {
+            position: relative;
+            display: block;
+            padding: .5rem .75rem;
+            line-height: 1.25;
+            color: $ecu-purple;
+            background-color: $white;
+            border: 1px solid $light-grey-3;
+            font-family: $heading-font;
+            transition: all .2s;
+            &:hover {
+                color: $white;
+                background-color: $ecu-purple;
+                text-decoration: none;
+            }
+            &:first-child {
+                border-top-left-radius: .25rem;
+                border-bottom-left-radius: .25rem;
+            }
+            &:not(:first-child){
+                margin-left: -1px;
+            }
+            &:last-child {
+                border-top-right-radius: .25rem;
+                border-bottom-right-radius: .25rem;
+            }
+            &.current {
+                font-weight: bold;
+                color: $white;
+                background-color: $ecu-purple;
+            }
+        }
+    }
+}

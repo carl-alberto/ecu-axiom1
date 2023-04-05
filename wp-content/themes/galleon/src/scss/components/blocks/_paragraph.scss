@@ -1,0 +1,33 @@
+.is-style-default {
+	color: #212529;
+	background-color: transparent;
+	font-family: $quattrocento;
+	font-size: 1em;
+}
+
+.is-style-paragraph-block-large {
+	color: $ecu-purple;
+	background-color: transparent;
+	font-family: $oswald;
+	font-size: 1.25em;
+}
+.is-style-paragraph-block-larger {
+	color: $ecu-purple;
+	background-color: transparent;
+	font-family: $oswald;
+	font-size: 1.375em;
+}
+.is-style-paragraph-block-largest {
+	color: $ecu-purple;
+	background-color: transparent;
+	font-family: $oswald;
+	font-size: 1.5em;
+}
+
+.is-style-paragraph-block-large,
+.is-style-paragraph-block-larger,
+.is-style-paragraph-block-largest {
+	address, del, mark, s, ins, u, small, strong, em, ul, ol, li, p, a {
+		font-family: $oswald;
+	}
+}

@@ -1,0 +1,9 @@
+.wp-block-file a.wp-block-file__button:not(.reset) {
+        color: $white;
+        background: $ecu-purple;
+}
+
+.wp-block-file a.wp-block-file__button:not(.reset):hover {
+    color: $light-grey-2;
+    transition: .2s;
+}

@@ -1,0 +1,44 @@
+/** Base Heading Styles **/
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-weight: 400;
+    font-family: $heading-font;
+    color: $ecu-purple;
+}
+
+h1 {
+    margin-bottom: $spacer * 1.5;
+    word-break: break-word;
+}
+.subtitle {
+    margin-top: -$spacer;
+    margin-bottom: $spacer * 1.5;
+}
+
+/** Base Text Styles **/
+address,
+del,
+mark,
+s,
+ins,
+u,
+small,
+strong,
+em,
+ul,
+ol,
+li,
+p,
+a {
+    font-family: $body-font;
+}
+
+button,
+a {
+    transition: color .2s;
+    @include focus;
+}

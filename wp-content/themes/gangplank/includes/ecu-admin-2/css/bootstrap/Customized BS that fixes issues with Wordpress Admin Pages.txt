@@ -1,0 +1,9 @@
+Changes should be applied to the non minified files.
+
+Changes that have been applied.
+
+Commented out the body tag classes.
+Commented out the * class.
+Commented out the header classes.
+
+Label:2500

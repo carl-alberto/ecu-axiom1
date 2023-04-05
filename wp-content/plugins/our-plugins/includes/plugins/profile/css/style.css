@@ -1,0 +1,43 @@
+.ecu-profile-page-select-div > .select2-container {
+	width: 100% !important;
+}
+
+.ecu-profile {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align:center;
+    line-height: 1.5em;
+}
+
+.ecu-profile-main    {
+    font-family:'Oswald', sans-serif;
+}
+.ecu-profile-image {
+    width: 140px;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    padding:5px;
+}
+
+.ecu-profile-name {
+    font-family:'Oswald', sans-serif;
+	font-size: 1.2em;
+    font-weight:300;
+    margin: 0;
+    padding: 2px 0;
+    text-transform: uppercase;
+}
+
+.ecu-profile-title {
+	font-size: 1em;
+    margin: 0;
+    padding: 2px 0;
+    text-shadow: none;
+  //  font-style: italic;
+}
+
+.ecu-profile-notes {
+	padding: 5px;
+
+}

@@ -1,0 +1,27 @@
+@mixin breakpoint($class) {
+	@if $class == xl {
+		@media screen and (min-width: $screen-xl-min) { @content; }
+	}
+	@else if $class == lg {
+		@media screen and (min-width: $screen-lg-min) { @content; }
+	}
+	@else if $class == md {
+		@media screen and (min-width: $screen-md-min) { @content; }
+	}
+	@else if $class == sm {
+		@media screen and (min-width: $screen-sm-min) { @content; }
+	}
+	@else {
+		@warn "Breakpoint mixin supports: lg, md, sm, xs";
+	}
+}
+
+@mixin well(){
+	border: 1px solid #e1e1e8;
+	padding: 10px;
+	background-color: #f7f7f9;
+}
+
+@mixin text-tags($primary, $secondary, $primarytxt, $secondarytext, $primaryalt, $secondaryalt){
+	
+}

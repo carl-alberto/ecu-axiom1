@@ -1,0 +1,88 @@
+/** Post entry in home loop **/
+
+.date-heading {
+    color: $dark-grey-3;
+    margin-bottom: $spacer * 1.25;
+    font-size: 1.5rem;
+    &:not(:first-child) {
+        margin-top: $spacer * 3;
+    }
+}
+.post-entry {
+    margin-bottom: $spacer * 2;
+    &.sticky {
+        background-color: lighten($light-purple-1, 22%);
+        padding: $spacer;
+        &:before {
+            content: "\f005";
+            font-family: $fontawesome;
+            font-weight: 900;
+            color: $ecu-purple;
+            float: right;
+        }
+    }
+    p:not(.date) {
+        margin-bottom: 10px;
+    }
+    .h5 {
+        font-weight: 400;
+    }
+    .date {
+        color: $ecu-purple;
+        font-weight: bold;
+        margin: 0px;
+        font-size: 14px;
+    }
+}
+
+.single-post {
+    .featured-image {
+        padding: $spacer;
+        border: 1px solid $light-grey-3;
+        margin: 0 $spacer $spacer 0;
+        float: left;
+    }
+    #post_meta {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        font-weight: bold;
+        .post-date {
+            font-family: $heading-font;
+        }
+        #post-authors {
+            padding: 0px;
+            margin: 0px;
+            li {
+                margin-right: $spacer;
+                display: inline-block;
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    font-family: $heading-font;
+                }
+            }
+        }
+    }
+    .post-categories {
+        padding: 0px;
+        margin: ($spacer * 3) 0 0 0;
+        clear: both;
+        li {
+            display: inline-block;
+            list-style: none;
+            margin-right: $spacer;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            font-family: $heading-font;
+            &:first-child {
+                font-weight: bold;
+            }
+            a {
+                font-family: $heading-font;
+            }
+        }
+    }
+}

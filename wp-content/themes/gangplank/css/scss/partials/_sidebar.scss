@@ -1,0 +1,16 @@
+aside {
+  &.sidebar{
+    h2 {
+      margin: 0px !important;
+    }
+    .widget {
+      padding-bottom: 20px;
+      h3 {
+        margin-top: 0px !important;
+      }
+      .widget-wrap {
+      	margin-bottom:20px;
+      }
+    }
+  }
+}

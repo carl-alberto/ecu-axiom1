@@ -1,0 +1,249 @@
+/* lavender background - ecu-purple callout */
+&.style-3 {
+  background-color: $ribbon-3-main;
+	color: $ribbon-3-main-text !important;
+
+  // Headings
+	.ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+		color: $default-text;
+	}
+
+	a {
+		color: $ribbon-3-main-text;
+		border-color: $ribbon-3-main-text;
+	}
+	blockquote {
+    border-left: 5px solid $ribbon-3-sup;
+    padding: 1rem 0 1rem 1rem;
+    p {
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  @include rib_btn($ribbon-3-sup, $ribbon-3-main, $white, $ribbon-3-sup);
+	.pagination-wrap {
+		.pagination {
+			border: 1px solid $ribbon-3-sup;
+			li {
+				border-right: 1px solid $ribbon-3-sup;
+				a {
+					color: $default-text !important;
+					&:hover {
+						background-color: $ribbon-3-sup;
+						color: $ribbon-3-sup-text !important;
+					}
+				}
+				&:last-child {
+					border-right: 0px;
+				}
+        &.active {
+          a {
+            background-color: $ribbon-3-sup;
+						color: $ribbon-3-sup-text !important;
+          }
+        }
+			}
+		}
+	}
+
+	/**************************\
+	    SHORTCODES + PLUGINS
+	\**************************/
+
+  // Flowflow
+  .ff-stream {
+    .ff-header {
+    }
+    .ff-stream-wrapper {
+      article {
+        &.ff-item {
+          h4 {
+          }
+          .ff-content {
+            &:first-child {
+            }
+          }
+          .picture-item__inner {
+            .ff-label-wrapper {
+              .ff-icon {
+                .ff-icon-inner {
+                  background: $ecu-purple !important;
+                }
+              }
+            }
+            .ff-item-bar {
+              background: $ecu-purple !important;
+              >a {
+              }
+              .ff-share-wrapper {
+                .ff-icon-share {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+	// Tablepress
+	.tablepress {
+		thead {
+			th {
+				background-color: $ribbon-3-sup;
+				color: $ribbon-3-sup-text;
+				border-bottom: 0px;
+			}
+		}
+		tbody {
+			tr {
+				td {
+					border-top: 0px !important;
+				}
+				&.even {
+					td {
+						background-color: lighten($ribbon-3-main, 5%) !important;
+						color: $ribbon-3-main-text !important;
+					}
+				}
+				&.odd {
+					td {
+						background-color: $ribbon-3-main !important;
+						color: $ribbon-3-main-text !important;
+					}
+				}
+			}
+		}
+	}
+	.dataTables_filter {
+		input {
+			border: 1px solid $ribbon-3-sup;
+		}
+	}
+	.dataTables_paginate {
+		a {
+			border-bottom: 0px;
+			cursor: pointer;
+			&.next {
+				&:after {
+					text-shadow: none;
+					color: $ribbon-3-main-text;
+				}
+			}
+			&.previous {
+				&:before {
+					text-shadow: none;
+					color: $ribbon-3-main-text;
+				}
+			}
+		}
+	}
+
+	// Fancyquote
+	.blockquotes {
+		.fancy {
+			hr {
+				border: 2px solid $ribbon-3-sup;
+			}
+			.fa {
+				color: $ribbon-3-sup;
+			}
+		}
+	}
+
+	// Linked / Tabbed grid
+	.ui_tabbed_grid, .ui_linked_grid {
+		.grid_post {
+			&:hover {
+				span {
+					background: rgba($ribbon-3-sup, 1);
+				}
+			}
+			span {
+				background: rgba($ribbon-3-sup, .5);
+			}
+		}
+	}
+
+  .ui_link_farm {
+    .ui_link_farm_header {
+      p {
+        color: $ribbon-3-main-text !important;
+      }
+    }
+  }
+
+  .ecu-news {
+    .ecu-news-column {
+      .ecu-header-section {
+        border-bottom: none;
+      }
+      .ecu-news-item {
+        border-bottom: none;
+        a {
+          border-bottom: 0px !important;
+        }
+        .ecu-news-info {
+          .read-more {
+            color: $white;
+            background-color: $ribbon-3-sup;
+          }
+        }
+      }
+    }
+  }
+
+  #wp-localist-list {
+      .wp-localist-calendar {
+        .wp-localist-day {
+            color: $default-text;
+        }
+      }
+      .wp-localist-event-title {
+          color: $default-text;
+      }
+  }
+
+	// Dashboard
+	.ui_dashboard {
+		.ui_element_wrap {
+			.dashboard_title {
+				color: $default-text !important;
+			}
+			.dashboard_icon {
+				.icon-wrap {
+					background: $ribbon-3-sup;
+					&.ui_none {
+						.fa {
+							color: $ribbon-3-sup-text !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/**************************\
+           RIBBONS
+	\**************************/
+
+	.ribbon-callout {
+		background-color: $ribbon-3-sup;
+		color: $ribbon-3-sup-text !important;
+
+		// Headings
+		.ribbon-header, .ecu-h2, .ecu-h3, .ecu-h4, .ecu-h5, .ecu-h6, h1, h2, h3, h4, h5, h6 {
+			color: $ribbon-3-sup-text !important;
+		}
+
+		a {
+			color: $ribbon-3-sup-text;
+            border-color: $white;
+		}
+        @include rib_btn($white, $ribbon-3-sup, $ribbon-3-sup, $white);
+		blockquote {
+	    border-left: 5px solid $ribbon-3-main;
+	  }
+	}
+}

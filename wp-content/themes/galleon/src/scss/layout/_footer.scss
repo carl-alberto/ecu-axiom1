@@ -1,0 +1,37 @@
+footer {
+    background-color: $grey;
+    padding: $spacer 0px;
+    color: $white;
+    font-weight: 300;
+    font-size: .875em;
+    .h4 {
+        color: $white;
+        font-weight: 300;
+        margin: 0px;
+    }
+    address,
+    p {
+        font-family: $heading-font;
+        margin-bottom: 0px;
+    }
+    a {
+        color: $white;
+        font-family: $heading-font;
+        text-decoration: underline;
+        &:hover {
+            color: $ecu-gold;
+        }
+    }
+    .footer-branding-left {
+        text-align: center;
+        @include breakpoint(md){
+            text-align: left;
+        }
+    }
+    .footer-branding-right {
+        text-align: center;
+        @include breakpoint(md){
+            text-align: right;
+        }
+    }
+}

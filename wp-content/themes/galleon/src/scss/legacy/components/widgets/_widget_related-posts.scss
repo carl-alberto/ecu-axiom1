@@ -1,0 +1,16 @@
+.related-post {
+  margin-bottom: 1rem;
+  h4 {
+    font-size: 1.25rem;
+    line-height: 26px;
+    &:after {
+      content: "\f054";
+      font-family: $font-awesome;
+      margin-left: 10px;
+      font-size: .875rem;
+    }
+    p {
+      font-size: .875rem;
+    }
+  }
+}

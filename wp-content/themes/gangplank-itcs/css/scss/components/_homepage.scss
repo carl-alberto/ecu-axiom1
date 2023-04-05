@@ -1,0 +1,126 @@
+#main-content {
+	a.btn-ribbon, a.btn-ribbon-simple {
+			font-weight:400;
+		}
+		a.no-underline {
+			border-bottom:1px solid transparent;
+			&:hover{
+				border-bottom:1px solid ligthen($dark-purple, 40%);
+			}
+		}
+		p:not([class]):empty {display:none}
+		p.ecu-icon-block-title {
+			color:#000;
+		}
+		.login-btn {
+			a {
+				border:none;
+				img {
+					width:90%;
+					padding:5px;
+					border:1px solid rgba(255,255,255,.2);
+					&:hover {
+						border:1px solid rgba(255,255,255,.75);
+					}
+				}
+			}
+		}
+		section[aria-label="Services"] {
+			a {
+				color:black;
+				.services-icon {
+					text-align: center;
+					font-size: 4em;
+					display:block;
+				}
+				.services-title {
+					text-align: center;
+					display:block;
+				}
+				&:hover {
+					color: lighten(black,35%)
+				}
+			}
+		}
+		.dashboard-wrapper {
+			.dashboard-item {
+				.item {
+					min-height:100%!important;
+				}
+			}
+		}
+	}
+	footer {
+
+		a.btn-ribbon, a.btn-ribbon-simple {
+			font-weight:400;
+		}
+		.get-help-ribbon {
+
+			padding: 20px 0px;
+			background-color:$dark-purple;
+			hr {
+				border-color:rgba(255, 255, 255, .25);
+			}
+		}
+		a {
+		  font-weight:200;
+	      transition: .2s all;
+	      &:hover {
+	        text-decoration: none;
+	      }
+	      &.btn-ribbon {
+	      	font-weight: 500;
+	        color: $white;
+	        background: $dark-purple;
+	        padding: 6px 12px;
+	        border: 1px solid $white;
+	        font-family: $heading-font;
+	       // font-weight: 700;
+	        font-size: 1rem;
+	        text-transform: uppercase;
+	        transition: all .2s;
+	        font-size: .875rem;
+	        display: inline-block;
+	        align-items: center;
+	        justify-content: space-between;
+
+	        &:after {
+	          font-family: $font-awesome;
+	          content: "\f054";
+	          color: $white;
+	          margin-left: 5px;
+	        }
+	        &:hover {
+	          background: $white;
+	          color: $dark-purple;
+	          &:after {
+	              color: $dark-purple;
+	          }
+	        }
+	      }
+	    }
+		.footer-ribbon {
+
+
+			padding: 20px 0px;
+			background-color:#B1AFC5;
+			.item {
+				a {
+					&:hover {
+						text-decoration:none;
+						border-bottom:none;
+					}
+				}
+				.link-list {
+					li {
+						a {
+							font-family:$body-font;
+							text-decoration:none;
+							border-bottom:none;
+						}
+					}
+				}
+			}
+		}
+	}

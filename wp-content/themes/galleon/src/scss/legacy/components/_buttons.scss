@@ -1,0 +1,75 @@
+.btn-primary {
+    &:hover {
+        background-color: $ecu-purple;
+    }
+}
+
+.ecu-btn {
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    line-height: 1.42857;
+    font-family: $heading-font;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: none;
+    }
+    &.arrow {
+        &:after {
+            content: "\f054";
+            font-family: $font-awesome;
+            margin-left: 10px;
+        }
+    }
+    &.primary {
+        background-color: $dark-purple;
+        color: $white !important;
+        border: 1px solid $dark-purple;
+        &:hover {
+            background-color: $white;
+            border: 1px solid $dark-purple;
+            color: $dark-purple !important;
+        }
+    }
+    &.plum {
+        background-color: $ribbon-1-sup;
+        color: $white !important;
+        border: 1px solid $white;
+        &:hover {
+            background-color: $white;
+            color: $ribbon-1-sup !important;
+        }
+    }
+    &.grey {
+        background-color: $ribbon-2-sup;
+        color: $white !important;
+        border: 1px solid $white;
+        &:hover {
+            background-color: $white;
+            color: $ribbon-2-sup !important;
+        }
+    }
+    &.inverted {
+        background-color: $ecu-purple;
+        color: $white !important;
+        border: 1px solid $white;
+        &:hover {
+            background-color: $white;
+            color: $ecu-purple !important;
+        }
+    }
+}
+
+.btn-ecu-gold {
+    color: $black !important;
+    background-color: $ecu-gold !important;
+    border-color: darken($ecu-gold, 40%) !important;
+
+    &:hover {
+        background-color: darken($ecu-gold, 10%);
+        border-color: darken($ecu-gold, 50%);
+    }
+}

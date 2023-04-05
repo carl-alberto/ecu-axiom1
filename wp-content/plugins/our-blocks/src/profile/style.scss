@@ -1,0 +1,67 @@
+$ecu-purple: #592A8A;
+
+.wp-block-wp-blocks-profile {
+	padding: 1rem 0;
+	&.isVertical .block-content {
+		flex-direction: column;
+		figure {
+			margin: 0 0 15px 0;
+		}
+	}
+	&.isCenter .block-content {
+		align-items: center;
+		justify-items: center;
+		.profile-content {
+			text-align: center;
+		}
+	}
+	.block-content{
+		display: flex;
+		.profile-content {
+			width: 100%;
+		}
+		figure {
+			margin: 0px 15px 0px 0px;
+			position: relative;
+			img {
+				width: 150px;
+				height: 200px;
+				max-height: 200px;
+				max-width: 150px;
+			}
+			button {
+				position: absolute;
+				left: 0;
+				top: 0;
+				margin: 5px;
+			}
+		}
+		h2 {
+			margin-top: 0px !important;
+			margin-bottom: .5em !important;
+			color: $ecu-purple !important;
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 24px;
+		}
+		p, a {
+			display: block;
+			margin-top: 0px !important;
+			margin-bottom: .2em !important;
+			font-family: "Quattrocento", sans-serif;
+			font-size: 16px;
+			line-height: 24px;
+		}
+		.profile-title {
+			font-weight: bold;
+		}
+		a {
+			color: $ecu-purple;
+			text-decoration: underline;
+		}
+	}
+}
+
+.prof-image-toggle {
+	margin-top: .5em;
+}
