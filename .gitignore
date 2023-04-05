@@ -1,22 +1,22 @@
 # WordPress #
 ############
-wp-config-local.php
-wp-cli.local.yml
-wp-content/uploads
-wp-content/blogs.dir/
-wp-content/upgrade/
-wp-content/backup-db/
-wp-content/updraft/
-wp-content/backupwordpress-*/
-wp-content/managewp/backups/
-wp-content/advanced-cache.php
-wp-content/wp-cache-config.php
-sitemap.xml
-sitemap.xml.gz
+web/wp-config-local.php
+web/wp-cli.local.yml
+web/wp-content/uploads
+web/wp-content/blogs.dir/
+web/wp-content/upgrade/
+web/wp-content/backup-db/
+web/wp-content/updraft/
+web/wp-content/backupwordpress-*/
+web/wp-content/managewp/backups/
+web/wp-content/advanced-cache.php
+web/wp-content/wp-cache-config.php
+web/sitemap.xml
+web/sitemap.xml.gz
 
 # @TODO writable paths
-wp-content/cache/
-wp-content/backups/
+web/web/wp-content/cache/
+web/wp-content/backups/
 
 # Avoid accidental modification of pantheon.upstream.yml in sites
 # created from this upstream
@@ -59,4 +59,4 @@ Thumbs.db
 # others #
 ##########
 .vscode
-wp-config-unique.php
+web/wp-config-unique.php
