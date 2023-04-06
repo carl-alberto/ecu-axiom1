@@ -15,7 +15,6 @@ jobs:
       uses: pantheoncarl/code-deploy-wp@main
       id: cache-vendor
       env:
-        CARKONEMAIL: ${{ secrets.PANTHEONEMAIL }}
         PANTHEONSITEUUID: 8ab85c5b-679a-48cb-9777-520ff283400f
         PANTHEONEMAIL: carl.alberto@getpantheon.com
         PANTHEON_TERMINUS_MACHINE_TOKEN: ${{ secrets.PANTHEON_TERMINUS_MACHINE_TOKEN }}
