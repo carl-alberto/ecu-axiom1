@@ -16,7 +16,6 @@ jobs:
       id: cache-vendor
       env:
         PANTHEONSITEUUID: 8ab85c5b-679a-48cb-9777-520ff283400f
-        PANTHEONENV: dev
         PANTHEON_TERMINUS_MACHINE_TOKEN: ${{ secrets.PANTHEON_TERMINUS_MACHINE_TOKEN }}
         PANTHEON_PRIVATE_KEY: ${{ secrets.PANTHEON_PRIVATE_KEY }}
 
