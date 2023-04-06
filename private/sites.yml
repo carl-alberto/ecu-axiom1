@@ -28,50 +28,6 @@ domain_maps:
     84: dev-ecunited.ecu.edu.psapp.dev                         
     88: dev-firstdestination.ecu.edu.psapp.dev                 
     95: dev-homecoming.ecu.edu.psapp.dev                       
-    104: dev-interculturalaffairs.ecu.edu.psapp.dev             
-    110: dev-lead.ecu.edu.psapp.dev                             
-    114: dev-lwcc.ecu.edu.psapp.dev                             
-    118: dev-offcampus.ecu.edu.psapp.dev                        
-    123: dev-orientation.ecu.edu.psapp.dev                      
-    132: dev-rha.ecu.edu.psapp.dev                              
-    136: dev-studentcenters.ecu.edu.psapp.dev                   
-    141: dev-studentcenters.ecu.edu.psapp.dev                   
-    147: dev-sab.ecu.edu.psapp.dev                              
-    152: dev-campusactivities.ecu.edu.psapp.dev                 
-    153: dev-sil.ecu.edu.psapp.dev                              
-    157: dev-stc.ecu.edu.psapp.dev                              
-    163: dev-studenthealth.ecu.edu.psapp.dev                    
-    166: dev-studentmedia.ecu.edu.psapp.dev                     
-    167: dev-mvrc.ecu.edu.psapp.dev                             
-    172: dev-thepirateexperience.ecu.edu.psapp.dev              
-    176: dev-wgo.ecu.edu.psapp.dev                              
-    180: dev-counselingcenter.ecu.edu.psapp.dev                 
-    218: dev-parents.ecu.edu.psapp.dev                          
-    223: dev-parents.ecu.edu.psapp.dev                          
-    229: dev-lgbtq.ecu.edu.psapp.dev                            
-    234: dev-osrr.ecu.edu.psapp.dev                             
-    245: dev-pirateread.ecu.edu.psapp.dev                       
-    251: dev-studenttransitions.ecu.edu.psapp.dev               
-    256: dev-youthprograms.ecu.edu.psapp.dev                    
-    262: dev-experiencesummer.ecu.edu.psapp.dev                 
-    268: dev-familyweekend.ecu.edu.psapp.dev                    
-    272: dev-accessibility.ecu.edu.psapp.dev                    
-    276: dev-accessibility.ecu.edu.psapp.dev                    
-    280: dev-accessibility.ecu.edu.psapp.dev                    
-    285: dev-studentaffairs.ecu.edu.psapp.dev                   
-    294: dev-studentaffairs.ecu.edu.psapp.dev                   
-    299: dev-studentaffairs.ecu.edu.psapp.dev                   
-    308: dev-studentaffairs.ecu.edu.psapp.dev                   
-    312: dev-studentaffairs.ecu.edu.psapp.dev                   
-    318: dev-studentaffairs.ecu.edu.psapp.dev                   
-    323: dev-symptom-screening.ecu.edu.psapp.dev                
-    328: dev-studentaffairs.ecu.edu.psapp.dev                   
-    334: dev-sil.ecu.edu.psapp.dev                              
-    338: dev-studentengagement.ecu.edu.psapp.dev                
-    350: dev-well-being.ecu.edu.psapp.dev                       
-    353: dev-studentaffairs.ecu.edu.psapp.dev                   
-    354: dev-campusliving.ecu.edu.psapp.dev                     
-    357: dev-dreamers.ecu.edu.psapp.dev                         
   test:
     1: test-wpcampus-axiom.pantheonsite.io       
     7: test-collegiaterecovery.ecu.edu.psapp.dev 
@@ -93,50 +49,6 @@ domain_maps:
     84: test-ecunited.ecu.edu.psapp.dev                         
     88: test-firstdestination.ecu.edu.psapp.dev                 
     95: test-homecoming.ecu.edu.psapp.dev                       
-    104: test-interculturalaffairs.ecu.edu.psapp.dev             
-    110: test-lead.ecu.edu.psapp.dev                             
-    114: test-lwcc.ecu.edu.psapp.dev                             
-    118: test-offcampus.ecu.edu.psapp.dev                        
-    123: test-orientation.ecu.edu.psapp.dev                      
-    132: test-rha.ecu.edu.psapp.dev                              
-    136: test-studentcenters.ecu.edu.psapp.dev                   
-    141: test-studentcenters.ecu.edu.psapp.dev                   
-    147: test-sab.ecu.edu.psapp.dev                              
-    152: test-campusactivities.ecu.edu.psapp.dev                 
-    153: test-sil.ecu.edu.psapp.dev                              
-    157: test-stc.ecu.edu.psapp.dev                              
-    163: test-studenthealth.ecu.edu.psapp.dev                    
-    166: test-studentmedia.ecu.edu.psapp.dev                     
-    167: test-mvrc.ecu.edu.psapp.dev                             
-    172: test-thepirateexperience.ecu.edu.psapp.dev              
-    176: test-wgo.ecu.edu.psapp.dev                              
-    180: test-counselingcenter.ecu.edu.psapp.dev                 
-    218: test-parents.ecu.edu.psapp.dev                          
-    223: test-parents.ecu.edu.psapp.dev                          
-    229: test-lgbtq.ecu.edu.psapp.dev                            
-    234: test-osrr.ecu.edu.psapp.dev                             
-    245: test-pirateread.ecu.edu.psapp.dev                       
-    251: test-studenttransitions.ecu.edu.psapp.dev               
-    256: test-youthprograms.ecu.edu.psapp.dev                    
-    262: test-experiencesummer.ecu.edu.psapp.dev                 
-    268: test-familyweekend.ecu.edu.psapp.dev                    
-    272: test-accessibility.ecu.edu.psapp.dev                    
-    276: test-accessibility.ecu.edu.psapp.dev                    
-    280: test-accessibility.ecu.edu.psapp.dev                    
-    285: test-studentaffairs.ecu.edu.psapp.dev                   
-    294: test-studentaffairs.ecu.edu.psapp.dev                   
-    299: test-studentaffairs.ecu.edu.psapp.dev                   
-    308: test-studentaffairs.ecu.edu.psapp.dev                   
-    312: test-studentaffairs.ecu.edu.psapp.dev                   
-    318: test-studentaffairs.ecu.edu.psapp.dev                   
-    323: test-symptom-screening.ecu.edu.psapp.dev                
-    328: test-studentaffairs.ecu.edu.psapp.dev                   
-    334: test-sil.ecu.edu.psapp.dev                              
-    338: test-studentengagement.ecu.edu.psapp.dev                
-    350: test-well-being.ecu.edu.psapp.dev                       
-    353: test-studentaffairs.ecu.edu.psapp.dev                   
-    354: test-campusliving.ecu.edu.psapp.dev                     
-    357: test-dreamers.ecu.edu.psapp.dev  
   live:
     1: live-wpcampus-axiom.pantheonsite.io       
     7: collegiaterecovery.ecu.edu
@@ -158,50 +70,6 @@ domain_maps:
     84: ecunited.ecu.edu                         
     88: firstdestination.ecu.edu                 
     95: homecoming.ecu.edu                       
-    104: interculturalaffairs.ecu.edu             
-    110: lead.ecu.edu                             
-    114: lwcc.ecu.edu                             
-    118: offcampus.ecu.edu                        
-    123: orientation.ecu.edu                      
-    132: rha.ecu.edu                              
-    136: studentcenters.ecu.edu                   
-    141: studentcenters.ecu.edu                   
-    147: sab.ecu.edu                              
-    152: campusactivities.ecu.edu                 
-    153: sil.ecu.edu                              
-    157: stc.ecu.edu                              
-    163: studenthealth.ecu.edu                    
-    166: studentmedia.ecu.edu                     
-    167: mvrc.ecu.edu                             
-    172: thepirateexperience.ecu.edu              
-    176: wgo.ecu.edu                              
-    180: counselingcenter.ecu.edu                 
-    218: parents.ecu.edu                          
-    223: parents.ecu.edu                          
-    229: lgbtq.ecu.edu                            
-    234: osrr.ecu.edu                             
-    245: pirateread.ecu.edu                       
-    251: studenttransitions.ecu.edu               
-    256: youthprograms.ecu.edu                    
-    262: experiencesummer.ecu.edu                 
-    268: familyweekend.ecu.edu                    
-    272: accessibility.ecu.edu                    
-    276: accessibility.ecu.edu                    
-    280: accessibility.ecu.edu                    
-    285: studentaffairs.ecu.edu                   
-    294: studentaffairs.ecu.edu                   
-    299: studentaffairs.ecu.edu                   
-    308: studentaffairs.ecu.edu                   
-    312: studentaffairs.ecu.edu                   
-    318: studentaffairs.ecu.edu                   
-    323: symptom-screening.ecu.edu                
-    328: studentaffairs.ecu.edu                   
-    334: sil.ecu.edu                              
-    338: studentengagement.ecu.edu                
-    350: well-being.ecu.edu                       
-    353: studentaffairs.ecu.edu                   
-    354: campusliving.ecu.edu                     
-    357: dreamers.ecu.edu                         
   carltest:
     1: carltest-wpcampus-axiom.pantheonsite.io       
     7: carltest-collegiaterecovery.ecu.edu.psapp.dev 
@@ -223,48 +91,4 @@ domain_maps:
     84: carltest-ecunited.ecu.edu.psapp.dev                         
     88: carltest-firstdestination.ecu.edu.psapp.dev                 
     95: carltest-homecoming.ecu.edu.psapp.dev                       
-    104: carltest-interculturalaffairs.ecu.edu.psapp.dev             
-    110: carltest-lead.ecu.edu.psapp.dev                             
-    114: carltest-lwcc.ecu.edu.psapp.dev                             
-    118: carltest-offcampus.ecu.edu.psapp.dev                        
-    123: carltest-orientation.ecu.edu.psapp.dev                      
-    132: carltest-rha.ecu.edu.psapp.dev                              
-    136: carltest-studentcenters.ecu.edu.psapp.dev                   
-    141: carltest-studentcenters.ecu.edu.psapp.dev                   
-    147: carltest-sab.ecu.edu.psapp.dev                              
-    152: carltest-campusactivities.ecu.edu.psapp.dev                 
-    153: carltest-sil.ecu.edu.psapp.dev                              
-    157: carltest-stc.ecu.edu.psapp.dev                              
-    163: carltest-studenthealth.ecu.edu.psapp.dev                    
-    166: carltest-studentmedia.ecu.edu.psapp.dev                     
-    167: carltest-mvrc.ecu.edu.psapp.dev                             
-    172: carltest-thepirateexperience.ecu.edu.psapp.dev              
-    176: carltest-wgo.ecu.edu.psapp.dev                              
-    180: carltest-counselingcenter.ecu.edu.psapp.dev                 
-    218: carltest-parents.ecu.edu.psapp.dev                          
-    223: carltest-parents.ecu.edu.psapp.dev                          
-    229: carltest-lgbtq.ecu.edu.psapp.dev                            
-    234: carltest-osrr.ecu.edu.psapp.dev                             
-    245: carltest-pirateread.ecu.edu.psapp.dev                       
-    251: carltest-studenttransitions.ecu.edu.psapp.dev               
-    256: carltest-youthprograms.ecu.edu.psapp.dev                    
-    262: carltest-experiencesummer.ecu.edu.psapp.dev                 
-    268: carltest-familyweekend.ecu.edu.psapp.dev                    
-    272: carltest-accessibility.ecu.edu.psapp.dev                    
-    276: carltest-accessibility.ecu.edu.psapp.dev                    
-    280: carltest-accessibility.ecu.edu.psapp.dev                    
-    285: carltest-studentaffairs.ecu.edu.psapp.dev                   
-    294: carltest-studentaffairs.ecu.edu.psapp.dev                   
-    299: carltest-studentaffairs.ecu.edu.psapp.dev                   
-    308: carltest-studentaffairs.ecu.edu.psapp.dev                   
-    312: carltest-studentaffairs.ecu.edu.psapp.dev                   
-    318: carltest-studentaffairs.ecu.edu.psapp.dev                   
-    323: carltest-symptom-screening.ecu.edu.psapp.dev                
-    328: carltest-studentaffairs.ecu.edu.psapp.dev                   
-    334: carltest-sil.ecu.edu.psapp.dev                              
-    338: carltest-studentengagement.ecu.edu.psapp.dev                
-    350: carltest-well-being.ecu.edu.psapp.dev                       
-    353: carltest-studentaffairs.ecu.edu.psapp.dev                   
-    354: carltest-campusliving.ecu.edu.psapp.dev                     
-    357: carltest-dreamers.ecu.edu.psapp.dev 
 # Anything else in the file will be ignored, but not rejected.
