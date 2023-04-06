@@ -21,6 +21,5 @@ jobs:
         PANTHEON_TERMINUS_MACHINE_TOKEN: ${{ secrets.PANTHEON_TERMINUS_MACHINE_TOKEN }}
         PANTHEON_PRIVATE_KEY: ${{ secrets.PANTHEON_PRIVATE_KEY }}
         PROJECT_ROOT: $(pwd)
-        GH_REF2: ${{ github.event.head_commit.message }}
         PANTHEONENV: dev
         SITENAME:
