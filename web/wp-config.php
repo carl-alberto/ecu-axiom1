@@ -27,13 +27,6 @@ define('WP_REDIS_DISABLED', filter_var(getenv('WP_REDIS_DISABLED'), FILTER_VALID
 // Avoids conflicts with plugins including older versions of select 2 for the shortcake ui.
 define( 'SELECT2_NOCONFLICT', true );
 
-// Define WordPress.com API Key (FOR AKISMET)
-define('WPCOM_API_KEY','287baa65f23e');
-
-// Define ENVIRA GALLERY KEY
-define( 'ENVIRA_LICENSE_KEY', '5c3b7a003078c66c837e15a2f6cbfc3b' );
-
-
 
 /** This provides PHP information from load balancer and allows https requests */
 if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
@@ -46,7 +39,8 @@ define('DISABLE_WP_ANALYTICS', filter_var(getenv('DISABLE_WP_ANALYTICS'), FILTER
 define('DISABLE_WP_EMAIL', filter_var(getenv('DISABLE_WP_EMAIL'), FILTER_VALIDATE_BOOLEAN) );
 
 /** The uploads directory location. */
-define('UPLOADS', 'wp-content/pv-uploads');
+// is this relevant??
+#define('UPLOADS', 'wp-content/pv-uploads');
 
 /** Disable API Calls */
 define('WP_HTTP_BLOCK_EXTERNAL', filter_var(getenv('WP_HTTP_BLOCK_EXTERNAL'), FILTER_VALIDATE_BOOLEAN));
@@ -101,6 +95,12 @@ define('PATH_CURRENT_SITE', '/');
 define('SITE_ID_CURRENT_SITE', getenv('SITE_ID_CURRENT_SITE'));
 define('BLOG_ID_CURRENT_SITE', getenv('BLOG_ID_CURRENT_SITE'));
 
+
+/**
+ * Store secrets in a private folder.
+ */
+if (file_exists(dirname(__FILE__) . '/wp-content/uploads/private/wp-config-secrets.php') && isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+	require_once(dirname(__FILE__) . '/wp-content/uploads/private/wp-config-secrets.php');
 
 
 
